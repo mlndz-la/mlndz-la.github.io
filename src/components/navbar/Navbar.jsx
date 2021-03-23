@@ -6,10 +6,13 @@ import dial from "../../images/dial.svg";
 
 const Navbar = () => {
   const [isPlay, setIsPlay] = useState(true);
+
   setTimeout(() => {
     const song = document.getElementById('player');
-    song.play();
-  }, 1500)
+    const isPlaying = (audio) => { return !audio.paused; }
+    console.log(isPlaying(song));
+  }, 1000)
+
   const toggleMusic = () => {
     const music = document.getElementById('player');
     if (isPlay) {

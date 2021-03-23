@@ -8,7 +8,7 @@ const config = {
   },
   devServer: {
     publicPath: path.resolve(__dirname, '/dist/'),
-    contentBase:  path.resolve(__dirname, './public/'),
+    contentBase:  path.resolve(__dirname),
     port: 8080,
     open: true,
     proxy: {
