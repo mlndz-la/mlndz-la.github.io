@@ -1,0 +1,21 @@
+.about_profile_pic {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+
+.about_container {
+  max-width: 80%;
+}
+
+.about_paragraph {
+  width: 80%;
+}
+
+@media (min-width: 1080px) {
+  .about_container {
+    max-width: 1080px;
+  }
+  .about_paragraph {
+    max-width: 1080px;
+  }
+}
