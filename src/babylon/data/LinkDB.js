@@ -5,6 +5,7 @@ export const linkDB = [
     title: "Github",
     link: "https://github.com/mlndz-la",
     color: "Yellow",
+    width: "50px",
   },
   {
     mesh: null,
@@ -12,11 +13,13 @@ export const linkDB = [
     title: "Linkedin",
     link: "https://www.linkedin.com/in/erick-m/",
     color: "Gold",
+    width: "70px",
   },
   {
     mesh: null,
     isLink: false,
     title: "Credits",
     color: "Teal",
+    width: "60px",
   },
 ];

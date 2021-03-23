@@ -18,6 +18,9 @@ const onSceneReady = (scene) => {
   );
   // slow scroll wheel speed
   camera.wheelPrecision = -2;
+  // these limit how close/far the camera can get to the target
+	camera.lowerRadiusLimit = -325;
+	camera.upperRadiusLimit = 325;
   const canvas = scene.getEngine().getRenderingCanvas();
   // This attaches the camera to the canvas
   camera.attachControl(canvas, true);
@@ -75,12 +78,11 @@ const onSceneReady = (scene) => {
       true,
       scene
     );
-    advancedTexture.layer.layerMask = 0x1000000
     const button = new GUI.Button.CreateSimpleButton(
       linkInfo.title,
       linkInfo.title
     );
-    button.width = 0.2;
+    button.width = linkInfo.width;
     button.height = "30px";
     button.color = linkInfo.color;
     button.thickness = 0;
