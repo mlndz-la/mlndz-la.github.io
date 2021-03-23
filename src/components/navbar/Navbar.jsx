@@ -5,7 +5,7 @@ import _PlayButton from "../../styles/navbar/_PlayButton.js";
 import dial from "../../images/dial.svg";
 
 const Navbar = () => {
-  const [isPlay, setIsPlay] = useState(true);
+  const [isPlay, setIsPlay] = useState(false);
 
   const toggleMusic = () => {
     const music = document.getElementById('player');

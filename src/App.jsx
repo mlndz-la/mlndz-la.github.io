@@ -13,11 +13,10 @@ const App = () => {
       <LandingPage />
       <iframe
         src=""
-        allow="autoplay"
         id="audio"
         style={{ display: "none" }}
       ></iframe>
-      <audio id="player" autoPlay loop>
+      <audio id="player" loop>
         <source src={audio} type="audio/mp3" />
       </audio>
       <GalaxyScene />
