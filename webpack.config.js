@@ -41,7 +41,7 @@ const config = {
         exclude: /node_modules/,
       },
       {
-        test: /.(png|jp(e*)g|svg|mp3|gif)$/,
+        test: /.(pdf|png|jp(e*)g|svg|mp3|gif)$/,
         use: {
           loader: 'file-loader',
           options: {
