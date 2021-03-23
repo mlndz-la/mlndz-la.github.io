@@ -1,6 +1,5 @@
 import resumePDF from "./images/pdf.png";
-
-const serverURL = "http://localhost:443/Erick_Melendez_Resume";
+import pdf from "../../../public/Erick_Melendez_Resume.pdf";
 
 const resume = () => {
   // create html
@@ -8,7 +7,7 @@ const resume = () => {
     <div class='flex_column resume_container'>
       <div class='flex_row resume_title_name'>
         <h1 class='title resume_header_title'>Resume:</h1>
-        <a class='link' href='${serverURL}' target="_blank">
+        <a class='link' href='${pdf}' target="_blank">
           <h1 title='Download Link' class='title link glitch_header'>Download Link</h1>
         </a>
       </div>
