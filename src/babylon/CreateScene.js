@@ -25,5 +25,18 @@ export const createScene = (scene) => {
   // light amount
   light.intensity = 1.4;
   light.specular = new BABYLON.Color3.Black();
-  return [camera, canvas, light];
+  // create spotlight for planets
+  const spotLight = new BABYLON.SpotLight(
+    "spotLight",
+    new BABYLON.Vector3(15, 0, -60),
+    new BABYLON.Vector3(0, 0, 1),
+    Math.PI / 3,
+    1,
+    scene
+  );
+  spotLight.includedOnlyMeshes.push(null);
+  spotLight.intensity = 0.8;
+  spotLight.specular = new BABYLON.Color3.Black();
+  spotLight.radius = 3;
+  return [camera, canvas, light, spotLight];
 };

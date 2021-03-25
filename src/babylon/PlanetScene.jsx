@@ -13,15 +13,15 @@ import collectionOfPlanets from "./data/PlanetDB.js";
 const onSceneReady = (scene) => {
   const arrayOfPlanets = collectionOfPlanets;
   // creates scene with camera, light and canvas
-  const [camera, canvas, light] = createScene(scene);
+  const [camera, canvas, light, spotLight] = createScene(scene);
   // apply properties to each planet
   arrayOfPlanets.forEach((planet) => {
     // create planet
     planet.mesh = createPlanet(scene, planet);
     // on click planet action
-    onHoverIlluminatePlanet(scene, planet, arrayOfPlanets);
+    onHoverIlluminatePlanet(scene, planet, spotLight);
     // on hover action
-    onHoverChangePlanet(scene, planet);
+    onHoverChangePlanet(planet);
     // on click display text
     onClickDisplayText(scene, planet);
     // add title to each planet

@@ -1,9 +1,15 @@
 import * as BABYLON from "babylonjs";
 import createDisplay from "./html/CreateDisplay.js";
 
-export const onHoverChangePlanet = (scene, { mesh }) => {
+export const onHoverChangePlanet = ({ mesh }) => {
   // rotations per minute
-  const rpm = 6;
+  // const rpm = 6;
+  // scene.registerBeforeRender((e, t) => {
+  //   console.log(e.meshes)
+  //   console.log(t)
+  //   const deltaTimeInMillis = scene.getEngine().getDeltaTime();
+  //   mesh.rotation.y -= (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+  // });
   // on exit
   // return to normal size
   mesh.actionManager.registerAction(
@@ -16,18 +22,18 @@ export const onHoverChangePlanet = (scene, { mesh }) => {
     )
   );
   // on exit decrease rotation
-  mesh.actionManager.registerAction(
-    new BABYLON.ExecuteCodeAction(
-      BABYLON.ActionManager.OnPointerOutTrigger,
-      () => {
-        scene.registerBeforeRender(() => {
-          const deltaTimeInMillis = scene.getEngine().getDeltaTime();
-          mesh.rotation.y -=
-            (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
-        });
-      }
-    )
-  );
+  // mesh.actionManager.registerAction(
+  //   new BABYLON.ExecuteCodeAction(
+  //     BABYLON.ActionManager.OnPointerOutTrigger,
+  //     () => {
+  //       scene.registerBeforeRender(() => {
+  //         const deltaTimeInMillis = scene.getEngine().getDeltaTime();
+  //         mesh.rotation.y -=
+  //           (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+  //       });
+  //     }
+  //   )
+  // );
   // on enter
   // increase scaling by 1.4
   mesh.actionManager.registerAction(
@@ -40,37 +46,42 @@ export const onHoverChangePlanet = (scene, { mesh }) => {
     )
   );
   // increase planet rotation
-  mesh.actionManager.registerAction(
-    new BABYLON.ExecuteCodeAction(
-      BABYLON.ActionManager.OnPointerOverTrigger,
-      () => {
-        scene.registerBeforeRender(() => {
-          const deltaTimeInMillis = scene.getEngine().getDeltaTime();
-          mesh.rotation.y +=
-            (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
-        });
-      }
-    )
-  );
+  // mesh.actionManager.registerAction(
+  //   new BABYLON.ExecuteCodeAction(
+  //     BABYLON.ActionManager.OnPointerOverTrigger,
+  //     () => {
+  //       scene.registerBeforeRender(() => {
+  //         const deltaTimeInMillis = scene.getEngine().getDeltaTime();
+  //         mesh.rotation.y +=
+  //           (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+  //       });
+  //     }
+  //   )
+  // );
 };
 
-export const onHoverIlluminatePlanet = (scene, { mesh, name }) => {
+export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
+  // scene.registerBeforeRender(function () {
+  //   var pickResult = scene.pick(
+  //     scene.pointerX,
+  //     scene.pointerY,
+  //     function (mesh) {
+  //       return mesh.isVisible && mesh.isReady();
+  //     },
+  //     false,
+  //   );
+  //   if (pickResult.hit) {
+  //     console.log(pickResult.pickedMesh);
+  //   }
+  // });
+  function is_touch_enabled() {
+    return ( 'ontouchstart' in window ) ||
+      ( navigator.maxTouchPoints > 0 ) ||
+      ( navigator.msMaxTouchPoints > 0 );
+  }
   // adds a default gray glow to each planet
   let highlight = new BABYLON.HighlightLayer(name, scene);
   highlight.addMesh(mesh, new BABYLON.Color3.Gray());
-
-  const spotLight = new BABYLON.SpotLight(
-    "spotLight",
-    new BABYLON.Vector3(15, 0, -60),
-    new BABYLON.Vector3(0, 0, 1),
-    Math.PI / 3,
-    1,
-    scene
-  );
-  spotLight.includedOnlyMeshes.push(null);
-  spotLight.intensity = .8;
-  spotLight.specular = new BABYLON.Color3.Black();
-  spotLight.radius = 3;
   // on enter
   // on hover, change highlight color
   mesh.actionManager.registerAction(
@@ -101,6 +112,14 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }) => {
       BABYLON.ActionManager.OnPointerOverTrigger,
       () => {
         spotLight.includedOnlyMeshes.push(mesh);
+        if (is_touch_enabled()) {
+          setTimeout(() => {
+            spotLight.includedOnlyMeshes.splice(1, 1);
+            highlight.removeMesh(mesh);
+            highlight.addMesh(mesh, new BABYLON.Color3.Gray());
+            mesh.scaling = new BABYLON.Vector3(1, 1, 1);
+          }, 1000);
+        }
       }
     )
   );
