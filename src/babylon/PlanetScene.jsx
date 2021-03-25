@@ -8,7 +8,7 @@ import {
 import { createPlanet } from "./CreatePlanets.js";
 import { createScene } from "./CreateScene.js";
 import { createPlanetLabels } from "./PlanetLabels.js";
-import collectionOfPlanets from "./data/PlanetDB.js";
+import collectionOfPlanets, { meshIndex } from "./data/PlanetDB.js";
 
 const onSceneReady = (scene) => {
   const arrayOfPlanets = collectionOfPlanets;
@@ -21,7 +21,7 @@ const onSceneReady = (scene) => {
     // on click planet action
     onHoverIlluminatePlanet(scene, planet, spotLight);
     // on hover action
-    onHoverChangePlanet(planet);
+    onHoverChangePlanet(planet, spotLight);
     // on click display text
     onClickDisplayText(scene, planet);
     // add title to each planet
@@ -31,16 +31,32 @@ const onSceneReady = (scene) => {
 
 // Will run on every frame render, spinning on y-axis.
 const onRender = (scene) => {
+  const increasedRPM = 6;
+  const defaultRPM = 2;
   const deltaTimeInMillis = scene.getEngine().getDeltaTime();
-  const rpm = 2;
   for (let planet of collectionOfPlanets) {
     planet.mesh.rotation.y +=
-      (rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+      (defaultRPM / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
+  }
+  const pickResult = scene.pick(
+    scene.pointerX,
+    scene.pointerY,
+    (mesh) => {
+      return mesh.isVisible && mesh.isReady();
+    },
+    false
+  );
+  if (pickResult.hit) {
+    console.log('test')
+    collectionOfPlanets[
+      meshIndex[pickResult.pickedMesh.name]
+    ].mesh.rotation.y +=
+      (increasedRPM / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
   }
 };
 
 export default () => (
-  <div id='squeaky_cheeks'>
+  <div id="squeaky_cheeks">
     <RenderScene
       antialias
       onSceneReady={onSceneReady}

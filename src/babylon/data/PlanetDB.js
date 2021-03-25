@@ -61,4 +61,12 @@ const collectionOfPlanets = [
   },
 ];
 
+export const meshIndex = {
+  icy2: 0,
+  terrestrial: 1,
+  gaseous1: 2,
+  volcanic: 3,
+  alpine: 4,
+}
+
 export default collectionOfPlanets;
