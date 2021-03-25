@@ -47,7 +47,6 @@ const onRender = (scene) => {
     false
   );
   if (pickResult.hit) {
-    console.log('test')
     collectionOfPlanets[
       meshIndex[pickResult.pickedMesh.name]
     ].mesh.rotation.y +=
