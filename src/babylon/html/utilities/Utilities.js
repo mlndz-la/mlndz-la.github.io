@@ -1,6 +1,6 @@
 export const getRandomNumber = (max) => Math.floor(Math.random() * max + 1);
 
-export const chanceToAssignGlitch = (max, chance) => {
+export const chance = (max, chance) => {
   const randomNumber = getRandomNumber(max);
   if (randomNumber < chance) {
     return true;
@@ -13,3 +13,4 @@ export const isTouchEnabled = () => {
     ( navigator.maxTouchPoints > 0 ) ||
     ( navigator.msMaxTouchPoints > 0 );
 }
+

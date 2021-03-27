@@ -6,14 +6,14 @@ import {
   testing,
   workFlow,
 } from "./data/Techs.js";
-import { chanceToAssignGlitch, getRandomNumber } from "./utilities/Utilities.js";
+import { chance, getRandomNumber } from "./utilities/Utilities.js";
 
 const createHTMLListItem = (list) => {
   let html = "";
 
   list.forEach(({ name, image, invert }) => {
     const isInvert = invert ? "invert" : "";
-    const isGlitched = chanceToAssignGlitch(10, 3);
+    const isGlitched = chance(10, 3);
     html += `
       <div class='ability_info flex_row max_width_ability'>
         ${isGlitched ? `<p class='subtitle inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3)}s alternate infinite;
