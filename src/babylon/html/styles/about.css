@@ -8,7 +8,31 @@
 }
 
 .about_paragraph {
-  width: 80%;
+  width: 85%;
+}
+
+@keyframes fade_word_animation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .6;
+    filter: blur(5px);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade_word {
+  animation: fade_word_animation 40000ms ease-in-out infinite;
+  animation-delay: 8000ms;
 }
 
 @media (min-width: 1080px) {
