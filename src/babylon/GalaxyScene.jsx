@@ -19,8 +19,8 @@ const onSceneReady = (scene) => {
   // slow scroll wheel speed
   camera.wheelPrecision = -2;
   // these limit how close/far the camera can get to the target
-	camera.lowerRadiusLimit = -325;
-	camera.upperRadiusLimit = 325;
+  camera.lowerRadiusLimit = -325;
+  camera.upperRadiusLimit = 325;
   const canvas = scene.getEngine().getRenderingCanvas();
   // This attaches the camera to the canvas
   camera.attachControl(canvas, true);
@@ -39,15 +39,18 @@ const onSceneReady = (scene) => {
   scene.beforeRender = () => {
     camera.alpha += 0.0003;
   };
-  const postProcess = new BABYLON.ImageProcessingPostProcess(
-    "processing",
-    1.0,
-    camera
-  );
-  postProcess.vignetteWeight = 5;
-  postProcess.vignetteStretch = 5;
-  postProcess.vignetteColor = new BABYLON.Color4(0.3, 0, 1, 0);
-  postProcess.vignetteEnabled = true;
+  const curve = new BABYLON.ColorCurves();
+  curve.globalHue = 200;
+  curve.globalDensity = 80;
+  curve.globalSaturation = 80;
+  curve.highlightsHue = 20;
+  curve.highlightsDensity = -80;
+  curve.highlightsSaturation = -85;
+  curve.shadowsHue = 2;
+  curve.shadowsDensity = 80;
+  curve.shadowsSaturation = 40;
+  scene.imageProcessingConfiguration.colorCurvesEnabled = true;
+  scene.imageProcessingConfiguration.colorCurves = curve;
   const pipeline = new BABYLON.DefaultRenderingPipeline(
     "pipeline",
     true,
@@ -56,13 +59,15 @@ const onSceneReady = (scene) => {
   );
   pipeline.bloomEnabled = true;
   pipeline.bloomWeight = 7;
-  pipeline.bloomThreshold = .93;
+  pipeline.bloomThreshold = 0.93;
   pipeline.bloomScale = 1;
+  pipeline.imageProcessing.contrast = 1.05;
+  pipeline.imageProcessing.exposure = 0.999;
   // Create a transparent background
   scene.clearColor = new BABYLON.Color4(0, 0, 0, 0);
   // instantiate global ui
   const advancedTexture = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
-    'main-gui',
+    "main-gui",
     true,
     scene
   );
@@ -70,15 +75,11 @@ const onSceneReady = (scene) => {
   linkDB.forEach((linkInfo) => {
     let numOne = getRandomNumber(124);
     let numTwo = getRandomNumber(124);
-    if (getRandomNumber(9) < 5) numOne = numOne * -1
-    if (getRandomNumber(9) < 5) numTwo = numTwo * -1
+    if (getRandomNumber(9) < 5) numOne = numOne * -1;
+    if (getRandomNumber(9) < 5) numTwo = numTwo * -1;
     linkInfo.mesh = new BABYLON.Mesh.CreateSphere(linkInfo.title, 1, 1, scene);
     linkInfo.mesh.visibility = 0;
-    linkInfo.mesh.position = new BABYLON.Vector3(
-      numOne,
-      0,
-      numTwo
-    );
+    linkInfo.mesh.position = new BABYLON.Vector3(numOne, 0, numTwo);
     const button = new GUI.Button.CreateSimpleButton(
       linkInfo.title,
       linkInfo.title
@@ -96,31 +97,35 @@ const onSceneReady = (scene) => {
         window.open(linkInfo.link);
       }
     });
-    button.onPointerEnterObservable.add(() => {
-      button.color = "White";
-    })
-    button.onPointerOutObservable.add(() => {
-      button.color = linkInfo.color;
-    })
     advancedTexture.addControl(button);
     button.linkWithMesh(linkInfo.mesh);
     button.linkOffsetY = -150;
-
+    
     const target = new GUI.Ellipse();
     target.width = "0px";
     target.height = "0px";
     target.thickness = 0;
     advancedTexture.addControl(target);
     target.linkWithMesh(linkInfo.mesh);
-
+    
     const line = new GUI.Line();
-    line.lineWidth = 2;
+    line.lineWidth = 3;
     line.color = linkInfo.color;
     line.y2 = 20;
     line.linkOffsetY = -20;
     advancedTexture.addControl(line);
     line.linkWithMesh(linkInfo.mesh);
     line.connectedControl = button;
+    button.onPointerEnterObservable.add(() => {
+      button.color = "#ffd400";
+      button.color = "#ff00c8";
+      line.color = "#ffa155";
+      line.color = "#ff00c8";
+    });
+    button.onPointerOutObservable.add(() => {
+      button.color = linkInfo.color;
+      line.color = linkInfo.color;
+    });
   });
 };
 

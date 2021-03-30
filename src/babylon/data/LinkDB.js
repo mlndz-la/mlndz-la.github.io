@@ -4,7 +4,7 @@ export const linkDB = [
     isLink: true,
     title: "Github",
     link: "https://github.com/mlndz-la",
-    color: "Yellow",
+    color: "#21abf5",
     width: "50px",
   },
   {
@@ -12,14 +12,14 @@ export const linkDB = [
     isLink: true,
     title: "Linkedin",
     link: "https://www.linkedin.com/in/erick-m/",
-    color: "Gold",
+    color: "#21abf5",
     width: "70px",
   },
   {
     mesh: null,
     isLink: false,
     title: "Credits",
-    color: "Teal",
+    color: "#21abf5",
     width: "60px",
   },
 ];
