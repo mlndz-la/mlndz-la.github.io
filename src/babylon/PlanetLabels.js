@@ -16,16 +16,9 @@ const randomWord = (str, specialStrArray) => {
 };
 
 export const createPlanetLabels = (
-  scene,
+  planetLabel,
   { mesh, name, label }
 ) => {
-  // label each planet
-  // instantiate a label
-  const planetLabel = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
-    name,
-    true,
-    scene
-  );
   // create label + its properties
   const nameContainer = new GUI.Rectangle(name);
   nameContainer.width = 0.8;

@@ -13,7 +13,7 @@ import collectionOfPlanets, { meshIndex } from "./data/PlanetDB.js";
 const onSceneReady = (scene) => {
   const arrayOfPlanets = collectionOfPlanets;
   // creates scene with camera, light and canvas
-  const [camera, canvas, light, spotLight] = createScene(scene);
+  const [camera, canvas, light, spotLight, planetLabel] = createScene(scene);
   // apply properties to each planet
   arrayOfPlanets.forEach((planet) => {
     // create planet
@@ -25,10 +25,9 @@ const onSceneReady = (scene) => {
     // on click display text
     onClickDisplayText(scene, planet);
     // add title to each planet
-    createPlanetLabels(scene, planet);
+    createPlanetLabels(planetLabel, planet);
   });
 };
-
 // Will run on every frame render, spinning on y-axis.
 const onRender = (scene) => {
   const increasedRPM = 6;

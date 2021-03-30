@@ -1,4 +1,5 @@
 import * as BABYLON from "babylonjs";
+import * as GUI from "babylonjs-gui";
 
 export const createScene = (scene) => {
   // Create a transparent background
@@ -38,5 +39,12 @@ export const createScene = (scene) => {
   spotLight.intensity = 0.8;
   spotLight.specular = new BABYLON.Color3.Black();
   spotLight.radius = 3;
-  return [camera, canvas, light, spotLight];
+    // label each planet
+  // instantiate a label
+  const planetLabel = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
+    "main-gui",
+    true,
+    scene
+  );
+  return [camera, canvas, light, spotLight, planetLabel];
 };
