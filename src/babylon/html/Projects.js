@@ -20,7 +20,7 @@ const createProjectHTML = (listOfProjects) => {
         <image class='project_preview round_corner' src='${preview}' alt='preview'></image>
         <div class='flex_row project_techL_list'>${techList}</div>
         <div class='paragraph projects_description'>${description}</div>
-        ${projectsData.length - 1 === i ? `` : `<hr class='divider projects_divider'/>`}
+        ${projectsData.length - 1 === i ? `` : `${randomDivider()}`}
       </div>
     `;
   });

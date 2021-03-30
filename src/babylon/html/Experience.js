@@ -1,4 +1,5 @@
 import { listOfExperience } from "./data/ListOfExperience.js";
+import { randomDivider } from "./utilities/Utilities.js";
 
 const createHTMLPoints = (arrayOfStr) => {
   let descriptionsHTML = ``;
@@ -7,7 +8,7 @@ const createHTMLPoints = (arrayOfStr) => {
       <div class='paragraph experience_description'>
         ${str}
       </div>
-      ${arrayOfStr.length - 1 === index ? `` : `<hr class='divider experience_divider'/>`}
+      ${arrayOfStr.length - 1 === index ? `` : `${randomDivider(false)}`}
     `;
   });
   return descriptionsHTML;
@@ -24,10 +25,11 @@ const createHTMLExperience = (data) => {
         </a>
         <image class='round_corner experience_image' src='${preview}' alt='preview'></image>
         <p class='subtitle'><i>Sept ${from}</i> - <i>Jan ${to}</i></p>
+        ${randomDivider()}
         <div class='flex_column center_items'>
           ${htmlListDescriptions}
         </div>
-        ${data.length - 1 === i ? `` : `<hr class='divider experience_divider'/>`}
+        ${data.length - 1 === i ? `` : `${randomDivider()}`}
       </div>
     `;
   });

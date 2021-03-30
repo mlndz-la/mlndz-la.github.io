@@ -7,11 +7,13 @@ export const projectsData = [
     name: "Personal Website",
     description:
       `
-      <p class='inline'>My personal website demonstrating my creativity through frontend development. Incorporating techniques such as the&nbsp;</p>
-      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3)}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='parallax effect'>parallax effect</p>
-      <p class='inline'>&nbsp;and CSS text&nbsp;</p>
-      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3)}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='animations'>animations</p>
-      <p class='inline'>; inspired by the video game Spore.</p>
+      <p class='inline'>My personal website, inspired by the video game Spore, demonstrating my creativity through frontend development. Incorporating techniques and technologies such as the&nbsp;</p>
+      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='parallax'>parallax</p>
+      <p class='inline'>&nbsp;effect, CSS text&nbsp;</p>
+      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='animations'>animations</p>
+      <p class='inline'>&nbsp;and&nbsp;</p>
+      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='WebGL'>WebGL</p>
+      <p class='inline'>&nbsp;tech.</p>
       `,
     techs: [
       {
