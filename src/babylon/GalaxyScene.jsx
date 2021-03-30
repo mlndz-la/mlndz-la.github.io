@@ -60,6 +60,12 @@ const onSceneReady = (scene) => {
   pipeline.bloomScale = 1;
   // Create a transparent background
   scene.clearColor = new BABYLON.Color4(0, 0, 0, 0);
+  // instantiate global ui
+  const advancedTexture = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
+    'main-gui',
+    true,
+    scene
+  );
   // add links
   linkDB.forEach((linkInfo) => {
     let numOne = getRandomNumber(124);
@@ -73,11 +79,6 @@ const onSceneReady = (scene) => {
       0,
       numTwo
     );
-    const advancedTexture = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
-      linkInfo.title,
-      true,
-      scene
-    );
     const button = new GUI.Button.CreateSimpleButton(
       linkInfo.title,
       linkInfo.title
@@ -89,11 +90,18 @@ const onSceneReady = (scene) => {
     button.scaleY = 1.5;
     button.fontFamily = "Verdana";
     button.fontSize = "15px";
+    button.hoverCursor = "pointer";
     button.onPointerUpObservable.add(() => {
       if (linkInfo.isLink) {
         window.open(linkInfo.link);
       }
     });
+    button.onPointerEnterObservable.add(() => {
+      button.color = "White";
+    })
+    button.onPointerOutObservable.add(() => {
+      button.color = linkInfo.color;
+    })
     advancedTexture.addControl(button);
     button.linkWithMesh(linkInfo.mesh);
     button.linkOffsetY = -150;
