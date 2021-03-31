@@ -1,4 +1,3 @@
-import "./styles/credits.css";
 
 const credits = () => {
   let html = `

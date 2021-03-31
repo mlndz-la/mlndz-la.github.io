@@ -1,50 +1,51 @@
-export const CreditLinks = [
+export const iconCredits = [
   {
-    title: "",
-    isLink: true,
+    company: "",
     link: "",
-    description: "",
+    isLink: true,
+    userName: "",
   },
+];
+
+export const imageCredits = [
   {
-    title: "",
-    isLink: true,
+    company: "",
     link: "",
-    description: "",
+    isLink: true,
+    userName: "",
   },
+];
+
+export const audioCredits = [
   {
-    title: "",
-    isLink: true,
+    company: "",
     link: "",
-    description: "",
+    isLink: true,
+    userName: "",
   },
+];
+
+export const modelsCredits = [
   {
-    title: "",
-    isLink: true,
+    company: "",
     link: "",
-    description: "",
-  },
+    isLink: true,
+    userName: "",
+  },  
+];
+
+export const cssCredits = [
   {
-    title: "",
-    isLink: true,
+    company: "",
     link: "",
-    description: "",
-  },
+    isLink: true,
+    userName: "",
+  },  
+];
+
+export const specialCredits = [
   {
-    title: "",
-    isLink: true,
-    link: "",
-    description: "",
-  },
-  {
-    title: "",
-    isLink: true,
-    link: "",
-    description: "",
-  },
-  {
-    title: "",
-    isLink: true,
-    link: "",
-    description: "",
-  },
+    name: "Janis H",
+    description: "A silly goose ❤",
+  },  
 ];
