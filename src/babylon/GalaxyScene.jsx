@@ -6,6 +6,7 @@ import RenderScene from "./RenderScene.jsx";
 import _SpaceBackgroundTwo from "../styles/_SpaceBackGroundTwo.js";
 import { linkDB } from "./data/LinkDB.js";
 import { getRandomNumber } from "./html/utilities/Utilities.js";
+import createDisplay from "./html/CreateDisplay.js";
 
 const onSceneReady = (scene) => {
   const camera = new BABYLON.ArcRotateCamera(
@@ -95,6 +96,8 @@ const onSceneReady = (scene) => {
     button.onPointerUpObservable.add(() => {
       if (linkInfo.isLink) {
         window.open(linkInfo.link);
+      } else if (linkInfo.title === "Credits") {
+        createDisplay("credits");
       }
     });
     advancedTexture.addControl(button);

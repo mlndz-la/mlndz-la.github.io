@@ -4,12 +4,14 @@ import about from "./About.js";
 import experience from "./Experience.js";
 import projects from "./Projects.js";
 import resume from "./Resume.js";
+import credits from "./Credits.js";
 import "./styles/abilities.css";
 import "./styles/about.css";
 import "./styles/experience.css";
 import "./styles/projects.css";
 import "./styles/resume.css";
 import "./styles/utilities.css";
+import "./styles/credits.css";
 
 const evaluateDisplay = (name) => {
   if (name === "abilities") return abilities();
@@ -17,9 +19,11 @@ const evaluateDisplay = (name) => {
   else if (name === "experience") return experience();
   else if (name === "projects") return projects();
   else if (name === "resume") return resume();
+  else if (name === "credits") return credits();
 };
 
 const createDisplay = (displayName) => {
+  const isCredits = displayName === "credits" ? "line_teal" : "";
   // instantiate div with id of displayName
   const display = document.createElement("div");
   display.id = displayName;
@@ -27,7 +31,7 @@ const createDisplay = (displayName) => {
   display.innerHTML = `
       <div id='exit' class='fade_in fade_out'>
         <div id='button_remove' class='remove'></div>
-        <div class='line'>
+        <div class='line ${isCredits}'>
           <div class='scanner'></div>
         </div>
         <image src='${tvStatic}' alt='tv static' class='tv_static'></image>
