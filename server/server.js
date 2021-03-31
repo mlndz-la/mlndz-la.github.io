@@ -3,7 +3,7 @@ const app = express();
 
 const path = require("path");
 
-const PORT = 443; // change to port 443
+const PORT = 3000;
 
 app.use("/dist", express.static(path.resolve(__dirname, "dist")));
 
