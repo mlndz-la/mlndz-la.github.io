@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import _Dial from "../../styles/navbar/_Dial.js";
+import _Mail from "../../styles/navbar/_Mail.js";
 import _Navbar from "../../styles/navbar/_Navbar.js";
 import _PlayButton from "../../styles/navbar/_PlayButton.js";
 import dial from "../../images/dial.svg";
+import mail from "../../images/mail.svg";
 
 const Navbar = () => {
   const [isPlay, setIsPlay] = useState(false);
 
   const toggleMusic = () => {
-    const music = document.getElementById('player');
+    const music = document.getElementById("player");
     if (isPlay) {
       music.pause();
       setIsPlay(!isPlay);
@@ -16,14 +18,14 @@ const Navbar = () => {
       music.play();
       setIsPlay(!isPlay);
     }
-  }
+  };
   const [view, setView] = useState(false);
   const getElementY = (query) => {
     return (
       window.pageYOffset +
       document.querySelector(query).getBoundingClientRect().top
     );
-  }
+  };
   const doScrolling = (element, duration) => {
     let startingY = window.pageYOffset;
     let elementY = getElementY(element);
@@ -68,11 +70,22 @@ const Navbar = () => {
   };
   useEffect(() => {
     doScrolling("#squeaky_cheeks", 1000);
-  }, [])
+  }, []);
   return (
     <_Navbar>
-      <_Dial rotate={view.toString()} src={dial} atl="dial" onClick={changeView} />
-      <_PlayButton isPlay={isPlay} onClick={toggleMusic}/>
+      <_Dial
+        rotate={view.toString()}
+        src={dial}
+        atl="dial"
+        onClick={changeView}
+      />
+      <_PlayButton isPlay={isPlay} onClick={toggleMusic} />
+      <_Mail
+        src={mail}
+        onClick={() => {
+          window.open("mailto:erick.cali@protonmail.com?subject=Job Opportunity&");
+        }}
+      />
     </_Navbar>
   );
 };
