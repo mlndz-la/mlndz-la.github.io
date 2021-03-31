@@ -1,3 +1,4 @@
+import { chance } from "./utilities/Utilities";
 import tvStatic from "./images/static_tv.gif";
 import abilities from "./Abilities.js";
 import about from "./About.js";
@@ -23,6 +24,12 @@ const evaluateDisplay = (name) => {
 };
 
 const createDisplay = (displayName) => {
+  const isPlayed = chance(20, 5);
+  if (isPlayed) {
+    const chatter = document.getElementById("open_modal");
+    chatter.volume = 0.1;
+    chatter.play();
+  }
   const isCredits = displayName === "credits" ? "line_teal" : "";
   // instantiate div with id of displayName
   const display = document.createElement("div");
