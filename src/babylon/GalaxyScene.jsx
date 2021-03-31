@@ -117,9 +117,7 @@ const onSceneReady = (scene) => {
     line.linkWithMesh(linkInfo.mesh);
     line.connectedControl = button;
     button.onPointerEnterObservable.add(() => {
-      button.color = "#ffd400";
       button.color = "#ff00c8";
-      line.color = "#ffa155";
       line.color = "#ff00c8";
     });
     button.onPointerOutObservable.add(() => {
