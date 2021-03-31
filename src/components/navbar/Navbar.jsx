@@ -83,7 +83,7 @@ const Navbar = () => {
       <_Mail
         src={mail}
         onClick={() => {
-          window.open("mailto:erick.cali@protonmail.com?subject=Job Opportunity&");
+          window.open("mailto:erick.cali@protonmail.com?subject=Job Opportunity");
         }}
       />
     </_Navbar>
