@@ -473,6 +473,10 @@ body {
   .abilities_container {
     margin-left: var(--margin-left-standard);
   }
+  /* * credits */
+  .credits_container {
+    margin-left: var(--margin-left-standard);
+  }
 }
 
 @media (max-width: 768px) {
@@ -528,6 +532,10 @@ body {
   }
   /* * abilities */
   .abilities_container {
+    margin-left: var(--margin-left-standard);
+  }
+  /* * credits */
+  .credits_container {
     margin-left: var(--margin-left-standard);
   }
 }
@@ -622,6 +630,10 @@ body {
   .abilities_container {
     margin-left: var(--margin-left-standard);
   }
+  /* * credits */
+  .credits_container {
+    margin-left: var(--margin-left-standard);
+  }
 }
 
 @media (max-width: 300px) {
@@ -712,6 +724,10 @@ body {
   }
   /* * abilities */
   .abilities_container {
+    margin-left: var(--margin-left-standard);
+  }
+  /* * credits */
+  .credits_container {
     margin-left: var(--margin-left-standard);
   }
 }
