@@ -33,6 +33,7 @@ export const frontend = [
   },
   { name: "Babylon", image: babylon },
   { name: "HTML", image: "https://api.iconify.design/logos:html-5.svg" },
+  { name: "Chart.js", image: "https://api.iconify.design/flat-color-icons:combo-chart.svg" },
   { name: "Electron", image: "https://api.iconify.design/logos:electron.svg" },
   { name: "Aleph", image: aleph },
 ];
@@ -101,5 +102,9 @@ export const workFlow = [
     name: "CodeSandbox",
     image: "https://api.iconify.design/logos:codesandbox.svg",
     invert: true,
+  },
+  {
+    name: "GitKraken",
+    image: "https://api.iconify.design/logos:gitkraken.svg",
   },
 ];
