@@ -1,7 +1,10 @@
 import profilePic from "./images/Erick_Melendez.jpg";
 import { randomDivider, getRandomNumber } from "./utilities/Utilities.js";
 
-const about = () => {
+const about = (eggs) => {
+  const defaultEgg = "?????";
+  const eggOne = eggs[0] ? `THE BIGGEST!! 🐰` : defaultEgg;
+  const eggTwo = eggs[1] ? `` : defaultEgg;
   // create html
   return `
     <div class='flex_column about_container'>
@@ -48,7 +51,11 @@ const about = () => {
       <div class='paragraph about_paragraph center_text'>
         <p class='inline'>Awarded 2 years of&nbsp;</p>
         <a class='link' href='https://sites.google.com/nhm.org/nhmlacvolunteersreflect/volunteer-recognition/continuous-service-awards?authuser=0#h.i0edzf1s8o4m' target="_blank">
-          <p title='Continuous Service' style='animation: glitch ${getRandomNumber(3)}s alternate infinite; transform: skewX(${getRandomNumber(20)}deg);' class='center_text link inline_flex glitch_paragraph'>Continuous Service</p>
+          <p title='Continuous Service' style='animation: glitch ${getRandomNumber(
+            3
+          )}s alternate infinite; transform: skewX(${getRandomNumber(
+    20
+  )}deg);' class='center_text link inline_flex glitch_paragraph'>Continuous Service</p>
         </a>
         <p class='inline'>&nbsp;by the Natural History Museum of Los Angeles</p>
       </div>
@@ -57,9 +64,13 @@ const about = () => {
       <p class='center_text paragraph'>I have a growing passion for sailing</p>
       <p class='center_text paragraph'>I enjoy volunteering at events i.e. Los Angeles Festival of Books</p>
       ${randomDivider(false)}
-      <h1 title='🥚' class='title glitch_header' style='animation: glitch ${getRandomNumber(3)}s alternate infinite; transform: skewX(${getRandomNumber(20)}deg);'>🥚</h1>
-      <p class='paragraph center_text'>?????</p>
-      <p class='paragraph center_text'>?????</p>
+      <h1 title='🥚' class='title glitch_header' style='animation: glitch ${getRandomNumber(
+        3
+      )}s alternate infinite; transform: skewX(${getRandomNumber(
+    20
+  )}deg);'>🥚</h1>
+      <p class='paragraph center_text'>${eggOne}</p>
+      <p class='paragraph center_text'>${eggTwo}</p>
     </div>
   `;
 };

@@ -12,6 +12,7 @@ import collectionOfPlanets, { meshIndex } from "./data/PlanetDB.js";
 
 const onSceneReady = (scene) => {
   const egg = [true, false];
+  const discovery = [false, false];
   const arrayOfPlanets = collectionOfPlanets;
   // creates scene with camera, light and canvas
   const [camera, canvas, light, spotLight, planetLabel] = createScene(scene);
@@ -22,9 +23,9 @@ const onSceneReady = (scene) => {
     // on click planet action
     onHoverIlluminatePlanet(scene, planet, spotLight);
     // on hover action
-    onHoverChangePlanet(planet, spotLight, egg);
+    onHoverChangePlanet(planet, spotLight, egg, discovery);
     // on click display text
-    onClickDisplayText(planet, egg);
+    onClickDisplayText(planet, egg, discovery);
     // add title to each planet
     createPlanetLabels(planetLabel, planet);
   });

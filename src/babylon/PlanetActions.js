@@ -2,7 +2,7 @@ import * as BABYLON from "babylonjs";
 import createDisplay from "./html/CreateDisplay.js";
 import { isEgg, isTouchEnabled } from "./html/utilities/Utilities.js";
 
-export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg) => {
+export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg, discovery) => {
   // on exit
   // return to normal size
   mesh.actionManager.registerAction(
@@ -29,13 +29,12 @@ export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg) => {
         spotLight.includedOnlyMeshes.splice(2, 1);
         if (egg[0]) {
           egg.push(name);
-          console.log(egg)
-          if (isEgg(egg) && (egg[0] && egg[1])) {
+          if (isEgg(egg) && egg[0] && egg[1]) {
             const easter = document.getElementById("easter_egg");
             easter.volume = 0.1;
             easter.play();
             egg[0] = false;
-            egg.splice(1, egg.length - 1);
+            discovery[0] = true;
           } else if (egg.length > 6) {
             egg.splice(2, egg.length - 1);
           }
@@ -117,7 +116,7 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
   );
 };
 
-export const onClickDisplayText = ({ mesh, name }, egg) => {
+export const onClickDisplayText = ({ mesh, name }, egg, discovery) => {
   mesh.actionManager.registerAction(
     new BABYLON.ExecuteCodeAction(
       {
@@ -126,7 +125,7 @@ export const onClickDisplayText = ({ mesh, name }, egg) => {
       () => {
         if (name === "gaseous1" && !document.querySelector("#about")) {
           // create about display
-          createDisplay("about");
+          createDisplay("about", discovery);
         } else if (name === "icy2" && !document.querySelector("#abilities")) {
           if (!egg[1]) egg[1] = true;
           // create abilities display

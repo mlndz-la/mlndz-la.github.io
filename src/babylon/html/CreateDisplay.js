@@ -14,16 +14,16 @@ import "./styles/resume.css";
 import "./styles/utilities.css";
 import "./styles/credits.css";
 
-const evaluateDisplay = (name) => {
+const evaluateDisplay = (name, eggs) => {
   if (name === "abilities") return abilities();
-  else if (name === "about") return about();
+  else if (name === "about") return about(eggs);
   else if (name === "experience") return experience();
   else if (name === "projects") return projects();
   else if (name === "resume") return resume();
   else if (name === "credits") return credits();
 };
 
-const createDisplay = (displayName) => {
+const createDisplay = (displayName, discovery) => {
   const isPlayed = chance(20, 5);
   if (isPlayed) {
     const chatter = document.getElementById("open_modal");
@@ -44,7 +44,7 @@ const createDisplay = (displayName) => {
         <image src='${tvStatic}' alt='tv static' class='tv_static'></image>
         <div class='blur'></div>
         <div class='info_card'>
-          ${evaluateDisplay(displayName)}
+          ${evaluateDisplay(displayName, discovery)}
         </div>
       </div>
     `;
@@ -53,7 +53,6 @@ const createDisplay = (displayName) => {
   // add ability to exit popup
   document.querySelector("#exit").addEventListener("click", (e) => {
     if (e.target.id === "exit" || e.target.id === "button_remove") {
-      // exitFunc(display);
       document.querySelector("#exit").style = "pointer-events: none;";
       document.querySelector("#button_remove").style = "pointer-events: none;";
       document.querySelector("body").removeChild(display);
