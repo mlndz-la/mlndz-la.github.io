@@ -1,8 +1,8 @@
 import * as BABYLON from "babylonjs";
 import createDisplay from "./html/CreateDisplay.js";
-import { isTouchEnabled } from "./html/utilities/Utilities.js";
+import { isEgg, isTouchEnabled } from "./html/utilities/Utilities.js";
 
-export const onHoverChangePlanet = ({ mesh }, spotLight) => {
+export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg) => {
   // on exit
   // return to normal size
   mesh.actionManager.registerAction(
@@ -27,6 +27,19 @@ export const onHoverChangePlanet = ({ mesh }, spotLight) => {
       false,
       () => {
         spotLight.includedOnlyMeshes.splice(2, 1);
+        if (egg[0]) {
+          egg.push(name);
+          console.log(egg)
+          if (isEgg(egg) && (egg[0] && egg[1])) {
+            const easter = document.getElementById("easter_egg");
+            easter.volume = 0.1;
+            easter.play();
+            egg[0] = false;
+            egg.splice(1, egg.length - 1);
+          } else if (egg.length > 6) {
+            egg.splice(2, egg.length - 1);
+          }
+        }
       }
     )
   );
@@ -66,7 +79,11 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
       BABYLON.ActionManager.OnPointerOverTrigger,
       () => {
         spotLight.includedOnlyMeshes.push(mesh);
-        if (isTouchEnabled() && (window.innerWidth <= 1024 && window.innerHeight <= 1366)) {
+        if (
+          isTouchEnabled() &&
+          window.innerWidth <= 1024 &&
+          window.innerHeight <= 1366
+        ) {
           setTimeout(() => {
             spotLight.includedOnlyMeshes.splice(1, 1);
             highlight.removeMesh(mesh);
@@ -100,7 +117,7 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
   );
 };
 
-export const onClickDisplayText = (scene, { mesh, name }) => {
+export const onClickDisplayText = ({ mesh, name }, egg) => {
   mesh.actionManager.registerAction(
     new BABYLON.ExecuteCodeAction(
       {
@@ -111,9 +128,9 @@ export const onClickDisplayText = (scene, { mesh, name }) => {
           // create about display
           createDisplay("about");
         } else if (name === "icy2" && !document.querySelector("#abilities")) {
+          if (!egg[1]) egg[1] = true;
           // create abilities display
           createDisplay("abilities");
-          // abilities();
         } else if (
           name === "terrestrial" &&
           !document.querySelector("#experience")

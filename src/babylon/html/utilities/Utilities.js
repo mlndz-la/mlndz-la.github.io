@@ -44,7 +44,7 @@ export const randomDivider = (isRandom) => {
   if (isRandom === false) {
     return createDividerWithoutImage();
   }
-  const max = 21
+  const max = 21;
   const result = getRandomNumber(max);
   if (result <= 3) {
     return createDivider(galaxy1);
@@ -65,4 +65,19 @@ export const randomDivider = (isRandom) => {
   } else {
     return createDivider(galaxy1);
   }
+};
+
+export const isEgg = (array) => {
+  if (array[2] === "icy2") {
+    if (array[3] === "gaseous1") {
+      if (array[4] === "terrestrial") {
+        if (array[5] === "alpine") {
+          if (array[6] === "volcanic") {
+            return true;
+          }
+        }
+      }
+    }
+  }
+  return false;
 };
