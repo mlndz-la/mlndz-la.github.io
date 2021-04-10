@@ -1,4 +1,4 @@
-import { chance } from "./utilities/Utilities";
+import { chance, lowVolume } from "./utilities/Utilities";
 import tvStatic from "./images/static_tv.gif";
 import abilities from "./Abilities.js";
 import about from "./About.js";
@@ -27,7 +27,7 @@ const createDisplay = (displayName, discovery) => {
   const isPlayed = chance(20, 5);
   if (isPlayed) {
     const chatter = document.getElementById("open_modal");
-    chatter.volume = 0.1;
+    chatter.volume = lowVolume;
     chatter.play();
   }
   const isCredits = displayName === "credits" ? "line_teal" : "";

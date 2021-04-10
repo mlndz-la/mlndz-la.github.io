@@ -1,8 +1,22 @@
 import * as BABYLON from "babylonjs";
 import createDisplay from "./html/CreateDisplay.js";
-import { isEgg, isTouchEnabled } from "./html/utilities/Utilities.js";
+import {
+  defaultVolume,
+  isEgg,
+  isTouchEnabled,
+  lowVolume,
+} from "./html/utilities/Utilities.js";
 
-export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg, discovery) => {
+const defaultScale = 1;
+const increasedScale = 1.3;
+
+export const onHoverChangePlanet = (
+  scene,
+  { mesh, name },
+  spotLight,
+  egg,
+  discovery
+) => {
   // on exit
   // return to normal size
   mesh.actionManager.registerAction(
@@ -10,7 +24,7 @@ export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg, discovery) =
       BABYLON.ActionManager.OnPointerOutTrigger,
       mesh,
       "scaling",
-      new BABYLON.Vector3(1, 1, 1),
+      new BABYLON.Vector3(defaultScale, defaultScale, defaultScale),
       175
     )
   );
@@ -21,7 +35,7 @@ export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg, discovery) =
       BABYLON.ActionManager.OnPointerOverTrigger,
       mesh,
       "scaling",
-      new BABYLON.Vector3(1.3, 1.3, 1.3),
+      new BABYLON.Vector3(increasedScale, increasedScale, increasedScale),
       150,
       null,
       false,
@@ -31,10 +45,88 @@ export const onHoverChangePlanet = ({ mesh, name }, spotLight, egg, discovery) =
           egg.push(name);
           if (isEgg(egg) && egg[0] && egg[1]) {
             const easter = document.getElementById("easter_egg");
-            easter.volume = 0.1;
+            easter.volume = lowVolume;
             easter.play();
             egg[0] = false;
             discovery[0] = true;
+            setTimeout(() => {
+              // play reveal song
+              const revealMusic = document.querySelector("#reveal");
+              revealMusic.volume = defaultVolume;
+              revealMusic.play();
+              const theme = document.querySelector("#player");
+              theme.volume = 0;
+              // egg
+              const chungus = new BABYLON.SceneLoader.ImportMesh(
+                "",
+                "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
+                "chungus.glb",
+                scene,
+                (meshes) => {
+                  const size = 0.3;
+                  let mesh = meshes[0];
+                  mesh.scaling = new BABYLON.Vector3(size, size, size);
+                  mesh.position = new BABYLON.Vector3(5, -60, -5);
+                  mesh.rotation = new BABYLON.Vector3(0, 2.6, 0);
+
+                  // * for y position
+                  // * -60 = start of animation
+                  // * -25 is the mid point
+                  // * -60 is the end
+                  const frameRate = 10;
+                  const expose = new BABYLON.Animation(
+                    "chungusFly",
+                    "position.y",
+                    frameRate,
+                    BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+                    BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+                  );
+                  const keyFrames = [];
+                  const endKeyFrame = frameRate * 15;
+                  keyFrames.push({
+                    frame: 0,
+                    value: -60,
+                  });
+                  keyFrames.push({
+                    frame: frameRate * 5,
+                    value: -40,
+                  });
+                  keyFrames.push({
+                    frame: frameRate * 7,
+                    value: -25,
+                  });
+                  keyFrames.push({
+                    frame: frameRate * 10,
+                    value: -25,
+                  });
+                  keyFrames.push({
+                    frame: frameRate * 12,
+                    value: -25,
+                  });
+                  keyFrames.push({
+                    frame: endKeyFrame,
+                    value: -60,
+                  });
+
+                  expose.setKeys(keyFrames);
+
+                  mesh.animations.push(expose);
+
+                  const chungusAnimation = scene.beginAnimation(
+                    mesh,
+                    0,
+                    endKeyFrame,
+                    false,
+                    0.3,
+                    () => {
+                      mesh.dispose();
+                      const theme = document.querySelector("#player");
+                      theme.volume = defaultVolume;
+                    }
+                  );
+                }
+              );
+            }, 3000);
           } else if (egg.length > 6) {
             egg.splice(2, egg.length - 1);
           }

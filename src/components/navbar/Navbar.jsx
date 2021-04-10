@@ -3,14 +3,15 @@ import _Dial from "../../styles/navbar/_Dial.js";
 import _Mail from "../../styles/navbar/_Mail.js";
 import _Navbar from "../../styles/navbar/_Navbar.js";
 import _PlayButton from "../../styles/navbar/_PlayButton.js";
+import { defaultVolume, lowVolume } from "../../babylon/html/utilities/Utilities.js";
 import dial from "../../images/dial.svg";
 import mail from "../../images/mail.svg";
 
 const Navbar = () => {
   const [isPlay, setIsPlay] = useState(false);
-
   const toggleMusic = () => {
     const music = document.getElementById("player");
+    music.volume = defaultVolume;
     if (isPlay) {
       music.pause();
       setIsPlay(!isPlay);
@@ -60,6 +61,9 @@ const Navbar = () => {
     });
   };
   const changeView = () => {
+    const selected = document.getElementById("selected");
+    selected.volume = lowVolume;
+    selected.play();
     if (view === false) {
       setView(!view);
       doScrolling("#silly_goose", 4000);
@@ -83,7 +87,9 @@ const Navbar = () => {
       <_Mail
         src={mail}
         onClick={() => {
-          window.open("mailto:erick.cali@protonmail.com?subject=Job Opportunity");
+          window.open(
+            "mailto:erick.cali@protonmail.com?subject=Job Opportunity"
+          );
         }}
       />
     </_Navbar>

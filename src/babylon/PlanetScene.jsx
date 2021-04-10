@@ -8,14 +8,14 @@ import {
 import { createPlanet } from "./CreatePlanets.js";
 import { createScene } from "./CreateScene.js";
 import { createPlanetLabels } from "./PlanetLabels.js";
-import collectionOfPlanets, { meshIndex } from "./data/PlanetDB.js";
+import collectionOfPlanets from "./data/PlanetDB.js";
 
 const onSceneReady = (scene) => {
   const egg = [true, false];
   const discovery = [false, false];
-  const arrayOfPlanets = collectionOfPlanets;
+  const arrayOfPlanets = [...collectionOfPlanets];
   // creates scene with camera, light and canvas
-  const [camera, canvas, light, spotLight, planetLabel] = createScene(scene);
+  const [camera, canvas, light, spotLight, planetLabelGUI] = createScene(scene);
   // apply properties to each planet
   arrayOfPlanets.forEach((planet) => {
     // create planet
@@ -23,35 +23,26 @@ const onSceneReady = (scene) => {
     // on click planet action
     onHoverIlluminatePlanet(scene, planet, spotLight);
     // on hover action
-    onHoverChangePlanet(planet, spotLight, egg, discovery);
+    onHoverChangePlanet(
+      scene,
+      planet,
+      spotLight,
+      egg,
+      discovery,
+    );
     // on click display text
     onClickDisplayText(planet, egg, discovery);
     // add title to each planet
-    createPlanetLabels(planetLabel, planet);
+    createPlanetLabels(planetLabelGUI, planet);
   });
 };
 // Will run on every frame render, spinning on y-axis.
 const onRender = (scene) => {
-  const increasedRPM = 6;
-  const defaultRPM = 2;
+  const defaultRPM = 3;
   const deltaTimeInMillis = scene.getEngine().getDeltaTime();
   for (let planet of collectionOfPlanets) {
     planet.mesh.rotation.y +=
       (defaultRPM / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
-  }
-  const pickResult = scene.pick(
-    scene.pointerX,
-    scene.pointerY,
-    (mesh) => {
-      return mesh.isVisible && mesh.isReady();
-    },
-    false
-  );
-  if (pickResult.hit) {
-    collectionOfPlanets[
-      meshIndex[pickResult.pickedMesh.name]
-    ].mesh.rotation.y +=
-      (increasedRPM / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000);
   }
 };
 

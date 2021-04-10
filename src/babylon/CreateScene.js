@@ -16,7 +16,7 @@ export const createScene = (scene) => {
   // This attaches the camera to the canvas
   camera.attachControl(canvas, true);
   // Remove all camera movements
-  camera.inputs.clear();
+  // camera.inputs.clear();
   // This creates a light
   const light = new BABYLON.HemisphericLight(
     "mainLight",
@@ -39,12 +39,11 @@ export const createScene = (scene) => {
   spotLight.intensity = 0.8;
   spotLight.specular = new BABYLON.Color3.Black();
   spotLight.radius = 3;
-    // label each planet
-  // instantiate a label
-  const planetLabel = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
+  // instantiate a gui for planet labels to exist on
+  const planetLabelGUI = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
     "main-gui",
     true,
     scene
   );
-  return [camera, canvas, light, spotLight, planetLabel];
+  return [camera, canvas, light, spotLight, planetLabelGUI];
 };

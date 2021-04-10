@@ -16,7 +16,7 @@ const randomWord = (str, specialStrArray) => {
 };
 
 export const createPlanetLabels = (
-  planetLabel,
+  planetLabelGUI,
   { mesh, name, label }
 ) => {
   // create label + its properties
@@ -26,7 +26,7 @@ export const createPlanetLabels = (
   nameContainer.color = "Gray";
   nameContainer.thickness = 0;
   nameContainer.isPointerBlocker = false;
-  planetLabel.addControl(nameContainer);
+  planetLabelGUI.addControl(nameContainer);
   // add text to nameContainer
   const text = new GUI.TextBlock();
   const generateRandomText = setInterval(() => {

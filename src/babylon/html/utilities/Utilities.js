@@ -81,3 +81,7 @@ export const isEgg = (array) => {
   }
   return false;
 };
+
+export const defaultVolume = 0.6;
+export const lowVolume = 0.05;
+export const noVolume = 0;
