@@ -54,8 +54,11 @@ export const onHoverChangePlanet = (
               const revealMusic = document.querySelector("#reveal");
               revealMusic.volume = defaultVolume;
               revealMusic.play();
+              // turn off sound
               const theme = document.querySelector("#player");
               theme.volume = 0;
+              const scramble = document.querySelector("#open_modal");
+              scramble.volume = 0;
               // egg
               const chungus = new BABYLON.SceneLoader.ImportMesh(
                 "",
@@ -122,6 +125,8 @@ export const onHoverChangePlanet = (
                       mesh.dispose();
                       const theme = document.querySelector("#player");
                       theme.volume = defaultVolume;
+                      const scramble = document.querySelector("#open_modal");
+                      scramble.volume = lowVolume;
                     }
                   );
                 }

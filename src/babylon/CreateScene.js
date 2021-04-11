@@ -16,7 +16,7 @@ export const createScene = (scene) => {
   // This attaches the camera to the canvas
   camera.attachControl(canvas, true);
   // Remove all camera movements
-  // camera.inputs.clear();
+  camera.inputs.clear();
   // This creates a light
   const light = new BABYLON.HemisphericLight(
     "mainLight",
