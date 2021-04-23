@@ -52,7 +52,7 @@ export const onHoverChangePlanet = (
             setTimeout(() => {
               // play reveal song
               const revealMusic = document.querySelector("#reveal");
-              revealMusic.volume = defaultVolume;
+              revealMusic.volume = defaultVolume - 0.025;
               revealMusic.play();
               // turn off sound
               const theme = document.querySelector("#player");
@@ -184,7 +184,11 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
             spotLight.includedOnlyMeshes.splice(1, 1);
             highlight.removeMesh(mesh);
             highlight.addMesh(mesh, new BABYLON.Color3.Gray());
-            mesh.scaling = new BABYLON.Vector3(1, 1, 1);
+            mesh.scaling = new BABYLON.Vector3(
+              defaultScale,
+              defaultScale,
+              defaultScale
+            );
           }, 2000);
         }
       }
