@@ -134,7 +134,7 @@ const onSceneReady = (scene) => {
   createStars(scene, 250);
 
   // ! testing purposes
-  showWorldAxis(scene, 10);
+  // showWorldAxis(scene, 10);
 };
 
 export default () => (

@@ -17,7 +17,7 @@ export const createScene = (scene) => {
   // This attaches the camera to the canvas
   camera.attachControl(canvas, true);
   // * Remove all camera movements
-  // camera.inputs.clear();
+  camera.inputs.clear();
   // This creates a light
   const light = new BABYLON.HemisphericLight(
     "mainLight",
@@ -47,6 +47,6 @@ export const createScene = (scene) => {
     scene
   );
   // ! testing purposes
-  showWorldAxis(scene, 10);
+  // showWorldAxis(scene, 10);
   return [camera, canvas, light, spotLight, planetLabelGUI];
 };
