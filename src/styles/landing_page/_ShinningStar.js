@@ -19,6 +19,7 @@ const _ShinningStar = styled.div`
   position: absolute;
   border-radius: 100px;
   z-index: 10;
+  pointer-events: none; 
   ${(props) => {
     const { size, top, left, color, blur, delay } = props.star;
     return (
