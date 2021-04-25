@@ -57,7 +57,7 @@ export const modelsCredits = [
   {
     company: "Sketchfab",
     link: "https://sketchfab.com/",
-    userName: ["Loïc Norgeot"],
+    userName: ["Loïc Norgeot", "ChristopherHedley"],
   },
   {
     company: "Poly",
