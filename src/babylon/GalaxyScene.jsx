@@ -130,9 +130,6 @@ const onSceneReady = (scene) => {
     });
   });
 
-  // createStars(scene, -250);
-  // createStars(scene, 250);
-
   const moonEater = new BABYLON.SceneLoader.ImportMesh(
     "",
     "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
