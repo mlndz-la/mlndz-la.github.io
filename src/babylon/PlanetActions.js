@@ -1,6 +1,8 @@
 import * as BABYLON from "babylonjs";
 import createDisplay from "./html/CreateDisplay.js";
 import {
+  achievementKeyTheBiggest,
+  achievementTheBiggest,
   defaultVolume,
   isEgg,
   isTouchEnabled,
@@ -129,6 +131,7 @@ export const onHoverChangePlanet = (
                       scramble.volume = lowVolume;
                     }
                   );
+                  localStorage.setItem(achievementTheBiggest, achievementKeyTheBiggest);
                 }
               );
             }, 3000);

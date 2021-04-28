@@ -1,9 +1,18 @@
 import profilePic from "./images/Erick_Melendez.jpg";
-import { randomDivider, getRandomNumber } from "./utilities/Utilities.js";
+import {
+  randomDivider,
+  getRandomNumber,
+  achievementTheBiggest,
+  achievementKeyTheBiggest,
+} from "./utilities/Utilities.js";
 
 const about = (eggs) => {
   const defaultEgg = "?????";
-  const eggOne = eggs[0] ? `THE BIGGEST!! 🐰` : defaultEgg;
+  const isAchieved = localStorage.getItem(achievementTheBiggest);
+  const eggOne =
+    eggs[0] || (isAchieved === achievementKeyTheBiggest)
+      ? `THE BIGGEST!! 🐰`
+      : defaultEgg;
   const eggTwo = eggs[1] ? `` : defaultEgg;
   // create html
   return `

@@ -81,7 +81,10 @@ export const isEgg = (array) => {
   }
   return false;
 };
-
+export const achievementKeyTheBiggest = "34!fwd5x34*35$wef";
+export const achievementTheBiggest = "c$4sh4fu^4zn33dg90u!5s#s";
+export const achievementKeyCleansingFire = "43&3fr6%4r2##ezl#%$";
+export const achievementCleansingFire = "f!i)90rpo;rth%el{5@]or$s^dd3@4";
 export const defaultVolume = 0.6;
 export const lowVolume = 0.05;
 export const noVolume = 0;
