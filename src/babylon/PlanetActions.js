@@ -1,13 +1,18 @@
 import * as BABYLON from "babylonjs";
 import createDisplay from "./html/CreateDisplay.js";
 import {
+  achievementCleansingFire,
+  achievementKeyCleansingFire,
   achievementKeyTheBiggest,
   achievementTheBiggest,
   defaultVolume,
   isEgg,
+  isEgg2,
   isTouchEnabled,
   lowVolume,
 } from "./html/utilities/Utilities.js";
+import activateEggChungus from "./js/EE1.js";
+import activateEggFire, { validEggFire } from "./js/EE2.js";
 
 const defaultScale = 1;
 const increasedScale = 1.3;
@@ -16,7 +21,7 @@ export const onHoverChangePlanet = (
   scene,
   { mesh, name },
   spotLight,
-  egg,
+  { egg1 },
   discovery
 ) => {
   // on exit
@@ -43,101 +48,18 @@ export const onHoverChangePlanet = (
       false,
       () => {
         spotLight.includedOnlyMeshes.splice(2, 1);
-        if (egg[0]) {
-          egg.push(name);
-          if (isEgg(egg) && egg[0] && egg[1]) {
-            const easter = document.getElementById("easter_egg");
-            easter.volume = lowVolume;
-            easter.play();
-            egg[0] = false;
-            discovery[0] = true;
-            setTimeout(() => {
-              // play reveal song
-              const revealMusic = document.querySelector("#reveal");
-              revealMusic.volume = defaultVolume - 0.025;
-              revealMusic.play();
-              // turn off sound
-              const theme = document.querySelector("#player");
-              theme.volume = 0;
-              const scramble = document.querySelector("#open_modal");
-              scramble.volume = 0;
-              // egg
-              const chungus = new BABYLON.SceneLoader.ImportMesh(
-                "",
-                "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
-                "chungus.glb",
-                scene,
-                (meshes) => {
-                  const size = 0.3;
-                  let mesh = meshes[0];
-                  mesh.scaling = new BABYLON.Vector3(size, size, size);
-                  mesh.position = new BABYLON.Vector3(5, -60, -5);
-                  mesh.rotation = new BABYLON.Vector3(0, 2.6, 0);
-
-                  // * for y position
-                  // * -60 = start of animation
-                  // * -25 is the mid point
-                  // * -60 is the end
-                  const frameRate = 10;
-                  const expose = new BABYLON.Animation(
-                    "chungusFly",
-                    "position.y",
-                    frameRate,
-                    BABYLON.Animation.ANIMATIONTYPE_FLOAT,
-                    BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
-                  );
-                  const keyFrames = [];
-                  const endKeyFrame = frameRate * 15;
-                  keyFrames.push({
-                    frame: 0,
-                    value: -60,
-                  });
-                  keyFrames.push({
-                    frame: frameRate * 5,
-                    value: -40,
-                  });
-                  keyFrames.push({
-                    frame: frameRate * 7,
-                    value: -25,
-                  });
-                  keyFrames.push({
-                    frame: frameRate * 10,
-                    value: -25,
-                  });
-                  keyFrames.push({
-                    frame: frameRate * 12,
-                    value: -25,
-                  });
-                  keyFrames.push({
-                    frame: endKeyFrame,
-                    value: -60,
-                  });
-
-                  expose.setKeys(keyFrames);
-
-                  mesh.animations.push(expose);
-
-                  const chungusAnimation = scene.beginAnimation(
-                    mesh,
-                    0,
-                    endKeyFrame,
-                    false,
-                    0.3,
-                    () => {
-                      mesh.dispose();
-                      const theme = document.querySelector("#player");
-                      theme.volume = defaultVolume;
-                      const scramble = document.querySelector("#open_modal");
-                      scramble.volume = lowVolume;
-                    }
-                  );
-                  localStorage.setItem(achievementTheBiggest, achievementKeyTheBiggest);
-                }
-              );
-            }, 3000);
-          } else if (egg.length > 6) {
-            egg.splice(2, egg.length - 1);
-          }
+        if (egg1[0]) {
+          activateEggChungus(
+            scene,
+            isEgg,
+            egg1,
+            discovery,
+            name,
+            achievementTheBiggest,
+            achievementKeyTheBiggest,
+            defaultVolume,
+            lowVolume
+          );
         }
       }
     )
@@ -220,7 +142,11 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
   );
 };
 
-export const onClickDisplayText = ({ mesh, name }, egg, discovery) => {
+export const onClickDisplayText = (
+  { mesh, name },
+  { egg1, egg2, egg2Tracker },
+  discovery
+) => {
   mesh.actionManager.registerAction(
     new BABYLON.ExecuteCodeAction(
       {
@@ -228,22 +154,39 @@ export const onClickDisplayText = ({ mesh, name }, egg, discovery) => {
       },
       () => {
         if (name === "gaseous1" && !document.querySelector("#about")) {
+          if (!egg2Tracker[0] && validEggFire(egg2Tracker)) {
+            // activateEggFire(
+            //   scene,
+            //   isEgg2,
+            //   egg2,
+            //   discovery,
+            //   name,
+            //   achievementCleansingFire,
+            //   achievementKeyCleansingFire,
+            //   defaultVolume,
+            //   lowVolume
+            // );
+          }
           // create about display
           createDisplay("about", discovery);
         } else if (name === "icy2" && !document.querySelector("#abilities")) {
-          if (!egg[1]) egg[1] = true;
+          if (!egg2Tracker[1] && validEggFire(egg2Tracker)) {}
+          if (!egg1[1]) egg1[1] = true;
           // create abilities display
           createDisplay("abilities");
         } else if (
           name === "terrestrial" &&
           !document.querySelector("#experience")
         ) {
+          if (!egg2Tracker[2] && validEggFire(egg2Tracker)) {}
           // create experience display
           createDisplay("experience");
         } else if (name === "alpine" && !document.querySelector("#projects")) {
+          if (!egg2Tracker[3] && validEggFire(egg2Tracker)) {}
           // create projects display
           createDisplay("projects");
         } else if (name === "volcanic" && !document.querySelector("#resume")) {
+          if (!egg2Tracker[4] && validEggFire(egg2Tracker)) {}
           // create resume display
           createDisplay("resume");
         }

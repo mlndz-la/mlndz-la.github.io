@@ -81,6 +81,14 @@ export const isEgg = (array) => {
   }
   return false;
 };
+
+export const isEgg2 = (array) => {
+  if (array.length === 4 && array[1] === array[2] && array[1] === array[3]) {
+    return true;
+  }
+  return false;
+};
+
 export const achievementKeyTheBiggest = "34!fwd5x34*35$wef";
 export const achievementTheBiggest = "c$4sh4fu^4zn33dg90u!5s#s";
 export const achievementKeyCleansingFire = "43&3fr6%4r2##ezl#%$";

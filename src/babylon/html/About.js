@@ -4,16 +4,22 @@ import {
   getRandomNumber,
   achievementTheBiggest,
   achievementKeyTheBiggest,
+  achievementCleansingFire,
+  achievementKeyCleansingFire,
 } from "./utilities/Utilities.js";
 
 const about = (eggs) => {
   const defaultEgg = "?????";
   const isAchieved = localStorage.getItem(achievementTheBiggest);
+  const isAchieved2 = localStorage.getItem(achievementCleansingFire);
   const eggOne =
-    eggs[0] || (isAchieved === achievementKeyTheBiggest)
+    eggs[0] || isAchieved === achievementKeyTheBiggest
       ? `THE BIGGEST!! 🐰`
       : defaultEgg;
-  const eggTwo = eggs[1] ? `` : defaultEgg;
+  const eggTwo =
+    eggs[1] || isAchieved2 === achievementKeyCleansingFire
+      ? `‘Mmmmmmm, Scorched Earth’`
+      : defaultEgg;
   // create html
   return `
     <div class='flex_column about_container'>
