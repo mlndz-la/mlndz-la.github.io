@@ -8,7 +8,6 @@ import { linkDB } from "./data/LinkDB.js";
 import { getRandomNumber } from "./html/utilities/Utilities.js";
 import createDisplay from "./html/CreateDisplay.js";
 import showWorldAxis from "../test/CreateWorldAxis.js";
-import createStars from "./CreateParticles.js";
 
 const onSceneReady = (scene) => {
   const camera = new BABYLON.ArcRotateCamera(
