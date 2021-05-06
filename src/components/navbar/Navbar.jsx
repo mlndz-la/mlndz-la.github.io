@@ -8,6 +8,7 @@ import dial from "../../images/dial.svg";
 import mail from "../../images/mail.svg";
 
 const Navbar = () => {
+  const [isFlashing, setIsFlashing] = useState(true);
   const [isPlay, setIsPlay] = useState(false);
   const toggleMusic = () => {
     const music = document.getElementById("player");
@@ -61,6 +62,7 @@ const Navbar = () => {
     });
   };
   const changeView = () => {
+    setIsFlashing(false);
     const selected = document.getElementById("selected");
     selected.volume = lowVolume;
     selected.play();
@@ -78,6 +80,7 @@ const Navbar = () => {
   return (
     <_Navbar>
       <_Dial
+        isFlashing={isFlashing}
         rotate={view.toString()}
         src={dial}
         atl="dial"
