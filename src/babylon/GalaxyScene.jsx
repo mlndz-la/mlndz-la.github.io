@@ -9,8 +9,9 @@ import { getRandomNumber } from "./html/utilities/Utilities.js";
 import createDisplay from "./html/CreateDisplay.js";
 import showWorldAxis from "../test/CreateWorldAxis.js";
 
-const onSceneReady = (scene) => {
-  const camera = new BABYLON.ArcRotateCamera(
+const onSceneReady = async (scene) => {
+  scene.getEngine().displayLoadingUI();
+  const camera = await new BABYLON.ArcRotateCamera(
     "Camera",
     (3 * Math.PI) / 2,
     1.2,
@@ -23,11 +24,11 @@ const onSceneReady = (scene) => {
   // these limit how close/far the camera can get to the target
   camera.lowerRadiusLimit = -325;
   camera.upperRadiusLimit = 325;
-  const canvas = scene.getEngine().getRenderingCanvas();
+  const canvas = await scene.getEngine().getRenderingCanvas();
   // This attaches the camera to the canvas
   camera.attachControl(canvas, true);
   // add galaxy mesh
-  const galaxy = new BABYLON.SceneLoader.ImportMesh(
+  const galaxy = await new BABYLON.SceneLoader.ImportMesh(
     "",
     "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
     "galaxy.glb",
@@ -41,7 +42,7 @@ const onSceneReady = (scene) => {
   scene.beforeRender = () => {
     camera.alpha += 0.0003;
   };
-  const curve = new BABYLON.ColorCurves();
+  const curve = await new BABYLON.ColorCurves();
   curve.globalHue = 200;
   curve.globalDensity = 80;
   curve.globalSaturation = 80;
@@ -53,7 +54,7 @@ const onSceneReady = (scene) => {
   curve.shadowsSaturation = 40;
   scene.imageProcessingConfiguration.colorCurvesEnabled = true;
   scene.imageProcessingConfiguration.colorCurves = curve;
-  const pipeline = new BABYLON.DefaultRenderingPipeline(
+  const pipeline = await new BABYLON.DefaultRenderingPipeline(
     "pipeline",
     true,
     scene,
@@ -68,13 +69,13 @@ const onSceneReady = (scene) => {
   // Create a transparent background
   scene.clearColor = new BABYLON.Color4(0, 0, 0, 0);
   // instantiate global ui
-  const advancedTexture = new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
+  const advancedTexture = await new GUI.AdvancedDynamicTexture.CreateFullscreenUI(
     "main-gui",
     true,
     scene
   );
   // add links
-  linkDB.forEach((linkInfo) => {
+  await linkDB.forEach((linkInfo) => {
     let numOne = getRandomNumber(124);
     let numTwo = getRandomNumber(124);
     if (getRandomNumber(9) < 5) numOne = numOne * -1;
@@ -129,7 +130,7 @@ const onSceneReady = (scene) => {
     });
   });
 
-  const moonEater = new BABYLON.SceneLoader.ImportMesh(
+  const moonEater = await new BABYLON.SceneLoader.ImportMesh(
     "",
     "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
     "moon_eater.glb",
@@ -150,6 +151,7 @@ const onSceneReady = (scene) => {
 
   // ! testing purposes
   // showWorldAxis(scene, 10);
+  scene.getEngine().hideLoadingUI();
 };
 
 export default () => (

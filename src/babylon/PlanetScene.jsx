@@ -11,6 +11,7 @@ import { createPlanetLabels } from "./PlanetLabels.js";
 import collectionOfPlanets from "./data/PlanetDB.js";
 
 const onSceneReady = async (scene) => {
+  scene.getEngine().displayLoadingUI();
   const egg = {
     egg1: [true, false],
     egg2: [true],
@@ -21,18 +22,19 @@ const onSceneReady = async (scene) => {
   // creates scene with camera, light and canvas
   const [camera, canvas, light, spotLight, planetLabelGUI] = createScene(scene);
   // apply properties to each planet
-  arrayOfPlanets.forEach(async (planet) => {
+  await arrayOfPlanets.forEach(async (planet) => {
     // create planet
     planet.mesh = await createPlanet(scene, planet);
     // on click planet action
-    onHoverIlluminatePlanet(scene, planet, spotLight);
+    await onHoverIlluminatePlanet(scene, planet, spotLight);
     // on hover action
-    onHoverChangePlanet(scene, planet, spotLight, egg, discovery);
+    await onHoverChangePlanet(scene, planet, spotLight, egg, discovery);
     // on click display text
-    onClickDisplayText(scene, planet, egg, discovery);
+    await onClickDisplayText(scene, planet, egg, discovery);
     // add title to each planet
-    createPlanetLabels(planetLabelGUI, planet);
+    await createPlanetLabels(planetLabelGUI, planet);
   });
+  scene.getEngine().hideLoadingUI();
 };
 // Will run on every frame render, spinning on y-axis.
 const onRender = (scene) => {
