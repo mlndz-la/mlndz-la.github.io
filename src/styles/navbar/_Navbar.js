@@ -7,7 +7,7 @@ const _Navbar = styled.nav`
   position: fixed;
   z-index: 1;
   right: 0%;
-
+  pointer-events: none;
   display: flex;
   flex-direction: column;
   justify-content: center;

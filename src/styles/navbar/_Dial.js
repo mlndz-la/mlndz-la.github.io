@@ -22,6 +22,7 @@ const _Dial = styled.img`
   width: 75px;
   filter: invert(0.9) opacity(0.5);
   outline: none;
+  pointer-events: auto;
   transform: rotate(
     ${(props) => (props.rotate === "false" ? "180deg" : "0deg")}
   );

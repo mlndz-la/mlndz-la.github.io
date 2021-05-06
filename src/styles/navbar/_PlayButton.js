@@ -6,6 +6,7 @@ const _PlayButton = styled.button`
   box-sizing: border-box;
   width: 0;
   height: 75px;
+  pointer-events: auto;
   transform: scale(.5);
   border-color: transparent transparent transparent rgba(245, 245, 245, 0.5);
   transition: 500ms all ease;
