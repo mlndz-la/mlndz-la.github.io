@@ -10,7 +10,7 @@ import { createScene } from "./CreateScene.js";
 import { createPlanetLabels } from "./PlanetLabels.js";
 import collectionOfPlanets from "./data/PlanetDB.js";
 
-const onSceneReady = (scene) => {
+const onSceneReady = async (scene) => {
   const egg = {
     egg1: [true, false],
     egg2: [true],
@@ -21,9 +21,9 @@ const onSceneReady = (scene) => {
   // creates scene with camera, light and canvas
   const [camera, canvas, light, spotLight, planetLabelGUI] = createScene(scene);
   // apply properties to each planet
-  arrayOfPlanets.forEach((planet) => {
+  arrayOfPlanets.forEach(async (planet) => {
     // create planet
-    planet.mesh = createPlanet(scene, planet);
+    planet.mesh = await createPlanet(scene, planet);
     // on click planet action
     onHoverIlluminatePlanet(scene, planet, spotLight);
     // on hover action

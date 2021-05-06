@@ -5,7 +5,7 @@ import volcanic from "./assets/Volcanic.png";
 import gaseous1 from "./assets/Gaseous1.png";
 import terrestrial from "./assets/Terrestrial1.png";
 
-export const createPlanet = (
+export const createPlanet = async (
   scene,
   { name, yAxis, xAxis, diameter, color, yAxis375, xAxis375, xAxis450, yAxis450 }
 ) => {
@@ -31,15 +31,15 @@ export const createPlanet = (
   // apply textures to each planet
   let texture = new BABYLON.StandardMaterial(color, scene);
   if (name === "icy2") {
-    texture.diffuseTexture = new BABYLON.Texture(icy2, scene);
+    texture.diffuseTexture = await new BABYLON.Texture(icy2, scene);
   } else if (name === "terrestrial") {
-    texture.diffuseTexture = new BABYLON.Texture(terrestrial, scene);
+    texture.diffuseTexture = await new BABYLON.Texture(terrestrial, scene);
   } else if (name === "gaseous1") {
-    texture.diffuseTexture = new BABYLON.Texture(gaseous1, scene);
+    texture.diffuseTexture = await new BABYLON.Texture(gaseous1, scene);
   } else if (name === "volcanic") {
-    texture.diffuseTexture = new BABYLON.Texture(volcanic, scene);
+    texture.diffuseTexture = await new BABYLON.Texture(volcanic, scene);
   } else if (name === "alpine") {
-    texture.diffuseTexture = new BABYLON.Texture(alpine, scene);
+    texture.diffuseTexture = await new BABYLON.Texture(alpine, scene);
   }
   sphere.material = texture;
   return sphere;
