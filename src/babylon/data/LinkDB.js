@@ -22,4 +22,12 @@ export const linkDB = [
     color: "#21abf5",
     width: "60px",
   },
+  {
+    mesh: null,
+    isLink: true,
+    title: "Triplebyte",
+    link: "https://triplebyte.com/tb/erick-melendez-2did2ch",
+    color: "#21abf5",
+    width: "80px",
+  },
 ];
