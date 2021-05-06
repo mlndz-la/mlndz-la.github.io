@@ -18,7 +18,7 @@ const about = (eggs) => {
       : defaultEgg;
   const eggTwo =
     eggs[1] || isAchieved2 === achievementKeyCleansingFire
-      ? `‘Mmmmmmm, Scorched Earth’`
+      ? "“Mmmmmmm, Scorched Earth”"
       : defaultEgg;
   // create html
   return `
