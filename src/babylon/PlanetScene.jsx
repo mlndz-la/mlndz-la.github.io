@@ -29,7 +29,7 @@ const onSceneReady = (scene) => {
     // on hover action
     onHoverChangePlanet(scene, planet, spotLight, egg, discovery);
     // on click display text
-    onClickDisplayText(planet, egg, discovery);
+    onClickDisplayText(scene, planet, egg, discovery);
     // add title to each planet
     createPlanetLabels(planetLabelGUI, planet);
   });

@@ -21,7 +21,7 @@ export const activateEggChungus = (
     setTimeout(() => {
       // play reveal song
       const revealMusic = document.querySelector("#reveal");
-      revealMusic.volume = defaultVolume - 0.035;
+      revealMusic.volume = defaultVolume - 0.038;
       revealMusic.play();
       // turn off sound
       const theme = document.querySelector("#player");

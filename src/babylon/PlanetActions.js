@@ -143,50 +143,121 @@ export const onHoverIlluminatePlanet = (scene, { mesh, name }, spotLight) => {
 };
 
 export const onClickDisplayText = (
-  { mesh, name },
+  scene,
+  planet,
   { egg1, egg2, egg2Tracker },
   discovery
 ) => {
-  mesh.actionManager.registerAction(
+  planet.mesh.actionManager.registerAction(
     new BABYLON.ExecuteCodeAction(
       {
         trigger: BABYLON.ActionManager.OnPickDownTrigger,
       },
       () => {
-        if (name === "gaseous1" && !document.querySelector("#about")) {
-          if (!egg2Tracker[0] && validEggFire(egg2Tracker)) {
-            // activateEggFire(
-            //   scene,
-            //   isEgg2,
-            //   egg2,
-            //   discovery,
-            //   name,
-            //   achievementCleansingFire,
-            //   achievementKeyCleansingFire,
-            //   defaultVolume,
-            //   lowVolume
-            // );
+        if (validEggFire(egg2Tracker)) {
+          egg2.push(planet.name);
+        }
+        if (planet.name === "gaseous1" && !document.querySelector("#about")) {
+          if (!egg2Tracker[0] && isEgg2(egg2)) {
+            egg2.splice(1, egg2.length - 1);
+            egg2Tracker[0] = true;
+            activateEggFire(
+              scene,
+              planet,
+              discovery,
+              achievementCleansingFire,
+              achievementKeyCleansingFire,
+              defaultVolume,
+              lowVolume
+            );
+          } else if (egg2.length > 3) {
+            egg2.splice(1, egg2.length - 1);
           }
           // create about display
           createDisplay("about", discovery);
-        } else if (name === "icy2" && !document.querySelector("#abilities")) {
-          if (!egg2Tracker[1] && validEggFire(egg2Tracker)) {}
+        } else if (
+          planet.name === "icy2" &&
+          !document.querySelector("#abilities")
+        ) {
+          if (!egg2Tracker[1] && isEgg2(egg2)) {
+            egg2.splice(1, egg2.length - 1);
+            egg2Tracker[1] = true;
+            activateEggFire(
+              scene,
+              planet,
+              discovery,
+              achievementCleansingFire,
+              achievementKeyCleansingFire,
+              defaultVolume,
+              lowVolume
+            );
+          } else if (egg2.length > 3) {
+            egg2.splice(1, egg2.length - 1);
+          }
           if (!egg1[1]) egg1[1] = true;
           // create abilities display
           createDisplay("abilities");
         } else if (
-          name === "terrestrial" &&
+          planet.name === "terrestrial" &&
           !document.querySelector("#experience")
         ) {
-          if (!egg2Tracker[2] && validEggFire(egg2Tracker)) {}
+          if (!egg2Tracker[2] && isEgg2(egg2)) {
+            egg2.splice(1, egg2.length - 1);
+            egg2Tracker[2] = true;
+            activateEggFire(
+              scene,
+              planet,
+              discovery,
+              achievementCleansingFire,
+              achievementKeyCleansingFire,
+              defaultVolume,
+              lowVolume
+            );
+          } else if (egg2.length > 3) {
+            egg2.splice(1, egg2.length - 1);
+          }
           // create experience display
           createDisplay("experience");
-        } else if (name === "alpine" && !document.querySelector("#projects")) {
-          if (!egg2Tracker[3] && validEggFire(egg2Tracker)) {}
+        } else if (
+          planet.name === "alpine" &&
+          !document.querySelector("#projects")
+        ) {
+          if (!egg2Tracker[3] && isEgg2(egg2)) {
+            egg2.splice(1, egg2.length - 1);
+            egg2Tracker[3] = true;
+            activateEggFire(
+              scene,
+              planet,
+              discovery,
+              achievementCleansingFire,
+              achievementKeyCleansingFire,
+              defaultVolume,
+              lowVolume
+            );
+          } else if (egg2.length > 3) {
+            egg2.splice(1, egg2.length - 1);
+          }
           // create projects display
           createDisplay("projects");
-        } else if (name === "volcanic" && !document.querySelector("#resume")) {
-          if (!egg2Tracker[4] && validEggFire(egg2Tracker)) {}
+        } else if (
+          planet.name === "volcanic" &&
+          !document.querySelector("#resume")
+        ) {
+          if (!egg2Tracker[4] && isEgg2(egg2)) {
+            egg2.splice(1, egg2.length - 1);
+            egg2Tracker[4] = true;
+            activateEggFire(
+              scene,
+              planet,
+              discovery,
+              achievementCleansingFire,
+              achievementKeyCleansingFire,
+              defaultVolume,
+              lowVolume
+            );
+          } else if (egg2.length > 3) {
+            egg2.splice(1, egg2.length - 1);
+          }
           // create resume display
           createDisplay("resume");
         }

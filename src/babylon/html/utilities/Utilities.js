@@ -83,7 +83,7 @@ export const isEgg = (array) => {
 };
 
 export const isEgg2 = (array) => {
-  if (array.length === 4 && array[1] === array[2] && array[1] === array[3]) {
+  if ((array.length === 4) && (array[1] === array[2]) && (array[1] === array[3])) {
     return true;
   }
   return false;
