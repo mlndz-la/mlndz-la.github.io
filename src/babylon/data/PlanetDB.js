@@ -43,9 +43,9 @@ const collectionOfPlanets = [
     diameter: 2.8,
     label: "Resume",
     xAxis375: 5.5,
-    yAxis375: -7.8,
+    yAxis375: -6.8,
     xAxis450: 6,
-    yAxis450: -7,
+    yAxis450: -6,
   },
   {
     mesh: null,
@@ -55,9 +55,9 @@ const collectionOfPlanets = [
     diameter: 4.3,
     label: "Projects",
     xAxis375: -5,
-    yAxis375: -10,
+    yAxis375: -9,
     xAxis450: -5,
-    yAxis450: -10,
+    yAxis450: -9,
   },
 ];
 
