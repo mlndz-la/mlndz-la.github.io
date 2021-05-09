@@ -10,7 +10,6 @@ import createDisplay from "./html/CreateDisplay.js";
 import showWorldAxis from "../test/CreateWorldAxis.js";
 
 const onSceneReady = async (scene) => {
-  scene.getEngine().displayLoadingUI();
   const camera = await new BABYLON.ArcRotateCamera(
     "Camera",
     (3 * Math.PI) / 2,
@@ -151,7 +150,6 @@ const onSceneReady = async (scene) => {
 
   // ! testing purposes
   // showWorldAxis(scene, 10);
-  scene.getEngine().hideLoadingUI();
 };
 
 export default () => (
