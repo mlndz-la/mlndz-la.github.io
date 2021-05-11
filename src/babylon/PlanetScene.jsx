@@ -9,8 +9,12 @@ import { createPlanet } from "./CreatePlanets.js";
 import { createScene } from "./CreateScene.js";
 import { createPlanetLabels } from "./PlanetLabels.js";
 import collectionOfPlanets from "./data/PlanetDB.js";
+import { createLoadingScreen, removeLoadingScreen } from "./CreateLoadingScreen.js";
 
 const onSceneReady = async (scene) => {
+  scene.getEngine().displayLoadingUI = createLoadingScreen();
+  scene.getEngine().hideLoadingUI = removeLoadingScreen();
+
   scene.getEngine().displayLoadingUI();
   const egg = {
     egg1: [true, false],
