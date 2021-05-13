@@ -34,8 +34,10 @@ const createDisplay = (displayName, discovery) => {
   const isExperience =
     displayName === "experience" || displayName === "projects"
       ? `
-    <image id='delete' src='https://picsum.photos/200'></image>
-    <image id='add' src='https://picsum.photos/400'></image>
+    <div class='button_container flex_row'>
+      <image id='delete' class='cycle_button delete' alt='delete' src='https://raw.githubusercontent.com/mlndz-la/pwAssets/main/delete.svg'></image>
+      <image id='add' class='cycle_button add' alt='add' src='https://raw.githubusercontent.com/mlndz-la/pwAssets/main/add.svg'></image>
+    </div>
   `
       : "";
   const isPlayed = chance(20, 5);
