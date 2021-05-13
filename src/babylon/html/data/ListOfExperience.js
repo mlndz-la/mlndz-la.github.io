@@ -121,7 +121,7 @@ export const listOfExperience = [
     link: "https://pawfinder.com/",
     from: "2018",
     to: "2019",
-    preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/pawFinderImage-min.png",
+    preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/pawFinder.png",
     descriptions: [
       `
         <p class='inline'>Overhauled application&nbsp;</p>
