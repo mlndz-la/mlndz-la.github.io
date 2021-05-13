@@ -13,17 +13,31 @@ import "./styles/projects.css";
 import "./styles/resume.css";
 import "./styles/utilities.css";
 import "./styles/credits.css";
+import { listOfExperience } from "./data/ListOfExperience";
+import { projectsData } from "./data/ProjectsData";
 
-const evaluateDisplay = (name, eggs) => {
+const evaluateDisplay = (name, eggs, index) => {
   if (name === "abilities") return abilities();
   else if (name === "about") return about(eggs);
-  else if (name === "experience") return experience();
+  else if (name === "experience") return experience(index);
   else if (name === "projects") return projects();
   else if (name === "resume") return resume();
   else if (name === "credits") return credits();
 };
 
 const createDisplay = (displayName, discovery) => {
+  let index = 0;
+  const limit =
+    displayName === "experience"
+      ? listOfExperience.length - 1
+      : projectsData.length - 1;
+  const isExperience =
+    displayName === "experience" || displayName === "projects"
+      ? `
+    <image id='delete' src='https://picsum.photos/200'></image>
+    <image id='add' src='https://picsum.photos/400'></image>
+  `
+      : "";
   const isPlayed = chance(20, 5);
   if (isPlayed) {
     const chatter = document.getElementById("open_modal");
@@ -38,13 +52,14 @@ const createDisplay = (displayName, discovery) => {
   display.innerHTML = `
       <div id='exit' class='fade_in fade_out'>
         <div id='button_remove' class='remove'></div>
+        ${isExperience}
         <div class='line ${isCredits}'>
           <div class='scanner'></div>
         </div>
         <image src='${tvStatic}' alt='tv static' class='tv_static'></image>
         <div class='blur'></div>
-        <div class='info_card'>
-          ${evaluateDisplay(displayName, discovery)}
+        <div id="contents" class='info_card'>
+          ${evaluateDisplay(displayName, discovery, index)}
         </div>
       </div>
     `;
@@ -58,6 +73,32 @@ const createDisplay = (displayName, discovery) => {
       document.querySelector("body").removeChild(display);
     }
   });
+
+  if (displayName === "experience" || displayName === "projects") {
+    const parent = "#contents";
+    const evaluateAction = displayName === "experience" ? experience : projects;
+
+    document.querySelector("#add").addEventListener("click", (e) => {
+      if (limit === 0) return;
+      if (index === limit) {
+        index = 0;
+        document.querySelector(parent).innerHTML = evaluateAction(index);
+      } else {
+        index += 1;
+        document.querySelector(parent).innerHTML = evaluateAction(index);
+      }
+    });
+    document.querySelector("#delete").addEventListener("click", (e) => {
+      if (limit === 0) return;
+      if (index === 0) {
+        index = limit;
+        document.querySelector(parent).innerHTML = evaluateAction(index);
+      } else {
+        index -= 1;
+        document.querySelector(parent).innerHTML = evaluateAction(index);
+      }
+    });
+  }
 };
 
 export default createDisplay;

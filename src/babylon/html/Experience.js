@@ -14,37 +14,45 @@ const createHTMLPoints = (arrayOfStr) => {
   return descriptionsHTML;
 };
 
-const createHTMLExperience = (data) => {
-  let html = ``;
-  data.forEach(({ company, link, preview, descriptions, from, to }, i) => {
-    const htmlListDescriptions = createHTMLPoints(descriptions);
-    html += `
+const createHTMLExperience = ({
+  descriptions,
+  link,
+  company,
+  subtitleCompany,
+  preview,
+  from,
+  to,
+}) => {
+  const htmlListDescriptions = createHTMLPoints(descriptions);
+
+  const html = `
       <div class='flex_column'>
         <a class='link' href='${link}' target='_blank'>
           <h1 class='title link glitch_header' title='${company}'>${company}</h1>
         </a>
+        <h1 class='title'>${subtitleCompany}</h1>
         <image class='round_corner experience_image' src='${preview}' alt='preview'></image>
-        <p class='subtitle'><i>Sept ${from}</i> - <i>Jan ${to}</i></p>
+        <p class='subtitle'><i>${from}</i> - <i>${to}</i></p>
         ${randomDivider()}
         <div class='flex_column center_items'>
           ${htmlListDescriptions}
         </div>
-        ${data.length - 1 === i ? `` : `${randomDivider()}`}
       </div>
-    `;
-  });
+  `;
 
   return html;
 };
 
-const experience = () => {
-  const listOfHTML = createHTMLExperience(listOfExperience);
+const experience = (index) => {
+  const currentExperience = listOfExperience[index];
+  const listOfHTML = createHTMLExperience(currentExperience);
   // create html
-  return `
-    <div class='flex_column experience_container'>
+  const html = `
+    <div id='experience_contents' class='flex_column experience_container'>
       ${listOfHTML}
     </div>
     `;
+  return html;
 };
 
 export default experience;
