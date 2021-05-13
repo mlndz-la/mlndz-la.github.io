@@ -1,5 +1,4 @@
 import babylon from "../icon/babylon.png";
-import pws from "../images/personal_website_screenshot.png";
 import { getRandomNumber } from "../utilities/Utilities";
 
 export const projectsData = [
@@ -31,6 +30,6 @@ export const projectsData = [
       { name: "Babylon", image: babylon },
     ],
     link: "",
-    preview: pws,
+    preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/personal_website_screenshot.png",
   },
 ];
