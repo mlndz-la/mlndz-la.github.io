@@ -110,23 +110,6 @@ export const activateEggFire = (
   const scramble = document.querySelector("#open_modal");
   scramble.volume = 0;
   // egg
-  // // Noise
-  // const noiseTexture = new BABYLON.NoiseProceduralTexture("perlin", 256, scene);
-  // noiseTexture.animationSpeedFactor = 5;
-  // noiseTexture.persistence = 0.2;
-  // noiseTexture.brightness = 0.5;
-  // noiseTexture.octaves = 4;
-
-  // const noiseTexture2 = new BABYLON.NoiseProceduralTexture(
-  //   "perlin",
-  //   256,
-  //   scene
-  // );
-  // noiseTexture2.animationSpeedFactor = 3;
-  // noiseTexture2.persistence = 1;
-  // noiseTexture2.brightness = 0.5;
-  // noiseTexture2.octaves = 8;
-
   // Fire
   const fireSystem = new BABYLON.ParticleHelper.CreateDefault(
     new BABYLON.Vector3(0, 3.25, 0),
@@ -161,111 +144,10 @@ export const activateEggFire = (
   colorParticles(fireSystem);
   fireSystem.minEmitPower = 0;
   fireSystem.maxEmitPower = 0;
-  fireSystem.blendMode = BABYLON.ParticleSystem.BLENDMODE_MULTIPLYADD;
+  fireSystem.blendMode = BABYLON.ParticleSystem.BLENDMODE_ADD;
   fireSystem.billboardMode = BABYLON.AbstractMesh.BILLBOARDMODE_Y;
 
-  // const fireSystem2 = new BABYLON.ParticleHelper.CreateDefault(
-  //   new BABYLON.Vector3(0, 2.25, 0),
-  //   3,
-  //   scene
-  // );
-  // fireSystem2.createBoxEmitter(
-  //   new BABYLON.Vector3(0, 1, 0),
-  //   new BABYLON.Vector3(0, 1, 0),
-  //   new BABYLON.Vector3(x, y, -0.5),
-  //   new BABYLON.Vector3(x, y, 0.5)
-  // );
-  // setupAnimationSheet(
-  //   scene,
-  //   fireSystem2,
-  //   "https://raw.githubusercontent.com/PatrickRyanMS/BabylonJStextures/master/ParticleSystems/Fire/Fire_SpriteSheet2_8x8.png",
-  //   1024,
-  //   1024,
-  //   8,
-  //   8,
-  //   0.9,
-  //   true,
-  //   true
-  // );
-  // fireSystem2.minLifeTime = 2;
-  // fireSystem2.maxLifeTime = 3;
-  // fireSystem2.emitRate = 2;
-  // fireSystem2.minSize = 5;
-  // fireSystem2.maxSize = 6;
-  // fireSystem2.minInitialRotation = -0.1;
-  // fireSystem2.maxInitialRotation = 0.1;
-  // colorParticles(fireSystem2);
-  // fireSystem2.minEmitPower = 0.0;
-  // fireSystem2.maxEmitPower = 0.0;
-  // fireSystem2.blendMode = BABYLON.ParticleSystem.BLENDMODE_MULTIPLYADD;
-  // fireSystem2.billboardMode = BABYLON.AbstractMesh.BILLBOARDMODE_Y;
-
-  // const fireSystem3 = new BABYLON.ParticleHelper.CreateDefault(
-  //   new BABYLON.Vector3(0, 2.25, 0),
-  //   3,
-  //   scene
-  // );
-  // fireSystem3.createBoxEmitter(
-  //   new BABYLON.Vector3(0, 1, 0),
-  //   new BABYLON.Vector3(0, 1, 0),
-  //   new BABYLON.Vector3(x, y, -0.5),
-  //   new BABYLON.Vector3(x, y, 0.5)
-  // );
-  // setupAnimationSheet(
-  //   scene,
-  //   fireSystem3,
-  //   "https://raw.githubusercontent.com/PatrickRyanMS/BabylonJStextures/master/ParticleSystems/Fire/Fire_SpriteSheet3_8x8.png",
-  //   1024,
-  //   1024,
-  //   8,
-  //   8,
-  //   0.9,
-  //   true,
-  //   true
-  // );
-  // fireSystem3.minLifeTime = 2;
-  // fireSystem3.maxLifeTime = 3;
-  // fireSystem3.emitRate = 2;
-  // fireSystem3.minSize = 5;
-  // fireSystem3.maxSize = 6;
-  // fireSystem3.minInitialRotation = -0.1;
-  // fireSystem3.maxInitialRotation = 0.1;
-  // colorParticles(fireSystem3);
-  // fireSystem3.minEmitPower = 0.0;
-  // fireSystem3.maxEmitPower = 0.0;
-  // fireSystem3.blendMode = BABYLON.ParticleSystem.BLENDMODE_MULTIPLYADD;
-  // fireSystem3.billboardMode = BABYLON.AbstractMesh.BILLBOARDMODE_Y;
-
-  // const sparksEdge = new BABYLON.ParticleHelper.CreateDefault(
-  //   new BABYLON.Vector3(0, 0, 0),
-  //   20,
-  //   scene
-  // );
-  // sparksEdge.createConeEmitter(x, y);
-  // sparksEdge.particleTexture = new BABYLON.Texture(
-  //   "https://raw.githubusercontent.com/PatrickRyanMS/BabylonJStextures/master/ParticleSystems/Sparks/sparks.png",
-  //   scene
-  // );
-  // sparksEdge.minLifeTime = 1.5;
-  // sparksEdge.maxLifeTime = 2.5;
-  // sparksEdge.minSize = 0.2;
-  // sparksEdge.maxSize = 0.3;
-  // sparksEdge.emitRate = 20;
-  // sparksEdge.minEmitPower = 15;
-  // sparksEdge.maxEmitPower = 20;
-  // sparksEdge.addLimitVelocityGradient(0.0, 7.0);
-  // sparksEdge.addLimitVelocityGradient(1.0, 1);
-  // sparksEdge.limitVelocityDamping = 0.5;
-
-  // sparksEdge.noiseTexture = noiseTexture2;
-  // sparksEdge.noiseStrength = new BABYLON.Vector3(x, y, 1);
-  // sparksEdge.blendMode = BABYLON.ParticleSystem.BLENDMODE_ADD;
-  // colorSparks(sparksEdge);
-
   fireSystem.start();
-  // sparksEdge.start();
-  // fireSystem2.start();
-  // fireSystem3.start();
 
   setTimeout(() => {
     // turn on sound

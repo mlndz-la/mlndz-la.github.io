@@ -1,4 +1,3 @@
-import profilePic from "./images/Erick_Melendez.jpg";
 import {
   randomDivider,
   getRandomNumber,
@@ -24,7 +23,7 @@ const about = (eggs) => {
   return `
     <div class='flex_column about_container'>
       <h1 title='Erick Melendez' class='title glitch_header'>Erick Melendez</h1>
-      <image class='about_profile_pic round_corner' src='${profilePic}' alt='profile picture'></image>
+      <image class='about_profile_pic round_corner' src='https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Erick_Melendez.jpg' alt='profile picture'></image>
       <div class='paragraph about_paragraph'>
         <p>I'm a software engineer who specializes in frontend technologies such as  React, Redux, and CSS / CSS preprocessors.</p>
         <p>&nbsp;</p>

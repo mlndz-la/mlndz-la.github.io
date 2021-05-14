@@ -1,9 +1,4 @@
 import * as BABYLON from "babylonjs";
-import icy2 from "./assets/Icy2.jpg";
-import alpine from "./assets/Alpine.png";
-import volcanic from "./assets/Volcanic.png";
-import gaseous1 from "./assets/Gaseous1.png";
-import terrestrial from "./assets/Terrestrial1.png";
 
 export const createPlanet = async (
   scene,
@@ -31,15 +26,15 @@ export const createPlanet = async (
   // apply textures to each planet
   let texture = new BABYLON.StandardMaterial(color, scene);
   if (name === "icy2") {
-    texture.diffuseTexture = await new BABYLON.Texture(icy2, scene);
+    texture.diffuseTexture = await new BABYLON.Texture("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Icy2.jpg", scene);
   } else if (name === "terrestrial") {
-    texture.diffuseTexture = await new BABYLON.Texture(terrestrial, scene);
+    texture.diffuseTexture = await new BABYLON.Texture("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Terrestrial1.png", scene);
   } else if (name === "gaseous1") {
-    texture.diffuseTexture = await new BABYLON.Texture(gaseous1, scene);
+    texture.diffuseTexture = await new BABYLON.Texture("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Gaseous1.png", scene);
   } else if (name === "volcanic") {
-    texture.diffuseTexture = await new BABYLON.Texture(volcanic, scene);
+    texture.diffuseTexture = await new BABYLON.Texture("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Volcanic.png", scene);
   } else if (name === "alpine") {
-    texture.diffuseTexture = await new BABYLON.Texture(alpine, scene);
+    texture.diffuseTexture = await new BABYLON.Texture("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Alpine.png", scene);
   }
   sphere.material = texture;
   return sphere;

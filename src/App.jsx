@@ -28,7 +28,12 @@ const App = () => {
         <source src={selected} type="audio/mp3" />
       </audio>
       <audio style={{ display: "none" }} id="reveal">
-        <source src={"https://raw.githubusercontent.com/mlndz-la/pwAssets/main/space_odyssey.mp3"} type="audio/mp3" />
+        <source
+          src={
+            "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/space_odyssey.mp3"
+          }
+          type="audio/mp3"
+        />
       </audio>
       <GalaxyScene />
     </main>
