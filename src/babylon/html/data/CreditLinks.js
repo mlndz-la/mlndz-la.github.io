@@ -18,6 +18,7 @@ export const iconCredits = [
       "Adrien Coquet",
       "Valerio Poltrini",
       "Alice Noir",
+      "Marvin Wilhelm",
     ],
   },
 ];
