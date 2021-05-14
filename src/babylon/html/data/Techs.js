@@ -39,6 +39,8 @@ export const frontend = [
 ];
 export const backend = [
   { name: "Webpack", image: "https://api.iconify.design/logos:webpack.svg" },
+  { name: "Babel", image: "https://api.iconify.design/logos:babel.svg" },
+  { name: "Yarn", image: "https://api.iconify.design/logos:yarn.svg" },
   { name: "Node", image: "https://api.iconify.design/logos:nodejs-icon.svg" },
   {
     name: "Express",
@@ -60,14 +62,20 @@ export const backend = [
     image: "https://api.iconify.design/ls:server.svg",
     invert: true,
   },
+  { name: "AWS", image: "https://api.iconify.design/logos:aws.svg" },
   { name: "OAuth 2.0", image: "https://api.iconify.design/noto-v1:key.svg" },
 ];
 export const testing = [
   { name: "Jest", image: "https://api.iconify.design/logos:jest.svg" },
+  { name: "Cypress", image: "https://api.iconify.design/logos:cypress.svg" },
   {
     name: "Enzyme",
     image: "https://api.iconify.design/file-icons:test-react.svg",
     invert: true,
+  },
+  {
+    name: "Mocha",
+    image: "https://api.iconify.design/logos:mocha.svg",
   },
   {
     name: "Supertest",
@@ -81,6 +89,8 @@ export const database = [
   },
   { name: "MongoDB", image: "https://api.iconify.design/vscode-icons:file-type-mongo.svg" },
   { name: "GraphQL", image: "https://api.iconify.design/logos:graphql.svg" },
+  { name: "MySQL", image: "https://api.iconify.design/logos:mysql.svg" },
+  { name: "Microsoft Access", image: "https://api.iconify.design/vscode-icons:file-type-access.svg" },
 ];
 export const workFlow = [
   { name: "Git", image: "https://api.iconify.design/logos:git-icon.svg" },
@@ -90,10 +100,15 @@ export const workFlow = [
     invert: true,
   },
   {
+    name: "npm",
+    image: "https://api.iconify.design/vscode-icons:file-type-npm.svg",
+  },
+  {
     name: "VS Code",
     image: "https://api.iconify.design/logos:visual-studio-code.svg",
   },
   { name: "Figma", image: "https://api.iconify.design/logos:figma.svg" },
+  { name: "Sketch", image: "https://api.iconify.design/logos:sketch.svg" },
   {
     name: "Photoshop",
     image: "https://api.iconify.design/vscode-icons:file-type-photoshop.svg",
@@ -106,5 +121,9 @@ export const workFlow = [
   {
     name: "GitKraken",
     image: "https://api.iconify.design/logos:gitkraken.svg",
+  },
+  {
+    name: "Jira",
+    image: "https://api.iconify.design/logos:jira.svg",
   },
 ];
