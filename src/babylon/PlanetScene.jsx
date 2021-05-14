@@ -9,13 +9,17 @@ import { createPlanet } from "./CreatePlanets.js";
 import { createScene } from "./CreateScene.js";
 import { createPlanetLabels } from "./PlanetLabels.js";
 import collectionOfPlanets from "./data/PlanetDB.js";
-import { createLoadingScreen, removeLoadingScreen } from "./CreateLoadingScreen.js";
+// import {
+//   createLoadingScreen,
+//   removeLoadingScreen,
+// } from "./CreateLoadingScreen.js";
 
 const onSceneReady = async (scene) => {
-  scene.getEngine().displayLoadingUI = createLoadingScreen();
-  scene.getEngine().hideLoadingUI = removeLoadingScreen();
+  // scene.getEngine().displayLoadingUI = createLoadingScreen();
+  // scene.getEngine().hideLoadingUI = removeLoadingScreen();
 
-  scene.getEngine().displayLoadingUI();
+  await scene.getEngine().displayLoadingUI();
+
   const egg = {
     egg1: [true, false],
     egg2: [true],
@@ -24,7 +28,7 @@ const onSceneReady = async (scene) => {
   const discovery = [false, false];
   const arrayOfPlanets = [...collectionOfPlanets];
   // creates scene with camera, light and canvas
-  const [camera, canvas, light, spotLight, planetLabelGUI] = createScene(scene);
+  const [camera, canvas, light, spotLight, planetLabelGUI] = await createScene(scene);
   // apply properties to each planet
   await arrayOfPlanets.forEach(async (planet) => {
     // create planet
@@ -38,7 +42,7 @@ const onSceneReady = async (scene) => {
     // add title to each planet
     await createPlanetLabels(planetLabelGUI, planet);
   });
-  scene.getEngine().hideLoadingUI();
+  await scene.getEngine().hideLoadingUI();
 };
 // Will run on every frame render, spinning on y-axis.
 const onRender = (scene) => {
