@@ -25,7 +25,7 @@ const about = (eggs) => {
       <h1 title='Erick Melendez' class='title glitch_header'>Erick Melendez</h1>
       <image class='about_profile_pic round_corner' src='https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Erick_Melendez.jpg' alt='profile picture'></image>
       <div class='paragraph about_paragraph'>
-        <p>I'm a software engineer who specializes in frontend technologies such as  React, Redux, and CSS / CSS preprocessors.</p>
+        <p>I'm a software engineer who specializes in frontend technologies such as React, Redux, and CSS / CSS preprocessors.</p>
         <p>&nbsp;</p>
         <p>For as long as I can remember, I’ve always had a love for video games. When I was younger, I remember playing for hours on end just for the fun of it, but as I got older, I grew an appreciation for the amount of hard work that went into their development and it was through my admiration that I sought out my own creative outlet.</p>
         <p>&nbsp;</p>
