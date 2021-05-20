@@ -54,6 +54,12 @@ export const listOfExperience = [
         transform: skewX(${getRandomNumber(20)}deg);' title='Typescript'>Typescript</p>
         <p class='inline'>&nbsp;across the stack to create a more predictable code base through explicit type definitions and greatly improve code maintainability by decreasing typecasting errors</p>
       `,
+      `
+        <p class='inline'>Devised complex traversal algorithms to pinpoint performance and potential bottlenecks of&nbsp;</p>
+        <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;
+        transform: skewX(${getRandomNumber(20)}deg);' title='GraphQL'>GraphQL</p>
+        <p class='inline'>&nbsp;queries by analyzing depth of nested queries, number of unique database requests, and effective runtime of roundtrip</p>
+      `,
     ],
   },
   {
@@ -175,7 +181,7 @@ export const listOfExperience = [
         <p class='inline'>, and&nbsp;</p>
         <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;
         transform: skewX(${getRandomNumber(20)}deg);' title='CSS'>CSS</p>
-        <p class='inline'>&nbsp;to better visualize statistical data</p>
+        <p class='inline'>&nbsp;to better visualize data</p>
       `,
     ],
   },
