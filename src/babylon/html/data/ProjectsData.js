@@ -1,18 +1,17 @@
 import babylon from "../icon/babylon.png";
-import { getRandomNumber } from "../utilities/Utilities";
 
 export const projectsData = [
   {
     name: "Portfolio Website",
     description:
       `
-      <p class='inline'>My portfolio website, inspired by the video game Spore, demonstrating my creativity through frontend development. Incorporating techniques and technologies such as the&nbsp;</p>
-      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='parallax'>parallax</p>
-      <p class='inline'>&nbsp;effect, CSS text&nbsp;</p>
-      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='animations'>animations</p>
-      <p class='inline'>&nbsp;and&nbsp;</p>
-      <p class='inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3) + .75}s alternate infinite;transform: skewX(${getRandomNumber(20)}deg);' title='WebGL'>WebGL</p>
-      <p class='inline'>&nbsp;tech.</p>
+      <p class='inline'>My portfolio website, inspired by the video game Spore, demonstrating my creativity through frontend development. Incorporating techniques and technologies such as the</p>
+      <p class='inline'><b>parallax</b></p>
+      <p class='inline'>effect, CSS text</p>
+      <p class='inline'><b>animations</b></p>
+      <p class='inline'>and</p>
+      <p class='inline'><b>WebGL</b></p>
+      <p class='inline'>tech.</p>
       `,
     techs: [
       {

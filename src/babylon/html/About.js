@@ -63,15 +63,11 @@ const about = (eggs) => {
       <p class='paragraph center_text'>Favorite author: Stephen King</p>
       <p class='paragraph center_text'>Favorite book: 'Salem's Lot</p>
       <div class='paragraph about_paragraph center_text'>
-        <p class='inline'>Awarded 2 years of&nbsp;</p>
+        <p class='inline'>Awarded 2 years of</p>
         <a class='link' href='https://sites.google.com/nhm.org/nhmlacvolunteersreflect/volunteer-recognition/continuous-service-awards?authuser=0#h.i0edzf1s8o4m' target="_blank">
-          <p title='Continuous Service' style='animation: glitch ${getRandomNumber(
-            3
-          )}s alternate infinite; transform: skewX(${getRandomNumber(
-    20
-  )}deg);' class='center_text link inline_flex glitch_paragraph'>Continuous Service</p>
+          <p class='center_text inline'>Continuous Service</p>
         </a>
-        <p class='inline'>&nbsp;by the Natural History Museum of Los Angeles</p>
+        <p class='inline'>by the Natural History Museum of Los Angeles</p>
       </div>
       <p class='center_text paragraph'>Favorite video game universe: Starcraft</p>
       <p class='center_text paragraph'>Favorite video game: Spore or Skull Monkey</p>
