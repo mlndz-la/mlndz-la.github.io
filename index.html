@@ -202,12 +202,10 @@
         </svg>
       </div>
     </div>
-    <!-- <h1 class="loading">Loading...</h1> -->
   </div>
   <script>
     const isLoading = setInterval(() => {
       const elements = document.body.getElementsByTagName("*");
-      console.log("Loading", elements.length);
       if (elements.length === 49) {
         console.log("done");
         clearInterval(isLoading);
