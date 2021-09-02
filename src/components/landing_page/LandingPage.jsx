@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <section>
       <_SpaceBackground>
-        {stars}
+        {/* {stars} */}
         <PlanetScene />
       </_SpaceBackground>
     </section>
