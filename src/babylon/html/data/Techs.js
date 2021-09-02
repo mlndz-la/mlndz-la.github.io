@@ -19,6 +19,7 @@ export const frontend = [
     image: "https://api.iconify.design/logos:react-router.svg",
   },
   { name: "Redux", image: "https://api.iconify.design/logos:redux.svg" },
+  { name: "Redux-Saga", image: "https://api.iconify.design/logos/redux-saga.svg" },
   { name: "Svelte", image: "https://api.iconify.design/logos:svelte-icon.svg" },
   { name: "CSS", image: "https://api.iconify.design/logos:css-3.svg" },
   { name: "SASS", image: "https://api.iconify.design/logos:sass.svg" },
@@ -26,6 +27,11 @@ export const frontend = [
   {
     name: "Tailwind-CSS",
     image: "https://api.iconify.design/logos:tailwindcss-icon.svg",
+  },
+  {
+    name: "BEM",
+    image: "https://api.iconify.design/logos/bem.svg",
+    invert: true,
   },
   {
     name: "Styled-Components",
@@ -36,6 +42,7 @@ export const frontend = [
   { name: "Chart.js", image: "https://api.iconify.design/flat-color-icons:combo-chart.svg" },
   { name: "Electron", image: "https://api.iconify.design/logos:electron.svg" },
   { name: "Aleph", image: aleph },
+  { name: "Immutable", image: "https://api.iconify.design/logos/immutable.svg" },
 ];
 export const backend = [
   { name: "Webpack", image: "https://api.iconify.design/logos:webpack.svg" },
@@ -107,6 +114,10 @@ export const workFlow = [
     name: "VS Code",
     image: "https://api.iconify.design/logos:visual-studio-code.svg",
   },
+  {
+    name: "DataDog",
+    image: "https://api.iconify.design/logos/datadog.svg",
+  },
   { name: "Figma", image: "https://api.iconify.design/logos:figma.svg" },
   { name: "Sketch", image: "https://api.iconify.design/logos:sketch.svg" },
   {
@@ -123,7 +134,15 @@ export const workFlow = [
     image: "https://api.iconify.design/logos:gitkraken.svg",
   },
   {
+    name: "Asana",
+    image: "https://api.iconify.design/logos/asana.svg",
+  },
+  {
     name: "Jira",
     image: "https://api.iconify.design/logos:jira.svg",
+  },
+  {
+    name: "Zeplin.io",
+    image: "https://api.iconify.design/logos/zeplin.svg",
   },
 ];

@@ -13,7 +13,7 @@ const createHTMLListItem = (list) => {
 
   list.forEach(({ name, image, invert }) => {
     const isInvert = invert ? "invert" : "";
-    const isGlitched = chance(35, 3);
+    const isGlitched = chance(48, 3);
     html += `
       <div class='ability_info flex_row max_width_ability'>
         ${isGlitched ? `<p class='subtitle inline_flex glitch_paragraph' style='animation: glitch ${getRandomNumber(3)}s alternate infinite;
