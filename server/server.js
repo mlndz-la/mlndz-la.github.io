@@ -8,7 +8,7 @@ const PORT = 3000;
 app.use("/dist", express.static(path.resolve(__dirname, "dist")));
 
 app.get("/Erick_Melendez_Resume", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../public/Erick_Melendez_Resume.pdf"));
+  res.sendFile(path.resolve(__dirname, "../public/Erick Melendez Resume 2021.pdf"));
 });
 
 if (process.env.NODE_ENV === "production") {

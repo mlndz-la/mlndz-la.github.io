@@ -1,5 +1,5 @@
 const resumePDF =
-  "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Erick_Melendez_Resume.pdf";
+  "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Erick Melendez Resume 2021.pdf";
 const resumeImage = "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/pdf.png";
 
 const resume = () => {
