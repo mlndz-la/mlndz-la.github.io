@@ -43,6 +43,7 @@ export const frontend = [
   { name: "Electron", image: "https://api.iconify.design/logos:electron.svg" },
   { name: "Aleph", image: aleph },
   { name: "Immutable", image: "https://api.iconify.design/logos/immutable.svg" },
+  { name: "Twilio", image: "https://api.iconify.design/logos/twilio-icon.svg" },
 ];
 export const backend = [
   { name: "Webpack", image: "https://api.iconify.design/logos:webpack.svg" },
