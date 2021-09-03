@@ -30,4 +30,12 @@ export const linkDB = [
     color: "#21abf5",
     width: "80px",
   },
+  {
+    mesh: null,
+    isLink: true,
+    title: "AngelList",
+    link: "https://angel.co/u/erick-melendez-1",
+    color: "#21abf5",
+    width: "80px",
+  },
 ];
