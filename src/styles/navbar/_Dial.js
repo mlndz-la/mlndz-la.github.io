@@ -2,19 +2,19 @@ import styled, { keyframes, css } from "styled-components";
 
 const flash = keyframes`
   0% {
-    filter: invert(.9) opacity(.5);
+    filter: invert(.9) opacity(.5) drop-shadow(0px 0px 0px grey);
   }
 
   50% {
-    filter: invert(1);
+    filter: invert(1) drop-shadow(0px 0px 25px aliceblue);
   }
 
   100% {
-    filter: invert(.9) opacity(.5);
+    filter: invert(.9) opacity(.5) drop-shadow(0px 0px 0px grey);
   }
 `;
 const animation = css`
-  animation: ${flash} 3000ms ease-in-out infinite;
+  animation: ${flash} 3500ms ease-in-out infinite;
 `;
 
 const _Dial = styled.img`
