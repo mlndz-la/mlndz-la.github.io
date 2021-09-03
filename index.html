@@ -204,6 +204,7 @@
   <script>
     const isLoading = setInterval(() => {
       const elements = document.body.getElementsByTagName("*");
+      console.log(elements.length)
       if (elements.length === 35) {
         clearInterval(isLoading);
         setTimeout(() => {
