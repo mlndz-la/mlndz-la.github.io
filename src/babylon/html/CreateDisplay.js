@@ -55,9 +55,7 @@ const createDisplay = (displayName, discovery) => {
       <div id='exit' class='fade_in fade_out'>
         <div id='button_remove' class='remove'></div>
         ${isExperience}
-        <div class='line ${isCredits}'>
-          <div class='scanner'></div>
-        </div>
+        <div class='line ${isCredits}'></div>
         <image src='${tvStatic}' alt='tv static' class='tv_static'></image>
         <div class='blur'></div>
         <div id="contents" class='info_card'>
