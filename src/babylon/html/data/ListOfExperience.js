@@ -16,7 +16,7 @@ export const listOfExperience = [
         </p>
       `,
       `
-        <p>Applied <b>Redux</b> to create a centralized data store that reduces prop drilling, enhances scalability by logically organizing state, and with Immutable.js, ensures data immutability for an improved debugging experience
+        <p>Applied <b>Redux</b> to create a centralized data store that reduces prop drilling, enhances scalability by logically organizing state, and with <b>Immutable.js</b>, ensures data immutability for an improved debugging experience
         </p>
       `,
       `
@@ -26,7 +26,7 @@ export const listOfExperience = [
         <p>Used <b>Redux Saga</b> Generators to handle async calls for authentication & dynamically generated data improving determinism of async testing</p>
       `,
       `
-        <p>Wrote <b>Jest</b>-based end-to-end, integration and unit tests in Cypress.io to drive development and  verify application behavior by mocking user interactions</p>
+        <p>Wrote <b>Jest</b>-based end-to-end, integration and unit tests in <b>Cypress</b> to drive development and  verify application behavior by mocking user interactions</p>
       `,
       `
         <p>Deployed <b>React-Router</b> to enhance UX by reducing unnecessary full-page DOM re-renders and create a smoother transition between pages</p>
