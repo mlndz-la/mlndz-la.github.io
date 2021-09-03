@@ -18,7 +18,7 @@ const createHTMLExperience = ({
   descriptions,
   link,
   company,
-  subtitleCompany,
+  product,
   preview,
   from,
   to,
@@ -30,8 +30,8 @@ const createHTMLExperience = ({
         <a class='link' href='${link}' target='_blank'>
           <h1 class='title link glitch_header' title='${company}'>${company}</h1>
         </a>
-        <h1 class='title'>${subtitleCompany}</h1>
         <image class='round_corner experience_image' src='${preview}' alt='preview'></image>
+        <h1 class='subtitle'>Product: ${product}</h1>
         <p class='subtitle'><i>${from}</i> - <i>${to}</i></p>
         ${randomDivider()}
         <div class='flex_column center_items'>
