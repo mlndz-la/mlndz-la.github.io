@@ -43,31 +43,6 @@ const colorParticles = function (system) {
   system.addColorRemapGradient(1.0, 0.2, 1.0);
 };
 
-const colorSparks = function (system) {
-  system.addColorGradient(0.0, new BABYLON.Color4(0.9245, 0.654, 0.0915, 0));
-  system.addColorGradient(
-    0.04,
-    new BABYLON.Color4(0.9062, 0.6132, 0.0942, 0.1)
-  );
-  system.addColorGradient(0.4, new BABYLON.Color4(0.7968, 0.3685, 0.1105, 1));
-  system.addColorGradient(0.7, new BABYLON.Color4(0.6886, 0.1266, 0.1266, 1));
-  system.addColorGradient(0.9, new BABYLON.Color4(0.3113, 0.0367, 0.0367, 0.6));
-  system.addColorGradient(1.0, new BABYLON.Color4(0.3113, 0.0367, 0.0367, 0));
-
-  // Defines the color ramp to apply
-  system.addRampGradient(0.0, new BABYLON.Color3(1, 1, 1));
-  system.addRampGradient(1.0, new BABYLON.Color3(0.7968, 0.63685, 0.4105));
-  system.useRampGradients = true;
-
-  system.addColorRemapGradient(0, 0, 0.1);
-  system.addColorRemapGradient(0.2, 0.1, 0.8);
-  system.addColorRemapGradient(0.3, 0.2, 0.85);
-  system.addColorRemapGradient(0.35, 0.4, 0.85);
-  system.addColorRemapGradient(0.4, 0.5, 0.9);
-  system.addColorRemapGradient(0.5, 0.95, 1.0);
-  system.addColorRemapGradient(1.0, 0.95, 1.0);
-};
-
 export const activateEggFire = (
   scene,
   { xAxis, yAxis, xAxis375, yAxis375, xAxis450, yAxis450 },
@@ -156,6 +131,10 @@ export const activateEggFire = (
     const scramble = document.querySelector("#open_modal");
     scramble.volume = lowVolume;
   }, 3000);
+  setTimeout(() => {
+    // turn off fire
+    fireSystem.stop();
+  }, 8000);
 };
 
 export const validEggFire = (array) => {
