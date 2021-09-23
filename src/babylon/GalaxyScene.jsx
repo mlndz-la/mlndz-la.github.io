@@ -129,24 +129,24 @@ const onSceneReady = async (scene) => {
     });
   });
 
-  const moonEater = await new BABYLON.SceneLoader.ImportMesh(
-    "",
-    "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
-    "moon_eater.glb",
-    scene,
-    (meshes) => {
-      const moonEaterSize = 0.1;
-      let mesh = meshes[0];
-      // center of mesh is of, this position centers mesh to camera
-      mesh.position = new BABYLON.Vector3(0, 0, 80);
-      mesh.rotation = new BABYLON.Vector3(0, -4.4, 0);
-      mesh.scaling = new BABYLON.Vector3(
-        moonEaterSize,
-        moonEaterSize,
-        moonEaterSize
-      );
-    }
-  );
+  // const moonEater = await new BABYLON.SceneLoader.ImportMesh(
+  //   "",
+  //   "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/",
+  //   "moon_eater.glb",
+  //   scene,
+  //   (meshes) => {
+  //     const moonEaterSize = 0.1;
+  //     let mesh = meshes[0];
+  //     // center of mesh is of, this position centers mesh to camera
+  //     mesh.position = new BABYLON.Vector3(0, 0, 80);
+  //     mesh.rotation = new BABYLON.Vector3(0, -4.4, 0);
+  //     mesh.scaling = new BABYLON.Vector3(
+  //       moonEaterSize,
+  //       moonEaterSize,
+  //       moonEaterSize
+  //     );
+  //   }
+  // );
 
   // ! testing purposes
   // showWorldAxis(scene, 10);
