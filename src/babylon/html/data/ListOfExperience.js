@@ -1,61 +1,62 @@
 export const listOfExperience = [
   {
     product: "Digital Buyflow",
-    company: "Centerfield",
+    company: "Centerfield Media",
     link: "https://www.centerfield.com/",
     from: "Jun 2020",
     to: "Aug 2021",
+    title: "React Developer",
+    employment: "Contract",
     preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Centerfield-logo.png",
     descriptions: [
       `
-        <p>Utilized <b>React</b> to create reusable components and leverage the reconciliation algorithm in order to re-render parts of the DOM that have changed
+        <p>Utilized <b>React</b> to create reusable components and leverage the reconciliation algorithm in order to re-render parts of the DOM that have changed while improving code extensibility across all react components associated with the application
         </p>
       `,
       `
-        <p>Capitalized on <b>React PropTypes</b> to configure and guarantee controlled component rendering as well as provide explicit error handling
+        <p>Capitalized on <b>React PropTypes</b> to configure and guarantee controlled component rendering while providing explicit error handling
         </p>
       `,
       `
-        <p>Applied <b>Redux</b> to create a centralized data store that reduces prop drilling, enhances scalability by logically organizing state, and with <b>Immutable.js</b>, ensures data immutability for an improved debugging experience
+        <p>Applied <b>Redux</b> to create a centralized data store that reduces prop drilling, enhances scalability by logically organizing state, and with <b>Immutable.js</b>, ensures data immutability for an improved and faster debugging experience
         </p>
       `,
       `
-        <p>Adopted <b>SASS</b> to improve extensibility and readability of stylesheets and ensure that the design of each component remained modular and independent</p>
+        <p>Adopted <b>SASS</b> to improve extensibility and readability of stylesheets and ensure that the design of each component remained modular and independent while generating locally scoped class names to avoid class name collision in global scope</p>
       `,
       `
-        <p>Used <b>Redux Saga</b> Generators to handle async calls for authentication & dynamically generated data improving determinism of async testing</p>
+        <p>Used <b>Redux Saga</b> Generators to handle async calls for authentication & dynamic data improving determinism of async testing</p>
       `,
       `
-        <p>Wrote <b>Jest</b>-based end-to-end, integration and unit tests in <b>Cypress</b> to drive development and  verify application behavior by mocking user interactions</p>
+        <p>Wrote <b>Jest</b>-based end-to-end, integration and unit tests in <b>Cypress</b> to drive development and verify application behavior by mocking user interactions in order to prevent breaking changes with in the code base during production mode</p>
       `,
       `
-        <p>Deployed <b>React-Router</b> to enhance UX by reducing unnecessary full-page DOM re-renders and create a smoother transition between pages</p>
+        <p>Built upon <b>React-Router</b> to enhance UX by reducing unnecessary full-page DOM re-renders and create a smoother transition between pages while reducing server requests to create a better user experience</p>
       `,
     ],
   },
   {
     product: "Artemis",
-    company: "OSLabs",
+    company: "Artemis",
     link: "https://project-artemis-v2.vercel.app/",
     from: "Apr 2020",
     to: "May 2021",
+    title: "Software Engineer",
+    employment: "Contract",
     preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/artemis_preview.png",
     descriptions: [
       `
-        <p>Implemented <b>React Context API</b> to consume and provide a single source of truth, simplify the data flow between components and maintain a cleaner codebase by removing needless prop drilling from stateless components</p>
+        <p>Operated <b>React Context API</b> to consume and provide a single source of truth, simplify the data flow between components and maintain a cleaner codebase by removing needless prop drilling from stateless components</p>
       `,
       `
         <p>Outlined a modern <b>Neomorphic UI</b> with CSS Grid and leveraged CSS Flexbox to create a responsive, mobile-first UI regardless of screen size</p>
       `,
       `
-        <p>Selected <b>Aleph</b> to build a dynamic React Application and pre-render the application server-side at build time before displaying to the client for quicker initial load times as well as update Artemis, through Hot Module Reloading, during development without having to restart the server on every change
+        <p>Shaped <b>Aleph</b> to build a dynamic React Application and pre-render the application server-side at build time before displaying to the client for quicker initial load times as well as update Artemis, through Hot Module Reloading, during development without having to restart the server on every change
         </p>
       `,
       `
-        <p>Integrated <b>Chart.js</b> for its minimalistic design and small module size</p>
-      `,
-      `
-        <p>Architected a <b>Deno</b> server to produce a lightweight application with Deno’s module system and safeguarded Artemis by utilizing its security measures to prevent unwanted script injections or file access from modules at runtime</p>
+        <p>Managed a <b>Deno</b> server to produce a lightweight application with Deno’s module system and safeguarded Artemis by utilizing its security measures to prevent unwanted script injections or file access from modules at runtime</p>
       `,
       `
         <p>Administered <b>Typescript</b> across the stack to create a more predictable code base through explicit type definitions and greatly improve code maintainability by decreasing type casting errors</p>
@@ -63,15 +64,20 @@ export const listOfExperience = [
       `
         <p>Devised complex traversal algorithms to pinpoint performance and potential bottlenecks of <b>GraphQL</b> queries by analyzing depth of nested queries, number of unique database requests, and effective runtime of roundtrip</p>
       `,
+      `
+        <p>Injected analytic tracers into promise-based async server calls to calculate and cache third-party <b>APIs</b> performance data</p>
+      `,
     ],
   },
   {
     product: "Papyrist",
-    company: "OSLabs",
-    link: "https://opensourcelabs.io/",
-    from: "Apr 2020",
-    to: "May 2021",
-    preview: "https://opensourcelabs.io/images/oslabs-white.png",
+    company: "Open Source",
+    link: "https://github.com/",
+    from: "2020",
+    to: "2020",
+    title: "Software Engineer",
+    employment: "Freelance",
+    preview: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
     descriptions: [
       `
         <p>Constructed a <b>Node.js</b> and <b>Express.js</b> backend to facilitate a faster response time with Node’s non-blocking asynchronous request handling</p>
@@ -83,14 +89,16 @@ export const listOfExperience = [
   },
   {
     product: "ChatterBox",
-    company: "OSLabs",
-    link: "https://opensourcelabs.io/",
-    from: "Apr 2020",
-    to: "May 2021",
-    preview: "https://opensourcelabs.io/images/oslabs-white.png",
+    company: "Open Source",
+    link: "https://github.com/",
+    from: "2020",
+    to: "2020",
+    title: "Software Engineer",
+    employment: "Freelance",
+    preview: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
     descriptions: [
       `
-        <p>Overhauled the <b>PostgreSQL</b> database to be normalized to the 3rd form and remove unnecessary joins when querying</p>
+        <p>Established the <b>PostgreSQL</b> database to be normalized to the 3rd form and remove unnecessary joins when querying</p>
       `,
     ],
   },
@@ -100,13 +108,15 @@ export const listOfExperience = [
     link: "https://pawfinder.com/",
     from: "Feb 2018",
     to: "Dec 2019",
+    title: "Software Engineer",
+    employment: "Full-time",
     preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/pawFinder.png",
     descriptions: [
       `
-        <p>Overhauled application with <b>React hooks</b> to share logic between multiple components using custom hooks and increase readability for future developers</p>
+        <p>Overhauled application with <b>React</b> hooks to share logic between multiple components, to create DRY logic using custom hooks and increase readability for future developers while maintaining clear and consistent logic across the stack</p>
       `,
       `
-        <p>Connected a <b>MongoDB</b> to achieve high-speed query responses and lessen the need for complex queries by storing related data in single documents while using <b>Mongoose</b> to communicate with the database to ensure database schemas remained consistent when manipulating documents</p>
+        <p>Worked a <b>MongoDB</b> to achieve high-speed query responses and lessen the need for complex queries by storing related data in single documents while using <b>Mongoose</b> to communicate with the database to ensure database schemas remained consistent when manipulating documents</p>
       `,
       `
         <p>Incorporated <b>Styled-Components</b> to leverage Automatic Critical CSS benefits  by having the client render only what is necessary and further separate CSS styling and Javascript logic within React Framework</p>
@@ -117,8 +127,10 @@ export const listOfExperience = [
     product: "Paw Acquisition",
     company: "Healthy Spot",
     link: "https://healthyspot.com/",
-    from: "Feb 2018",
-    to: "Dec 2019",
+    from: "2018",
+    to: "2018",
+    title: "Junior Software Engineer",
+    employment: "Internship",
     preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/healthy_spot.png",
     descriptions: [
       `

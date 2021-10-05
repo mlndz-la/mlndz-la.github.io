@@ -22,6 +22,8 @@ const createHTMLExperience = ({
   preview,
   from,
   to,
+  title,
+  employment,
 }) => {
   const htmlListDescriptions = createHTMLPoints(descriptions);
 
@@ -32,6 +34,8 @@ const createHTMLExperience = ({
         </a>
         <image class='round_corner experience_image' src='${preview}' alt='preview'></image>
         <h1 class='subtitle'>Product: ${product}</h1>
+        <h1 class='subtitle'>Title: ${title}</h1>
+        <h1 class='subtitle'>Employment: ${employment}</h1>
         <p class='subtitle'><i>${from}</i> - <i>${to}</i></p>
         ${randomDivider()}
         <div class='flex_column center_items'>
