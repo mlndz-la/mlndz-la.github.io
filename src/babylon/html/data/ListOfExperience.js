@@ -77,7 +77,7 @@ export const listOfExperience = [
     to: "2020",
     title: "Software Engineer",
     employment: "Freelance",
-    preview: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
+    preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/hub.png",
     descriptions: [
       `
         <p>Constructed a <b>Node.js</b> and <b>Express.js</b> backend to facilitate a faster response time with Node’s non-blocking asynchronous request handling</p>
@@ -95,7 +95,7 @@ export const listOfExperience = [
     to: "2020",
     title: "Software Engineer",
     employment: "Freelance",
-    preview: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
+    preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/hub.png",
     descriptions: [
       `
         <p>Established the <b>PostgreSQL</b> database to be normalized to the 3rd form and remove unnecessary joins when querying</p>
@@ -105,7 +105,7 @@ export const listOfExperience = [
   {
     product: "Paw Finder",
     company: "Healthy Spot",
-    link: "https://pawfinder.com/",
+    link: "https://healthyspot.com/",
     from: "Feb 2018",
     to: "Dec 2019",
     title: "Software Engineer",
