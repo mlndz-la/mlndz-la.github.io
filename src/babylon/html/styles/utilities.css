@@ -61,6 +61,7 @@ body {
     rgba(17, 17, 17, 1) 0%,
     rgba(0, 212, 255, 0) 100%
   );
+  pointer-events: none;
 }
 
 .blur::after {
@@ -77,6 +78,7 @@ body {
     rgba(17, 17, 17, 1) 0%,
     rgba(0, 212, 255, 0) 100%
   );
+  pointer-events: none;
 }
 
 .show_div {
