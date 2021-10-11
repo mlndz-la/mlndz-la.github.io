@@ -166,10 +166,38 @@
       transform: translate(-50%, -50%);
       animation: shine_loading 9000ms ease-in-out infinite;
     }
+    .warning {
+      position: absolute;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 80%;
+    }
+    .warning_text {
+      color: aliceblue;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: Verdana;
+      max-width: 90vw;
+    }
+    @media screen and (min-width: 600px) {
+      .warning_text {
+        font-size: 2rem;
+        max-width: 80vw;
+      }
+    }
+    @media screen and (min-width: 1000px) {
+      .warning_text {
+        font-size: 2.5rem;
+        max-width: 60vw;
+      }
+    }
   </style>
   <div id="loading_container">
     <div class="galaxy_loading_container">
       <div class="star_loading"></div>
+      <div class="warning"><h1 class="warning_text">For a smoother experience a dedicated graphics card is needed</h1></div>
       <div class="galaxy_loading_icon">
         <svg
           height="400px"
@@ -204,7 +232,7 @@
   <script>
     const isLoading = setInterval(() => {
       const elements = document.body.getElementsByTagName("*");
-      if (elements.length === 35) {
+      if (elements.length === 37) {
         clearInterval(isLoading);
         setTimeout(() => {
           const elem = document.getElementById("loading_container");
