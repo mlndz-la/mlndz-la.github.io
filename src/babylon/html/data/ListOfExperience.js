@@ -3,8 +3,8 @@ export const listOfExperience = [
     product: "Digital Buyflow",
     company: "Centerfield Media",
     link: "https://www.centerfield.com/",
-    from: "Jun 2020",
-    to: "Aug 2021",
+    from: "May 2021",
+    to: "Current",
     title: "React Developer",
     employment: "Contract",
     preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/Centerfield-logo.png",
@@ -22,6 +22,10 @@ export const listOfExperience = [
         </p>
       `,
       `
+        <p>Coordinated with QA to release, fix any bugs, or setup a branch for staging to be later passed on to <b>Jenkins</b> for deployment
+        </p>
+      `,
+      `
         <p>Adopted <b>SASS</b> to improve extensibility and readability of stylesheets and ensure that the design of each component remained modular and independent while generating locally scoped class names to avoid class name collision in global scope</p>
       `,
       `
@@ -31,16 +35,16 @@ export const listOfExperience = [
         <p>Wrote <b>Jest</b>-based end-to-end, integration and unit tests in <b>Cypress</b> to drive development and verify application behavior by mocking user interactions in order to prevent breaking changes with in the code base during production mode</p>
       `,
       `
-        <p>Built upon <b>React-Router</b> to enhance UX by reducing unnecessary full-page DOM re-renders and create a smoother transition between pages while reducing server requests to create a better user experience</p>
+        <p>Increased <b>SEO</b> performance, measured via Lighthouse, by using <b>Semantic</b> HTML, adding descriptive meta attributes, and traffic generating keywords in order to maintain a high <b>Search Engine Ranking</b></p>
       `,
     ],
   },
   {
-    product: "Artemis",
+    product: "Artemis.db",
     company: "Artemis",
     link: "https://project-artemis-v2.vercel.app/",
     from: "Apr 2020",
-    to: "May 2021",
+    to: "Apr 2021",
     title: "Software Engineer",
     employment: "Contract",
     preview: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/artemis_preview.png",
@@ -52,8 +56,7 @@ export const listOfExperience = [
         <p>Outlined a modern <b>Neomorphic UI</b> with CSS Grid and leveraged CSS Flexbox to create a responsive, mobile-first UI regardless of screen size</p>
       `,
       `
-        <p>Shaped <b>Aleph</b> to build a dynamic React Application and pre-render the application server-side at build time before displaying to the client for quicker initial load times as well as update Artemis, through Hot Module Reloading, during development without having to restart the server on every change
-        </p>
+        <p>Built upon <b>React-Router</b> to enhance UX by reducing unnecessary full-page DOM re-renders and create a smoother transition between pages while reducing server requests to create a better user experience</p>
       `,
       `
         <p>Managed a <b>Deno</b> server to produce a lightweight application with Deno’s module system and safeguarded Artemis by utilizing its security measures to prevent unwanted script injections or file access from modules at runtime</p>
