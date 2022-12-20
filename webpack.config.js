@@ -1,23 +1,31 @@
 const path = require('path');
 
 const config = {
-  entry: path.resolve(__dirname, 'src', 'index.jsx'),
-  output : {
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   devServer: {
     publicPath: path.resolve(__dirname, '/dist/'),
-    contentBase:  path.resolve(__dirname),
+    contentBase: path.resolve(__dirname),
     port: 8080,
     open: true,
     proxy: {
-      '/api/' : 'http://localhost:3000',
+      '/api/': 'http://localhost:3000',
     },
   },
   mode: process.env.NODE_ENV,
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.js$/,
         enforce: "pre",
