@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: .8rem;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: hsl(0, 0%, 18%, 35%);
+}
+
+.navbar_links_container {
+  display: flex;
+  gap: .5em;
+}
+
+.navbar_logo {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar_link {
+  color: hsl(0, 0%, 18%, 65%);
+  font-size: .8rem;
+  font-weight: bold;
+}
