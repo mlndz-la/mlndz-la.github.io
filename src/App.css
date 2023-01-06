@@ -6,3 +6,71 @@
   padding: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+:root {
+  --primary: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 18%);
+  --secondary35: hsl(0, 0%, 18%, 35%);
+  --secondary65: hsl(0, 0%, 18%, 65%);
+  --secondary70: hsl(0, 0%, 18%, 70%);
+  --accent: hsl(219, 100%, 44%);
+  --link: hsl(216, 100%, 60%, 80%);
+  --placeholder: hsl(0, 0%, 85%);
+
+  /* Tlayoa's Cosina */
+    /* Color Palette */
+    --color1TC: hsl(30, 100%, 98%);
+    --color2TC: hsl(30, 100%, 96%);
+    --color3TC: hsl(28, 7%, 68%);
+    --color4TC: hsl(214, 55%, 21%);
+    --color5TC: hsl(213, 52%, 4%);
+
+  --primaryTC: var(--color1TC);
+  --secondaryTC: var(--color2TC);
+  --textPrimaryTC: hsl(0, 0%, 0%);
+  --textPrimary50TC: hsl(0, 0%, 0%, 50%);
+  --backgroundTC: var(--primary);
+  --buttonPrimaryTC: var(--color4TC);
+  --buttonPrimaryTextTC: var(--color1TC);
+  --buttonSecondaryTC: var(--color1TC);
+  --buttonSecondaryTextTC: var(--textPrimaryTC);
+  --LogoTC: var(--color4TC);
+
+  /* Paw Finder */
+    /* Color Palette */
+    --color1PF: hsl(140, 15%, 60%);
+    --color2PF: hsl(140, 66%, 36%);
+    --color3PF: hsl(139, 20%, 30%);
+    --color4PF: hsl(0, 66%, 36%);
+    --color5PF: hsl(48, 83%, 60%);
+
+  --backgroundPF: var(--primary);
+  --primaryPF: hsl(140, 23%, 95);
+  --secondaryPF: hsl(140, 67%, 25%);
+  --textPrimaryPF: hsl(0, 0%, 0%);
+  --textPrimary50PF: hsl(0, 0%, 0%, 50%);
+  --primaryButtonPF: var(--color2PF);
+  --primaryButtonTextPF: hsl(0, 0%, 100%);
+  --secondaryButtonPF: var(--color5PF);
+  --secondaryButtonTextPF: var(--color3PF);
+  --iconsPF: hsl(140, 20%, 40%);
+
+  /* Cosmic Kitchen */
+    /* Color Palette */
+    --color1CK: hsl(0, 0%, 18%);
+    --color2CK: hsl(38, 97%, 55%);
+    --color3CK: hsl(0, 0%, 60%);
+    --color4CK: hsl(0, 0%, 91%);
+    --color5CK: hsl(0, 0%, 12%);
+
+  --backgroundCK: hsl(0, 0%, 12%);
+  --primaryCK: hsl(0, 0%, 18%);
+  --secondary: var(--color2CK);
+  --textPrimaryCK: hsl(0, 0%, 100%);
+  --textPrimary50CK: hsl(0, 0%, 100%, 50%);
+  --primaryButtonCK: var(--color5CK);
+  --primaryButtonTextCK: var(--color2CK);
+  --secondaryButtonCK: var(--color1CK);
+  --secondaryButtonTextCK: var(--textPrimaryCK);
+  --iconsCK: var(--color4CK);
+}
