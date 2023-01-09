@@ -65,7 +65,7 @@
 
   --backgroundCK: hsl(0, 0%, 12%);
   --primaryCK: hsl(0, 0%, 18%);
-  --secondary: var(--color2CK);
+  --secondaryCK: var(--color2CK);
   --textPrimaryCK: hsl(0, 0%, 100%);
   --textPrimary50CK: hsl(0, 0%, 100%, 50%);
   --primaryButtonCK: var(--color5CK);

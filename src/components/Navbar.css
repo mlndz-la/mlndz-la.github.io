@@ -1,7 +1,7 @@
 .navbar {
   border-bottom: solid;
   border-width: 2px;
-  border-color: hsl(0, 0%, 18%, 35%);
+  border-color: var(--secondary35);
 }
 .navbar_container {
   display: flex;
@@ -16,13 +16,13 @@
 }
 
 .navbar_logo {
-  color: black;
+  color: var(--secondary);
   font-weight: bold;
   font-size: 1.3rem;
 }
 
 .navbar_link {
-  color: hsl(0, 0%, 18%, 65%);
+  color: var(--secondary65);
   font-size: .8rem;
   font-weight: bold;
 }
@@ -32,18 +32,14 @@
     max-width: 1324px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
+    padding: 1em;
   }
 
   .navbar_logo {
-    color: black;
-    font-weight: bold;
     font-size: 2rem;
   }
 
   .navbar_link {
-    color: hsl(0, 0%, 18%, 65%);
     font-size: 1.2rem;
-    font-weight: bold;
   }
 }
