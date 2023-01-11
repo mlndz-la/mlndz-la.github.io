@@ -13,7 +13,7 @@
       "High-fidelity UI",
       "Prototype",
       "Usability Study",
-      "Accessibility evaluation"
+      "Accessibility Evaluation"
     ],
     "whatWhereWhy": {
       "where": ["Where", "United States, California"],
@@ -74,22 +74,22 @@
   "notableComments": {
     "fiona": {
       "name": "Fiona",
-      "image": "",
-      "comment": "I'm looking for a dog for my small apartment but it is a lot of work to look through multiple apps for the “one”."
+      "profilePic": "",
+      "comment": "I'm looking for a dog for my small apartment but it is a lot of work to look through multiple apps for the \"one\"."
     },
     "sam": {
       "name": "Sam",
-      "image": "",
+      "profilePic": "",
       "comment": "I wish this app had a map so I can see where all the locations are."
     },
     "michael": {
       "name": "Michael",
-      "image": "",
+      "profilePic": "",
       "comment": "I like reviewing all of my likes when it comes to deciding what I'm looking for."
     },
     "jesse": {
       "name": "Jesse",
-      "image": "",
+      "profilePic": "",
       "comment": "Finding a new puppy can be hard but finding a good collection of puppies is harder."
     }
   },
