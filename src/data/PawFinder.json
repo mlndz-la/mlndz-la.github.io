@@ -148,10 +148,16 @@
     }
   },
   "highFidelityDesign": {
+    "title": "29 high-fidelity design were created",
+    "desc": "Including two different navigational models (hamburger menu and a taskbar) that could be used for A/B testing at other design stages.",
+    "screenshots": ["", "", "", "", "", "", ""],
+    "imageDesc": "A colorful background was created for the application using the accent color, but, was not used because it removed the focus away from the application. Although the login screen has preserved some of this color."
+  },
+  "highFidelityPrototype": {
     "title": "High- fidelity Prototype",
     "desc": "I linked my high-fidelity designs to a click-through prototype that will let me test the application with an initial set of users.",
     "image": "",
-    "imageDesc": "The prototype can  be live-previewed at: [ link ]",
+    "imageDesc": "The prototype can be live-previewed at: [ link ]",
     "link": ""
   },
   "usability": {
