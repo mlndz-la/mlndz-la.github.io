@@ -1,6 +1,6 @@
 {
   "mockUpImageTop": "",
-  "caseStudy": {
+  "caseStudyStart": {
     "tittle": "Cosmic Kitchen",
     "subtitle": "The kitchen of tomorrow",
     "categories": [
@@ -31,12 +31,18 @@
   "research&Analysis": {
     "title": "Research & Analysis",
     "image": "",
-    "industryLeaders": [
-      "LG - Mkt Cap: 15.50 trillion", "Samsung - Mkt Cap: 409.96 trillion", "Whirlpool - Mkt Cap: 8.08 billion", "GE - Mkt Cap: 96.01 billion", "Bosch - Mkt Cap: 490.38 billion"
-    ],
-    "refrigeratorType": [
-      "Side-by-side Refrigerator", "Bottom Freezer Refrigerators", "Double Door Refrigerators", "Single Door Refrigerators", "French Door Refrigerators"
-    ]
+    "industryLeader": {
+      "title": "Industry Leaders",
+      "list": [
+        "LG - Mkt Cap: 15.50 trillion", "Samsung - Mkt Cap: 409.96 trillion", "Whirlpool - Mkt Cap: 8.08 billion", "GE - Mkt Cap: 96.01 billion", "Bosch - Mkt Cap: 490.38 billion"
+      ]
+    },
+    "refrigeratorType": {
+      "title": "Refrigerator Type",
+      "list": [
+        "Side-by-side Refrigerator", "Bottom Freezer Refrigerators", "Double Door Refrigerators", "Single Door Refrigerators", "French Door Refrigerators"
+      ]
+    }
   },
   "globalMarketResearch": {
     "title": "Global Market Research",
@@ -73,7 +79,7 @@
     "topImage": "",
     "bottomImage": ""
   },
-  "itsTime": {
+  "timeToStartDesign": {
     "title": "It's time to get to work on the blueprints",
     "desc": "Once the research was finished, the target audience, pain points, and personas could be developed. Information architecture and low-fidelity wireframes, the cornerstones of any successful product, must now be laid."
   },
@@ -91,6 +97,7 @@
   "highFidelityUIDesign": {
     "title": "High-fidelity UI Design",
     "desc": "Having finished the fundamental wireframe, I moved on to developing the color scheme and selecting the fonts. First, I'll try out different combinations before I begin making high-resolution designs.",
+    "alphabet": "AaBbCcDdEeFfGgHh",
     "color": {
       "title": "Color Palette",
       "desc": "Accent, Primary, Secondary, Tertiary, Background"
@@ -107,14 +114,14 @@
   "highFidelityDesign": {
     "title": "20 high-fidelity design were created",
     "desc": "Previously, the app could be navigated using a hamburger menu. We didn't implement it because we believed that was better suited for a mobile device.",
-    "image": "",
+    "screenshots": ["", "", "", "", "", "", ""],
     "imageDesc": "Before the current matte black aesthetic, a white and blue color scheme was in use. The user interface was a mishmash of colors that didn't go well together and stood in stark contrast to the sleek black and silver appearance of the refrigerator. In the end, we plan to implement a light mode so that users can select their favorite user interface."
   },
   "highFidelityPrototype": {
     "title": "High- fidelity Prototype",
     "desc": "I linked my high-fidelity designs to a click-through prototype that will let me test the application with an initial set of users.",
     "image": "",
-    "imageDesc": "The prototype can  be live-previewed at: [ link ]",
+    "imageDesc": "The prototype can be live-previewed at: [ link ]",
     "link": ""
   },
   "usability": {
