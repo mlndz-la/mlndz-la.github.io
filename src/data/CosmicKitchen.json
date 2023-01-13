@@ -1,5 +1,5 @@
 {
-  "mockUpImageTop": "",
+  "mockUpImageTop": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png",
   "caseStudyStart": {
     "tittle": "Cosmic Kitchen",
     "subtitle": "The kitchen of tomorrow",
@@ -30,7 +30,7 @@
   },
   "research&Analysis": {
     "title": "Research & Analysis",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Chart.png",
     "industryLeader": {
       "title": "Industry Leaders",
       "list": [
@@ -47,12 +47,12 @@
   "globalMarketResearch": {
     "title": "Global Market Research",
     "desc": "The popularity of smart refrigerators is rising rapidly in Asia. Europe is currently in second place, and smart refrigerators are beginning to gain popularity in the Western world. In 2025, its value is predicted to increase by $4.56 billion.",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Potential_Growth.png"
   },
   "targetAudience": {
     "title": "Target Audience",
     "desc": "We adopted a quantitative methodology for gathering information about our intended audience. By polling our followers and readers on social media and online discussion forums like Reddit or Twitter.",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Range.png",
     "imageDesc": "People spend more money on advanced smart refrigerators in general."
   },
   "users": {
@@ -76,8 +76,8 @@
   "personas": {
     "title": "Personas",
     "desc": "User needs access to temperature regulation, recipe app, and refrigerator contents display. U.S. demand is clearly on the rise, despite the fact that the country isn't as large a market as Asia.",
-    "topImage": "",
-    "bottomImage": ""
+    "topImage": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Vanessa.png",
+    "bottomImage": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Stephanie.png"
   },
   "timeToStartDesign": {
     "title": "It's time to get to work on the blueprints",
@@ -86,13 +86,13 @@
   "informationArchitecture": {
     "title": "Information Architecture",
     "desc": "From a bird's-eye vantage point, this flow depicts the entire user experience. The IA was developed using a hybrid of the hierarchical and matrix design approaches. However, a sequential approach to purchasing will be implemented.",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/FlowDiagram.png",
     "imageTitle": "Client FLow"
   },
   "lowFidelityUIDesign": {
     "title": "Low-fidelity UI Design",
     "desc": "Now that the IA was finished, I could start making basic wire frames for the app's functionality. This panel demonstrates how a user might navigate between the three different views (recipes, refrigerator, and item details).",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/lowfid.png"
   },
   "highFidelityUIDesign": {
     "title": "High-fidelity UI Design",
@@ -109,18 +109,33 @@
     "look": {
       "title": "Look & Feel",
       "desc": "So that the user interface would look like the fridge, a dark theme was used. In addition to using simple user interface techniques to keep user lag to a minimum."
-    }
+    },
+    "icons": [
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/home@2x.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/fridge@2x.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/apps@2x.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/add_shopping_cart@2x.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/recipe-book-47@2x.png"
+    ]
   },
   "highFidelityDesign": {
     "title": "20 high-fidelity design were created",
     "desc": "Previously, the app could be navigated using a hamburger menu. We didn't implement it because we believed that was better suited for a mobile device.",
-    "screenshots": ["", "", "", "", "", "", ""],
+    "screenshots": [
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Notes.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Cartclickeditem.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/FoodDetails.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/AmazonStore.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/RecipeDetails.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Home.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Apps-ClimateControlclicked.png"
+    ],
     "imageDesc": "Before the current matte black aesthetic, a white and blue color scheme was in use. The user interface was a mishmash of colors that didn't go well together and stood in stark contrast to the sleek black and silver appearance of the refrigerator. In the end, we plan to implement a light mode so that users can select their favorite user interface."
   },
   "highFidelityPrototype": {
     "title": "High- fidelity Prototype",
     "desc": "I linked my high-fidelity designs to a click-through prototype that will let me test the application with an initial set of users.",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/MapFlow.png",
     "imageDesc": "The prototype can be live-previewed at: [ link ]",
     "link": ""
   },
@@ -136,17 +151,17 @@
   "futureConsideration": {
     "title": "Future Considerations",
     "desc": "The majority of people who used this app requested a faster filter for searching and a way to see inside the fridge directly from the details page. When searching, a filter action was added to the right side of the search input box to help with the issues that had been occurring. In addition, we've included a convenient option to peek inside the fridge without leaving the product details page.",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/updateconcept.png"
   },
   "accessibilityCheck": {
     "title": "Accessibility Check",
     "desc1": "We employed contrast checkers to ensure that the use of gray, white, and orange in the dark mode user interface was acceptable so that we could comply with WCAG standards.",
     "desc2": "As a side note, there was no text that was smaller than 12 pixels, with the sole exception being the navigation bar that was located at the bottom of each page.",
-    "image": ""
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/WCAG.png"
   },
   "productOverview": {
     "title": "Product Overview",
     "desc": "I looked at the best the smart fridge makers both nationally and internationally. figured out who would benefit most from using Cosmic Kitchen and what problems those users were having, then made an effort to alleviate those problems. developed user profiles, planned the site's structure, and drafted both low- and high-fidelity prototypes. Then, as a last step, we compared our findings from the usability study with those from the accessibility audit from WCAG."
   },
-  "mockUpImageBottom": ""
+  "mockUpImageBottom": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-up3panels.png"
 }
