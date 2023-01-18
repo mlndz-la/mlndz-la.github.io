@@ -1,5 +1,6 @@
 {
   "mockUpImageMobile": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Mock-up-min.png",
+  "mockUpImageDesktop": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Mock-uplanding-min.png",
   "caseStudyStart": {
     "title": "Paw Finder",
     "subtitle": "Pet adoption, now easier than ever",
@@ -148,10 +149,10 @@
       "desc": "This style was created using rounded edges with a smooth color palette along side minimalist icons and font."
     },
     "icons": [
-      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/home@2x.png",
-      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/fridge@2x.png",
-      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/apps@2x.png",
-      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/add_shopping_cart@2x.png"
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/pin.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/search.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/history.png",
+      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/profile.png"
     ]
   },
   "highFidelityDesign": {
