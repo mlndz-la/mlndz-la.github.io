@@ -14,6 +14,7 @@ const config = {
     contentBase: path.resolve(__dirname),
     port: 8080,
     open: true,
+    historyApiFallback: true,
     proxy: {
       '/api/': 'http://localhost:3000',
     },
