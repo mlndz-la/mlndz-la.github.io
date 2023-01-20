@@ -1,3 +1,1 @@
-const CosmicKitchen = () => (<p>Cosmic Kitchen</p>);
-
-export default CosmicKitchen;
+export const CosmicKitchen = () => (<p>Cosmic Kitchen</p>);

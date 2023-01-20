@@ -1,3 +1,1 @@
-const Resume = () => (<p>Resume</p>)
-
-export default Resume;
+export const Resume = () => (<p>Resume</p>)

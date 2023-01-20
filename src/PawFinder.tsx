@@ -1,3 +1,1 @@
-const PawFinder = () => (<p>Paw Finder</p>);
-
-export default PawFinder;
+export const PawFinder = () => (<p>Paw Finder</p>);
