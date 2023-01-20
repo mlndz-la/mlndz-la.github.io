@@ -1,3 +1,1 @@
-const TlayoasCocina = () => (<p>Tlayoas Cocina</p>);
-
-export default TlayoasCocina;
+export const TlayoasCocina = () => (<p>Tlayoas Cocina</p>);

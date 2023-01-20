@@ -3,6 +3,7 @@
   border-width: 2px;
   border-color: var(--secondary35);
 }
+
 .navbar_container {
   display: flex;
   justify-content: space-between;
@@ -27,8 +28,10 @@
   font-weight: bold;
 }
 
-.navbar_link:hover, .navbar_logo:hover {
+.navbar_link:hover,
+.navbar_logo:hover {
   color: var(--secondary);
+  cursor: pointer;
 }
 
 @media (min-width: 1008px) {

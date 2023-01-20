@@ -1,14 +1,10 @@
-import Navbar from "./components/Navbar";
-import Router from "./Router";
 import "./App.css";
+import Router from "./Router";
 
-const App = () => {
+export const App = () => {
   return (
     <main>
-      <Navbar />
       <Router />
     </main>
   );
 };
-
-export default App;
