@@ -45,7 +45,7 @@
     --color5PF: hsl(48, 83%, 60%);
 
   --backgroundPF: var(--primary);
-  --primaryPF: hsl(140, 23%, 95);
+  --primaryPF: hsl(140, 23%, 95%);
   --secondaryPF: hsl(140, 67%, 25%);
   --textPrimaryPF: hsl(0, 0%, 0%);
   --textPrimary50PF: hsl(0, 0%, 0%, 50%);

@@ -1,0 +1,37 @@
+.category_container {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.category_container:active {
+  filter: brightness(90%);
+  transform: translateY(2px);
+}
+
+.category_title {
+  font-size: .9rem;
+  letter-spacing: .33px;
+}
+
+.category_PF {
+  color: var(--secondaryPF);
+  background-color: var(--primaryPF);
+}
+
+.category_TC {
+  color: var(--color4TC);
+  background-color: var(--secondaryTC);
+}
+
+.category_CK {
+  color: var(--secondaryCK);
+  background-color: var(--color1CK);
+  font-weight: 500;
+}
+
+@media (min-width: 1008px) {
+  .category_container {
+    cursor: pointer;
+  }
+}
