@@ -78,3 +78,16 @@
   --secondaryButtonTextCK: var(--textPrimaryCK);
   --iconsCK: var(--color4CK);
 }
+
+.dark {
+  color: var(--dark);
+}
+.dark50 {
+  color: var(--dark50);
+}
+.light {
+  color: var(--light);
+}
+.light50 {
+  color: var(--light50);
+}
