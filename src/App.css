@@ -16,6 +16,10 @@
   --accent: hsl(219, 100%, 44%);
   --link: hsl(216, 100%, 60%, 80%);
   --placeholder: hsl(0, 0%, 85%);
+  --dark: hsl(0, 0%, 0%);
+  --dark50: hsl(0, 0%, 0%, 50%);
+  --light: hsl(0, 0%, 100%);
+  --light50: hsl(0, 0%, 100%, 50%);
 
   /* Tlayoa's Cosina */
     /* Color Palette */
