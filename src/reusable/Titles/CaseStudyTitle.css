@@ -9,3 +9,7 @@
 .case_study_subtitle {
   font-size: 1rem;
 }
+
+@media (min-width: 1008px) {
+
+}
