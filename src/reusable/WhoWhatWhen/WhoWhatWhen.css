@@ -1,0 +1,54 @@
+.WhoWhatWhen_container {
+  padding: 8px;
+}
+
+.WhoWhatWhen_Card {
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.WhoWhatWhen_text_container {
+  margin-left: 8px;
+}
+
+.WhoWhatWhen_title {
+  font-size: 1rem;
+}
+
+.WhoWhatWhen_subtitle {
+  font-size: 1.2rem;
+}
+
+.WhoWhatWhen_line_pf {
+  width: 4px;
+  border-radius: 5px;
+  background-color: var(--secondaryPF);
+}
+
+@media (min-width: 1008px) {
+  .WhoWhatWhen_Card {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    display: flex;
+  }
+
+  .WhoWhatWhen_Card {
+    width: 33.3%;
+  }
+
+  .WhoWhatWhen_title {
+    font-size: .9rem;
+  }
+  
+  .WhoWhatWhen_subtitle {
+    font-size: 1rem;
+  }
+
+  .WhoWhatWhen_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
