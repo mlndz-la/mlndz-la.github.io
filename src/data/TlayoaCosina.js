@@ -1,10 +1,10 @@
-{
+export const tlayoaCosinaData = {
   "mockUpImageTopMobile": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Mock-up3-min.png",
   "mockUpImageTopDesktop": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Mock-up_landing-min.png",
   "caseStudyStart": {
-    "title": "Tlayoa's Cosina",
-    "subtitle": "Authentic Mexican food at your finger tips",
-    "categories": [
+    "caseStudyTitle": "Tlayoa's Cosina",
+    "caseStudySubtitle": "Authentic Mexican food at your finger tips",
+    "caseStudyCategories": [
       "Market Research",
       "Competitive Analysis",
       "User Survey",
@@ -16,14 +16,14 @@
       "Usability Study",
       "Accessibility Evaluation"
     ],
-    "whatWhereWhy": {
-      "where": ["Where", "United States, California"],
-      "what": ["What", "Mobile App (Android)"],
-      "why": ["Why", "Family Restaurant"],
-      "role": ["Role", "Designer, Researcher"],
-      "category": ["Category", "Food & Drink, Restaurant"],
-      "when": ["When", "2022"]
-    }
+      whatWhereWhy: [
+        {title: "Where", subtitle: "United States, California"},
+        {title: "What", subtitle: "Mobile App (Android)"},
+        {title: "Why", subtitle: "Family Restaurant"},
+        {title: "Role", subtitle: "Designer, Researcher"},
+        {title: "Category", subtitle: "Food & Drink, Restaurant"},
+        {title: "When", subtitle: "2022"},
+    ]
   },
   "whyThisProduct": {
     "title": "Why I chose this product",

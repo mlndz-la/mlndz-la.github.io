@@ -1,10 +1,10 @@
-{
+export const cosmicKitchenData = {
   "mockUpImageTopMobile": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-up.png",
   "mockUpImageTopDesktop": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png",
   "caseStudyStart": {
-    "tittle": "Cosmic Kitchen",
-    "subtitle": "The kitchen of tomorrow",
-    "categories": [
+    "caseStudyTitle": "Cosmic Kitchen",
+    "caseStudySubtitle": "The kitchen of tomorrow",
+    "caseStudyCategories": [
       "Research & Analysis",
       "Global Market Research",
       "Target Audience",
@@ -16,14 +16,14 @@
       "Usability Study",
       "Accessibility Check"
     ],
-    "whatWhereWhy": {
-      "where": ["Where", "United States, California"],
-      "what": ["What", "Fridge UI / UX"],
-      "why": ["Why", "Fridge Technology"],
-      "role": ["Role", "Designer, Researcher"],
-      "category": ["Category", "Home, Kitchen"],
-      "when": ["When", "2022"]
-    }
+    whatWhereWhy: [
+      {title: "Where", subtitle: "United States, California"},
+      {title: "What", subtitle: "Fridge UI / UX"},
+      {title: "Why", subtitle: "Fridge Technology"},
+      {title: "Role", subtitle: "Designer, Researcher"},
+      {title: "Category", subtitle: "Home, Kitchen"},
+      {title: "When", subtitle: "2022"},
+    ],
   },
   "whyThisProduct": {
     "desc": "There have been more technological advances in the United States as a whole, but the fridge hasn't done anything new yet. This area has a lot of room for growth, and I'd like to be at the front of it.",

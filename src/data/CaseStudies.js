@@ -1,4 +1,4 @@
-{
+export const caseStudiesData = {
   "caseStudies": [
     {
       "title": "Tlayoa's Cosina",

@@ -1,10 +1,10 @@
-{
-  "mockUpImageTopMobile": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Mock-up-min.png",
-  "mockUpImageTopDesktop": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Mock-uplanding-min.png",
-  "caseStudyStart": {
-    "title": "Paw Finder",
-    "subtitle": "Pet adoption, now easier than ever",
-    "categories": [
+export const pawFinderData = {
+  mockUpImageTopMobile: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Mock-up-min.png",
+  mockUpImageTopDesktop: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Mock-uplanding-min.png",
+  caseStudyStart: {
+    caseStudyTitle: "Paw Finder",
+    caseStudySubtitle: "Pet adoption, now easier than ever",
+    categories: [
       "Market Research",
       "Competitive Analysis",
       "Personas",
@@ -16,28 +16,28 @@
       "Usability Study",
       "Accessibility Evaluation"
     ],
-    "whatWhereWhy": {
-      "where": ["Where", "United States, California"],
-      "what": ["What", "IOS based mobile app"],
-      "why": ["Why", "Pet Adoption"],
-      "role": ["Role", "Designer, Researcher"],
-      "category": ["Category", "Pets, House & Home"],
-      "when": ["When", "2022"]
-    }
+    whatWhereWhy: [
+      {title: "Where", subtitle: "United States, California"},
+      {title: "What", subtitle: "IOS based mobile app"},
+      {title: "Why", subtitle: "Pet Adoption"},
+      {title: "Role", subtitle: "Designer, Researcher"},
+      {title: "Category", subtitle: "Pet, House & Home"},
+      {title: "When", subtitle: "2022"},
+    ]
   },
-  "whyThisProduct": {
-    "title": "Why did I decide on this product?",
-    "desc": "I personally adopted a small dog and understand why people don't want to adopt a “used pet.” I believe all animals deserve a second chance and this is my way of helping.",
-    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/binoculars.svg"
+  whyThisProduct: {
+    title: "Why did I decide on this product?",
+    desc: "I personally adopted a small dog and understand why people don't want to adopt a “used pet.” I believe all animals deserve a second chance and this is my way of helping.",
+    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/binoculars.svg"
   },
-  "marketResearch": {
-    "title": "Market Research",
-    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/PieChart-min.png",
-    "theClaim": {
-      "title": "The Claim",
-      "desc": "According to the ASPCA, approximately 4.1 million animals are adopted from animal shelters each year. Two million dogs are adopted and 2.1 million cats are adopted each year on average."
+  marketResearch: {
+    title: "Market Research",
+    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/PieChart-min.png",
+    theClaim: {
+      title: "The Claim",
+      desc: "According to the ASPCA, approximately 4.1 million animals are adopted from animal shelters each year. Two million dogs are adopted and 2.1 million cats are adopted each year on average."
     },
-    "theProblem": {
+    theProblem: {
       "title": "The Problem",
       "desc": "It is estimated that 6.5 million animals enter into shelters each year, that leaves around 2 million animals that aren't adopted, many of which get euthanized or die in shelters due to sickness or old age."
     }
