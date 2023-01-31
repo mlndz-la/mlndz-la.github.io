@@ -1,20 +1,19 @@
 .title_categories_case_study_and_www_container {
   display: flex;
   flex-direction: column;
-  border: 2px solid purple;
 }
 
 .categories_www_and_case_study_container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid greenyellow;
 }
 
 .paw_finder_categories_container {
   display: flex;
   flex-wrap: wrap;
   padding: 4px;
+  max-height: 600px;
 }
 
 .paw_finder_line {
@@ -33,9 +32,7 @@
 
   .paw_finder_categories_container {
     max-width: 12.5em;
-    align-items: center;
-    justify-content: flex-start;
-    border: 1px solid saddlebrown;
+    align-content: flex-start;
   }
 
   .paw_finder_line {
@@ -45,12 +42,13 @@
     width: 5px;
     border-radius: 5px;
     background-color: var(--secondaryPF);
-    border: 1px solid violet;
+    /* controls hight of line */
+    max-height: 530px;
   }
 
   .www_and_case_study_container {
     min-width: 1100px;
-    border: 1px solid red;
+    border: 1px solid blue;
   }
 }
 
