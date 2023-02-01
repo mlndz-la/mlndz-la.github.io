@@ -1,0 +1,39 @@
+.colored_section_container {
+  position: relative;
+}
+
+.colored_section_right {
+  display: none;
+}
+
+.colored_section_left {
+  display: none;
+}
+
+.theme_section_PF {
+  background-color: var(--primaryPF);
+}
+.theme_section_KC {
+  background-color: var(--primaryCK);
+}
+.theme_section_TC {
+  background-color: var(--color1CK);
+}
+
+@media (min-width: 1008px) {
+  .colored_section_right {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 1%;
+  }
+  
+  .colored_section_left {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 1%;
+  }
+}

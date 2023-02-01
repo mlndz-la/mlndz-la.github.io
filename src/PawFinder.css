@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 1324px;
 }
 
 .paw_finder_categories_container {
@@ -14,10 +15,12 @@
   flex-wrap: wrap;
   padding: 4px;
   max-height: 600px;
+  z-index: 1;
 }
 
 .paw_finder_line {
   display: none;
+  z-index: 1;
 }
 
 @media (min-width: 1008px) {

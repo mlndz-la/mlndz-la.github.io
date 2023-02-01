@@ -10,6 +10,7 @@
 }
 
 :root {
+  overflow-x: hidden;
   --primary: hsl(0, 0%, 100%);
   --secondary: hsl(0, 0%, 18%);
   --secondary35: hsl(0, 0%, 18%, 35%);
