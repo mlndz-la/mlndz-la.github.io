@@ -6,6 +6,7 @@ import { ThemesEnum } from "./reusable/Categories/types";
 import { pawFinderData } from "./data/PawFinder";
 import "./PawFinder.css";
 import { TypeTwoText } from "./reusable/Text/TypeTwoText";
+import { ColoredSection } from "./reusable/ColoredSection";
 
 export const PawFinder = () => {
   const data = pawFinderData;
@@ -39,47 +40,25 @@ export const PawFinder = () => {
             atl="green cartoon with binoculars"
           />
         </section>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
-        <h1>TEST</h1>
+        <section>
+          <ColoredSection theme={ThemesEnum.pf}>
+            {/* must have position relative */}
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+            <div className="test">test</div>
+          </ColoredSection>
+        </section>
+        <section>
+          <h1>TEST</h1>
+        </section>
       </div>
     </div>
   </div>
