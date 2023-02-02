@@ -7,6 +7,7 @@ import { pawFinderData } from "./data/PawFinder";
 import "./PawFinder.css";
 import { TypeTwoText } from "./reusable/Text/TypeTwoText";
 import { ColoredSection } from "./reusable/ColoredSection";
+import { MarketResearchPF } from "./PawFinder/MarketResearchPF";
 
 export const PawFinder = () => {
   const data = pawFinderData;
@@ -43,17 +44,13 @@ export const PawFinder = () => {
         <section>
           <ColoredSection theme={ThemesEnum.pf}>
             {/* must have position relative */}
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
-            <div className="test">test</div>
+            <MarketResearchPF
+              image={data.marketResearch.image}
+              textData={data.marketResearch.desc}
+              title={data.marketResearch.title}
+              textColor={TextColorEnum.dark}
+
+            />
           </ColoredSection>
         </section>
         <section>
