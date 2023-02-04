@@ -95,3 +95,18 @@
 .position_relative {
   position: relative;
 }
+.container_margin {
+  margin: 16px 4px 16px 18px;
+}
+.font_size_desc {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1008px) {
+  .container_margin {
+    margin: 16px 18px 16px 18px;
+  }
+  .font_size_desc {
+    font-size: 1.2rem;
+  }
+}

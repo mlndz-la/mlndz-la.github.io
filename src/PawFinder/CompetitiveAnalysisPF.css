@@ -1,0 +1,107 @@
+.competitive_analysis_PF_intro_container {
+}
+
+.competitive_analysis_PF_title {
+  font-size: 1.2rem;
+}
+
+.competitive_analysis_PF_logo {
+  max-width: 80px;
+}
+
+.competitive_analysis_PF_desc {
+  margin-top: 8px;
+}
+
+.competitive_analysis_PF_logo_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 160px;
+  padding: 0px 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.competitive_analysis_PF_logo_title {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: lighter;
+}
+
+.competitive_analysis_PF_logo_title_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+.competitive_analysis_PF_good_bad_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.competitive_analysis_PF_good_bad_title {
+  font-size: 1.2rem;
+}
+
+.competitive_analysis_PF_good_bad_desc {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.competitive_analysis_PF_screenshot_container {
+  display: none;
+}
+
+@media (min-width: 1008px) {
+  .competitive_analysis_PF_good_bad_container {
+    gap: 16px;
+  }
+  .competitive_analysis_PF_companies_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 46px 18px 46px 18px;
+    gap: 64px;
+  }
+  .competitive_analysis_PF_good_bad_content {
+  }
+  .competitive_analysis_PF_logo_title_container {
+    justify-content: space-evenly;
+    gap: 64px;
+  }
+  .competitive_analysis_PF_logo {
+    max-width: 130px;
+  }
+  .competitive_analysis_PF_logo_content {
+    height: 275px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+  }
+  .competitive_analysis_PF_intro_container{
+    margin: 64px 18px 32px 18px;
+  }
+  .competitive_analysis_PF_screenshot_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 46px;
+  }
+  .competitive_analysis_PF_screenshot{
+    max-width: 145px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  .competitive_analysis_PF_screenshot_content{
+    /* border: 1px solid saddlebrown */
+  }
+  .competitive_analysis_PF_screenshot_title{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  .competitive_analysis_PF_image_container{
+    display: flex;
+    gap: 20px;
+  }
+}

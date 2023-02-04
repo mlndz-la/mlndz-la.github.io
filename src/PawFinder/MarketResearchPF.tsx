@@ -5,7 +5,7 @@ export const MarketResearchPF = ({image, title, textData, textColor}:any) => {
     return (
       <article className="market_research_PF_desc_container" key={i}>
         <h1 className={`market_research_PF_desc_title ${textColor}50`}>{textData.title}</h1>
-        <p className={`market_research_PF_desc ${textColor}`}>{textData.desc}</p>
+        <p className={`market_research_PF_desc font_size_desc ${textColor}`}>{textData.desc}</p>
       </article>
     )
   })

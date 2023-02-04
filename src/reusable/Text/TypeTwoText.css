@@ -1,5 +1,5 @@
 .type_two_text_container {
-  padding: 18px;
+  padding: 30px 4px 30px 18px;
 }
 
 .type_two_text_image {
@@ -12,7 +12,6 @@
 }
 
 .type_two_paragraph {
-  font-size: 1.1rem;
 }
 
 @media (min-width: 1008px) {
@@ -39,7 +38,6 @@
   }
   
   .type_two_paragraph {
-    font-size: 1.2rem;
   }
 
   .type_two_text_image {

@@ -8,9 +8,12 @@ import "./PawFinder.css";
 import { TypeTwoText } from "./reusable/Text/TypeTwoText";
 import { ColoredSection } from "./reusable/ColoredSection";
 import { MarketResearchPF } from "./PawFinder/MarketResearchPF";
+import { CompetitiveAnalysisPF } from "./PawFinder/CompetitiveAnalysisPF"
 
 export const PawFinder = () => {
   const data = pawFinderData;
+  const themeColor = ThemesEnum.pf;
+  const themeText = TextColorEnum.dark;
   const {whatWhereWhy, categories, caseStudyTitle, caseStudySubtitle} = data.caseStudyStart;
 
   return (
@@ -20,41 +23,45 @@ export const PawFinder = () => {
       <CaseStudyTitle
           title={caseStudyTitle}
           subtitle={caseStudySubtitle}
-          textColor={TextColorEnum.dark}
+          textColor={themeText}
       />
       <div className="categories_www_and_case_study_container">
         <div className="paw_finder_categories_container">
           <DisplayCategories
             categoryList={categories}
-            theme={ThemesEnum.pf}
+            theme={themeColor}
           />
       </div>
       <div className="paw_finder_line"></div>
       <div className="www_and_case_study_container">
-        <WhoWhatWhen theme={TextColorEnum.dark} data={whatWhereWhy}/>
+        <WhoWhatWhen theme={themeText} data={whatWhereWhy}/>
         <section>
           <TypeTwoText
             title={data.whyThisProduct.title}
             desc={data.whyThisProduct.desc}
-            textColor={TextColorEnum.dark}
+            textColor={themeText}
             image={data.whyThisProduct.image}
             atl="green cartoon with binoculars"
           />
         </section>
         <section>
-          <ColoredSection theme={ThemesEnum.pf}>
+          <ColoredSection theme={themeColor}>
             {/* must have position relative */}
             <MarketResearchPF
               image={data.marketResearch.image}
               textData={data.marketResearch.desc}
               title={data.marketResearch.title}
-              textColor={TextColorEnum.dark}
-
+              textColor={themeText}
             />
           </ColoredSection>
         </section>
         <section>
-          <h1>TEST</h1>
+          <CompetitiveAnalysisPF
+            textColor={themeText}
+            mainData={data.competitiveAnalysis.main}
+            orgsData={data.competitiveAnalysis.orgsData}
+            badGoodData={data.competitiveAnalysis.badGood}
+          />
         </section>
         </div>
       </div>
