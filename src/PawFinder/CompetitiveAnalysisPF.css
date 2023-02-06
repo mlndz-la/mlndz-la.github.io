@@ -1,6 +1,3 @@
-.competitive_analysis_PF_intro_container {
-}
-
 .competitive_analysis_PF_title {
   font-size: 1.2rem;
 }
@@ -65,8 +62,6 @@
     margin: 46px 18px 46px 18px;
     gap: 64px;
   }
-  .competitive_analysis_PF_good_bad_content {
-  }
   .competitive_analysis_PF_logo_title_container {
     justify-content: space-evenly;
     gap: 64px;
@@ -90,9 +85,6 @@
   .competitive_analysis_PF_screenshot{
     max-width: 145px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  }
-  .competitive_analysis_PF_screenshot_content{
-    /* border: 1px solid saddlebrown */
   }
   .competitive_analysis_PF_screenshot_title{
     text-align: center;
