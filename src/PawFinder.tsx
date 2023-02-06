@@ -9,6 +9,7 @@ import { TypeTwoText } from "./reusable/Text/TypeTwoText";
 import { ColoredSection } from "./reusable/ColoredSection";
 import { MarketResearchPF } from "./PawFinder/MarketResearchPF";
 import { CompetitiveAnalysisPF } from "./PawFinder/CompetitiveAnalysisPF"
+import { NotableComments } from "./PawFinder/NotableComments";
 
 export const PawFinder = () => {
   const data = pawFinderData;
@@ -62,6 +63,14 @@ export const PawFinder = () => {
             orgsData={data.competitiveAnalysis.orgsData}
             badGoodData={data.competitiveAnalysis.badGood}
           />
+        </section>
+        <section>
+          <ColoredSection theme={themeColor}>
+            <NotableComments
+              data={data.notableComments}
+              theme={"comment_light"}
+            />
+          </ColoredSection>
         </section>
         </div>
       </div>

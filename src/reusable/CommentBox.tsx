@@ -3,14 +3,15 @@ import './CommentBox.css';
 interface Props {
   comment: string,
   name: string,
-  link: string
+  link: string,
+  theme: string
 }
 
 export const CommentBox = (props: Props) => {
-  const {comment, name, link} = props;
+  const {comment, name, link, theme} = props;
 
   return (
-    <div className='comment_box_container'>
+    <div className={`comment_box_container ${theme}`}>
       <div className='comment_box_image_and_comment_container'>
         <img 
           className='comment_box_image'

@@ -17,8 +17,8 @@
 }
 
 .comment_box_comment {
-  font-size: .9rem;
-  color: hsl(0, 0%, 0%, 50%);
+  font-size: 1rem;
+  color: hsl(0, 0%, 0%);
 }
 
 .comment_box_title {
@@ -41,5 +41,8 @@
     font-size: 1rem;
     color: hsl(0, 0%, 0%, 50%);
     margin-top: 15px;
+  }
+
+  .comment_box_container {
   }
 }
