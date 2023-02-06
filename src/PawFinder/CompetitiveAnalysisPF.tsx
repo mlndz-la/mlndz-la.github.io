@@ -28,7 +28,7 @@ export const CompetitiveAnalysisPF = ({
 
   const displayScreenshot = orgsData.map((data:any, i:any) => {
     return (
-      <div className="competitive_analysis_PF_screenshot_content">
+      <div key={i} className="competitive_analysis_PF_screenshot_content">
         <div className="competitive_analysis_PF_image_container">
           <img className="competitive_analysis_PF_screenshot" src={data.screenshot1} alt={`${data.title} screenshot 1`} />
           <img className="competitive_analysis_PF_screenshot" src={data.screenshot2} alt={`${data.title} screenshot 2`} />

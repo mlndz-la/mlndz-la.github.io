@@ -80,28 +80,28 @@ export const pawFinderData = {
       },
     ]
   },
-  "notableComments": {
-    "fiona": {
+  "notableComments": [
+    {
       "name": "Fiona",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Fiona.png",
-      "comment": "I'm looking for a dog for my small apartment but it is a lot of work to look through multiple apps for the \"one\"."
+      "comment": "Looking for a dog for my small apartment, it is a lot of work to search through multiple apps for the \"one\"."
     },
-    "sam": {
+    {
       "name": "Sam",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Sam.png",
       "comment": "I wish this app had a map so I can see where all the locations are."
     },
-    "michael": {
+    {
       "name": "Michael",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Michael.png",
       "comment": "I like reviewing all of my likes when it comes to deciding what I'm looking for."
     },
-    "jesse": {
+    {
       "name": "Jesse",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Jesse.png",
       "comment": "Finding a new puppy can be hard but finding a good collection of puppies is harder."
     }
-  },
+  ],
   "researchSoFar": {
     "title": "The initial research shows",
     "desc": "There isn't an easy way of browsing a large collection of animal shelters without having to go to each individual shelter.",
