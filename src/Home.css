@@ -1,0 +1,37 @@
+.home_page {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home_page__title {
+  margin-top: 48px;
+}
+
+.home_page__case_study_container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+@media (min-width: 1008px) {
+  .home_page {
+    max-width: 1324px;
+    padding: 16px;
+  }
+
+  .home_page__title {
+    margin-top: 64px;
+  }
+
+  .home_page__case_study_container {
+    margin-top: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 84px 224px;
+  }
+}

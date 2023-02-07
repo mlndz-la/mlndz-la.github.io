@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0 0;
   padding: 0;
@@ -22,12 +24,12 @@
   --light50: hsl(0, 0%, 100%, 50%);
 
   /* Tlayoa's Cosina */
-    /* Color Palette */
-    --color1TC: hsl(30, 100%, 98%);
-    --color2TC: hsl(30, 100%, 96%);
-    --color3TC: hsl(28, 7%, 68%);
-    --color4TC: hsl(214, 55%, 21%);
-    --color5TC: hsl(213, 52%, 4%);
+  /* Color Palette */
+  --color1TC: hsl(30, 100%, 98%);
+  --color2TC: hsl(30, 100%, 96%);
+  --color3TC: hsl(28, 7%, 68%);
+  --color4TC: hsl(214, 55%, 21%);
+  --color5TC: hsl(213, 52%, 4%);
 
   --primaryTC: var(--color1TC);
   --secondaryTC: var(--color2TC);
@@ -41,12 +43,12 @@
   --LogoTC: var(--color4TC);
 
   /* Paw Finder */
-    /* Color Palette */
-    --color1PF: hsl(140, 15%, 60%);
-    --color2PF: hsl(140, 66%, 36%);
-    --color3PF: hsl(139, 20%, 30%);
-    --color4PF: hsl(0, 66%, 36%);
-    --color5PF: hsl(48, 83%, 60%);
+  /* Color Palette */
+  --color1PF: hsl(140, 15%, 60%);
+  --color2PF: hsl(140, 66%, 36%);
+  --color3PF: hsl(139, 20%, 30%);
+  --color4PF: hsl(0, 66%, 36%);
+  --color5PF: hsl(48, 83%, 60%);
 
   --backgroundPF: var(--primary);
   --primaryPF: hsl(140, 23%, 95%);
@@ -60,12 +62,12 @@
   --iconsPF: hsl(140, 20%, 40%);
 
   /* Cosmic Kitchen */
-    /* Color Palette */
-    --color1CK: hsl(0, 0%, 18%);
-    --color2CK: hsl(38, 97%, 55%);
-    --color3CK: hsl(0, 0%, 60%);
-    --color4CK: hsl(0, 0%, 91%);
-    --color5CK: hsl(0, 0%, 12%);
+  /* Color Palette */
+  --color1CK: hsl(0, 0%, 18%);
+  --color2CK: hsl(38, 97%, 55%);
+  --color3CK: hsl(0, 0%, 60%);
+  --color4CK: hsl(0, 0%, 91%);
+  --color5CK: hsl(0, 0%, 12%);
 
   --backgroundCK: hsl(0, 0%, 12%);
   --primaryCK: hsl(0, 0%, 18%);
@@ -82,12 +84,15 @@
 .dark {
   color: var(--dark);
 }
+
 .dark50 {
   color: var(--dark50);
 }
+
 .light {
   color: var(--light);
 }
+
 .light50 {
   color: var(--light50);
 }
