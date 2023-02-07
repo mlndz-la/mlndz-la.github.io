@@ -105,7 +105,7 @@ export const pawFinderData = {
   "researchSoFar": {
     "title": "The initial research shows",
     "desc": "There isn't an easy way of browsing a large collection of animal shelters without having to go to each individual shelter.",
-    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/holding_website.svg"
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/holdwebsitecartoon.png"
   },
   "personas": {
     "title": "Personas",

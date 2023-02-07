@@ -10,6 +10,7 @@ import { ColoredSection } from "./reusable/ColoredSection";
 import { MarketResearchPF } from "./PawFinder/MarketResearchPF";
 import { CompetitiveAnalysisPF } from "./PawFinder/CompetitiveAnalysisPF"
 import { NotableComments } from "./PawFinder/NotableComments";
+import { ResearchSoFar } from "./PawFinder/ResearchSoFar";
 
 export const PawFinder = () => {
   const data = pawFinderData;
@@ -71,6 +72,12 @@ export const PawFinder = () => {
               theme={"comment_light"}
             />
           </ColoredSection>
+        </section>
+        <section>
+          <ResearchSoFar
+            data={data.researchSoFar}
+            textColor={themeText}
+          />
         </section>
         </div>
       </div>

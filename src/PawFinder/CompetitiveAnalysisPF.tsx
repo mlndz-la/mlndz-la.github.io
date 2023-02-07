@@ -12,7 +12,7 @@ export const CompetitiveAnalysisPF = ({
         <div className="competitive_analysis_PF_logo_content">
           <img className={`competitive_analysis_PF_logo ${data.title}`} src={data.logo} alt={`${data.title} logo`} />
         </div>
-        <h2 className={`competitive_analysis_PF_logo_title ${textColor}50`}>{data.title}</h2>
+        <h2 className={`competitive_analysis_PF_logo_title ${textColor}65`}>{data.title}</h2>
       </div>
     )
   });
@@ -20,7 +20,7 @@ export const CompetitiveAnalysisPF = ({
   const displayGoodBad = badGoodData.map((data:any, i:any) => {
     return (
       <div className={`competitive_analysis_PF_good_bad_content`} key={i}>
-        <h2 className={`competitive_analysis_PF_good_bad_title ${textColor}50`}>{data.title}</h2>
+        <h2 className={`competitive_analysis_PF_good_bad_title ${textColor}65`}>{data.title}</h2>
         <p className={`competitive_analysis_PF_good_bad_desc font_size_desc`}>{data.desc}</p>
       </div>
     )
@@ -33,7 +33,7 @@ export const CompetitiveAnalysisPF = ({
           <img className="competitive_analysis_PF_screenshot" src={data.screenshot1} alt={`${data.title} screenshot 1`} />
           <img className="competitive_analysis_PF_screenshot" src={data.screenshot2} alt={`${data.title} screenshot 2`} />
         </div>
-        <h2 className={`competitive_analysis_PF_screenshot_title ${textColor}50`}>{data.title}</h2>
+        <h2 className={`competitive_analysis_PF_screenshot_title ${textColor}65`}>{data.title}</h2>
       </div>
     )
   })
@@ -41,7 +41,7 @@ export const CompetitiveAnalysisPF = ({
     <div>
       <div className="competitive_analysis_PF_intro_container container_margin">
         <h1 className={`competitive_analysis_PF_title ${textColor}`}>{mainData.title}</h1>
-        <p className={`competitive_analysis_PF_desc font_size_desc ${textColor}50`}>{mainData.desc}</p>
+        <p className={`competitive_analysis_PF_desc font_size_desc ${textColor}65`}>{mainData.desc}</p>
       </div>
       {/* Good / Bad & Logo Container */}
       <article className="competitive_analysis_PF_companies_container">
