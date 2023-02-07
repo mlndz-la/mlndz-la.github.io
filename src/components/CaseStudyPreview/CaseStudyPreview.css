@@ -1,0 +1,23 @@
+.case_study_preview_container {
+  max-width: 100%;
+  width: 388px;
+}
+
+.case_study_preview_container__img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.case_study_preview_container__title {
+  margin-top: 8px;
+}
+
+.case_study_preview_container__subtitle {
+  margin-top: 5px;
+  opacity: 65%;
+}
+
+.case_study_preview_container__link {
+  margin-top: 12px;
+  color: var(--link)
+}
