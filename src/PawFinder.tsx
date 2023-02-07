@@ -11,6 +11,7 @@ import { MarketResearchPF } from "./PawFinder/MarketResearchPF";
 import { CompetitiveAnalysisPF } from "./PawFinder/CompetitiveAnalysisPF"
 import { NotableComments } from "./PawFinder/NotableComments";
 import { ResearchSoFar } from "./PawFinder/ResearchSoFar";
+import { Personas } from "./PawFinder/Personas";
 
 export const PawFinder = () => {
   const data = pawFinderData;
@@ -76,6 +77,15 @@ export const PawFinder = () => {
         <section>
           <ResearchSoFar
             data={data.researchSoFar}
+            textColor={themeText}
+          />
+        </section>
+        <section>
+          <Personas
+            title={data.personas.title}
+            desc={data.personas.desc}
+            personaOne={data.personas.topImage}
+            personaTwo={data.personas.bottomImage}
             textColor={themeText}
           />
         </section>
