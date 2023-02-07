@@ -1,0 +1,15 @@
+.work_page__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 1008px) {
+  .work_page__container {
+    max-width: 1324px;
+    padding: 16px;
+  }
+}
