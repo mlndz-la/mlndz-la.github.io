@@ -23,7 +23,7 @@ export const Home = () => {
 
   return (
     <div className="home_page">
-      <h3 className="home_page__title">My Work</h3>
+      <h2 className="home_page__title">My Work</h2>
       <div className="home_page__case_study_container">
         {
           caseStudies.map(({ imagePreview, title, description }) => {
