@@ -1,4 +1,4 @@
-.home_page {
+.home_page__container {
   width: 80%;
   margin: auto;
   display: flex;
@@ -7,8 +7,18 @@
   margin-bottom: 48px;
 }
 
+.home_page__button {
+  margin-top: 48px;
+  align-self: center;
+  color: var(--secondary);
+}
+
+.home_page__button:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 1008px) {
-  .home_page {
+  .home_page__container {
     max-width: 1324px;
     padding: 16px;
   }
