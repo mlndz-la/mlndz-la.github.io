@@ -9,7 +9,7 @@ export const CaseStudyPreview = ({ imagePreview, title, subtitle, caseStudyUrl }
 
   return (
     <div className="case_study_preview_container" >
-      <img className="case_study_preview_container__img" src={imagePreview} />
+      <img className="case_study_preview_container__img" src={imagePreview} onClick={goToCaseStudy} />
       <h3 className="case_study_preview_container__title" >{title}</h3>
       <p className="case_study_preview_container__subtitle" >{subtitle}</p>
       <h4 className="case_study_preview_container__link" onClick={goToCaseStudy}>Read Case Study</h4>
