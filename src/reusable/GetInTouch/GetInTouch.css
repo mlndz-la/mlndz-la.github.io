@@ -1,0 +1,20 @@
+.get_in_touch_container {
+  margin-top: 64px;
+}
+
+.get_in_touch_container__title {}
+
+.get_in_touch_container__button {
+  box-shadow: 3px 3px 8px 1px rgba(0, 70, 215, 0.4);
+  border-radius: 7px;
+  margin-top: 24px;
+  padding: 10px 13px;
+  color: var(--light);
+  background-color: var(--accent);
+}
+
+@media (min-width: 1008px) {
+  .get_in_touch_container__button {
+    margin-top: 20px;
+  }
+}

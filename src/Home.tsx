@@ -1,6 +1,7 @@
 import { CaseStudyPreview, CaseStudyUrlEnum } from "./components/CaseStudyPreview/";
 import { caseStudiesData } from './data/CaseStudies';
 import './Home.css';
+import { GetInTouch } from "./reusable/GetInTouch/";
 
 
 
@@ -33,6 +34,7 @@ export const Home = () => {
           })
         }
       </div>
+      <GetInTouch />
     </div>
   );
 
