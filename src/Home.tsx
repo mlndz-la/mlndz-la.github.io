@@ -9,21 +9,21 @@ import './Home.css';
 export const Home = () => {
   const { caseStudies } = caseStudiesData;
 
-  const [displayedCaseStudies, setDisplayedCaseStudies] = useState(caseStudies.slice(0, 4));
+  const [visibleCaseStudies, setVisibleCaseStudies] = useState(caseStudies.slice(0, 4));
 
-  const showViewMore = useMemo(() => !(displayedCaseStudies.length === caseStudies.length), [displayedCaseStudies]);
+  const showViewMore = useMemo(() => !(visibleCaseStudies.length === caseStudies.length), [visibleCaseStudies]);
 
 
   const viewMore = () => {
-    const currentViewIndex = displayedCaseStudies.length + 1
+    const currentViewIndex = visibleCaseStudies.length + 1
     const newViewIndex = currentViewIndex + 4;
 
-    setDisplayedCaseStudies(caseStudies.slice(0, newViewIndex));
+    setVisibleCaseStudies(caseStudies.slice(0, newViewIndex));
   }
 
   return (
     <div className="home_page__container">
-      <MyWork caseStudies={displayedCaseStudies} />
+      <MyWork caseStudies={visibleCaseStudies} />
       {showViewMore && <h3 className='home_page__button' onClick={viewMore}>View More</h3>}
       <GetInTouch />
     </div>
