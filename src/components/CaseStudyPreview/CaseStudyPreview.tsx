@@ -5,7 +5,7 @@ import './CaseStudyPreview.css';
 export const CaseStudyPreview = ({ imagePreview, title, subtitle, caseStudyUrl }: ICaseStudyPreviewProps) => {
   const navigate = useNavigate();
 
-  const goToCaseStudy = () => navigate(caseStudyUrl);
+  const goToCaseStudy = () => navigate(`/${caseStudyUrl}`);
 
   return (
     <div className="case_study_preview__container" >
