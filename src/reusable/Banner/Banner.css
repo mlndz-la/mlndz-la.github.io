@@ -1,0 +1,5 @@
+.banner {}
+
+@media (min-width: 1008px) {
+  .banner {}
+}
