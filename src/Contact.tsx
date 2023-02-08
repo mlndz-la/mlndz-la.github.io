@@ -6,7 +6,7 @@ export const Contact = () => {
   const { profilePic } = websiteAssets;
   return (
     <div className='contact_page__container'>
-      <h2 className='contact_page__header'>Contact</h2>
+      <h2 className='contact_page__title'>Contact</h2>
       <div className='contact_info__container'>
         <div className='contact_info_text__container'>
           <h2 className='contact_info_text__title'>Erick Melendez</h2>

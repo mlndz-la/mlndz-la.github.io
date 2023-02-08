@@ -1,0 +1,16 @@
+.resume_page__container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+
+.resume_page__title {
+  margin-top: 48px;
+}
+
+@media (min-width: 1008px) {
+  .resume_page__container {
+    max-width: 1324px;
+    padding: 16px;
+  }
+}

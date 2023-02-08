@@ -1,5 +1,5 @@
 import { websiteAssets } from '../../data/WebsiteAssets';
-import './ResumeIcon.css'
+import './ResumeIconSection.css'
 
 export const ResumeIconSection = () => {
   const { pdfIcon } = websiteAssets;
