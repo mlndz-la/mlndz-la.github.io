@@ -10,6 +10,7 @@
 }
 
 :root {
+  overflow-x: hidden;
   --primary: hsl(0, 0%, 100%);
   --secondary: hsl(0, 0%, 18%);
   --secondary35: hsl(0, 0%, 18%, 35%);
@@ -20,8 +21,10 @@
   --placeholder: hsl(0, 0%, 85%);
   --dark: hsl(0, 0%, 0%);
   --dark50: hsl(0, 0%, 0%, 50%);
+  --dark65: hsl(0, 0%, 0%, 65%);
   --light: hsl(0, 0%, 100%);
   --light50: hsl(0, 0%, 100%, 50%);
+  --light65: hsl(0, 0%, 100%, 65%);
 
   /* Tlayoa's Cosina */
   /* Color Palette */
@@ -84,15 +87,34 @@
 .dark {
   color: var(--dark);
 }
-
-.dark50 {
-  color: var(--dark50);
+.dark65 {
+  color: var(--dark65);
 }
 
 .light {
   color: var(--light);
 }
+.light65 {
+  color: var(--light65);
+}
+.comment_light {
+  background-color: var(--primary);
+}
+.position_relative {
+  position: relative;
+}
+.container_margin {
+  margin: 16px 4px 16px 18px;
+}
+.font_size_desc {
+  font-size: 1.1rem;
+}
 
-.light50 {
-  color: var(--light50);
+@media (min-width: 1008px) {
+  .container_margin {
+    margin: 16px 18px 16px 18px;
+  }
+  .font_size_desc {
+    font-size: 1.2rem;
+  }
 }

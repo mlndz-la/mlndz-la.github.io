@@ -33,71 +33,79 @@ export const pawFinderData = {
   marketResearch: {
     title: "Market Research",
     image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/PieChart-min.png",
-    theClaim: {
-      title: "The Claim",
-      desc: "According to the ASPCA, approximately 4.1 million animals are adopted from animal shelters each year. Two million dogs are adopted and 2.1 million cats are adopted each year on average."
-    },
-    theProblem: {
-      "title": "The Problem",
-      "desc": "It is estimated that 6.5 million animals enter into shelters each year, that leaves around 2 million animals that aren't adopted, many of which get euthanized or die in shelters due to sickness or old age."
-    }
+    desc: [
+      {
+        title: "The Claim",
+        desc: "According to the ASPCA, approximately 4.1 million animals are adopted from animal shelters each year. Two million dogs are adopted and 2.1 million cats are adopted each year on average."
+      },
+      {
+        title: "The Problem",
+        desc: "It is estimated that 6.5 million animals enter into shelters each year, that leaves around 2 million animals that aren't adopted, many of which get euthanized or die in shelters due to sickness or old age."
+      }
+    ]
   },
-  "competitiveAnalysis": {
-    "title": "Competitive Analysis",
-    "desc": "I analyzed 3 animal shelter around the United States - I looked at the usability, information architecture and searched for any negative reviews in the app store or any online reviews.",
-    "chewy": {
-      "title": "Chewy",
-      "logo": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Chewy_Logo_RGB_Blue.png",
-      "screenshot1": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot1_chewy.png",
-      "screenshot2": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot2_chewy.png"
+  competitiveAnalysis: {
+    main: {
+      title: "Competitive Analysis",
+      desc: "I analyzed 3 animal shelter around the United States - I looked at the usability, information architecture and searched for any negative reviews in the app store or any online reviews.",
     },
-    "Petfinder": {
-      "title": "Petfinder",
-      "logo": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/PFF_logo_1200x630.png",
-      "screenshot1": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot1_petfinder.png",
-      "screenshot2": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot2_petfinder.png"
-    },
-    "OCAC": {
-      "title": "OCAC",
-      "logo": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/smallOCAC_SecondaryLogoWwhite.png",
-      "screenshot1": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot1_OCAC.png",
-      "screenshot2": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot2_OCAC.png"
-    },
-    "theGood": {
-      "title": "The Good",
-      "desc": "All of the apps allow users to save and search animals with ease. Petfinder has a nifty tool that lets users search for specific animal shelters near their location."
-    },
-    "theBad": {
-      "title": "The Bad",
-      "desc": "Chewy, Petfinder and OCAC do not have the ability to freely search a map and OCAC and they lack the necessary tools view a large data base of animal shelters near them. As well as giving the users a useful rating systems."
-    }
+    orgsData : [
+      {
+        title: "Chewy",
+        logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Chewy_Logo_RGB_Blue.jpg",
+        screenshot1: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot1_chewy.png",
+        screenshot2: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot2_chewy.png"
+      },
+      {
+        title: "Petfinder",
+        logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/PFF_logo_1200x630.png",
+        screenshot1: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot1_petfinder.png",
+        screenshot2: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot2_petfinder.png"
+      },
+      {
+        title: "OCAC",
+        logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/smallOCAC_SecondaryLogoWwhitenew.png",
+        screenshot1: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot1_OCAC.png",
+        screenshot2: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/screenshot2_OCAC.png"
+      }
+    ],
+    badGood: [
+      {
+        title: "The Good",
+        desc: "All of the apps allow users to save and search animals with ease. Petfinder has a nifty tool that lets users search for specific animal shelters near their location."
+      },
+      {
+        title: "The Bad",
+        desc: "Chewy, Petfinder and OCAC do not have the ability to freely search a map and OCAC and they lack the necessary tools view a large data base of animal shelters near them. As well as giving the users a useful rating systems."
+      },
+    ]
   },
-  "notableComments": {
-    "fiona": {
+  "notableComments": [
+    {
       "name": "Fiona",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Fiona.png",
-      "comment": "I'm looking for a dog for my small apartment but it is a lot of work to look through multiple apps for the \"one\"."
+      "comment": "Looking for a dog for my small apartment, it is a lot of work to search through multiple apps for the \"one\"."
     },
-    "sam": {
+    {
       "name": "Sam",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Sam.png",
       "comment": "I wish this app had a map so I can see where all the locations are."
     },
-    "michael": {
+    {
       "name": "Michael",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Michael.png",
       "comment": "I like reviewing all of my likes when it comes to deciding what I'm looking for."
     },
-    "jesse": {
+    {
       "name": "Jesse",
       "profilePic": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Jesse.png",
       "comment": "Finding a new puppy can be hard but finding a good collection of puppies is harder."
     }
-  },
+  ],
   "researchSoFar": {
     "title": "The initial research shows",
     "desc": "There isn't an easy way of browsing a large collection of animal shelters without having to go to each individual shelter.",
-    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/holding_website.svg"
+    "image": "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/holdwebsitecartoon.png"
   },
   "personas": {
     "title": "Personas",
