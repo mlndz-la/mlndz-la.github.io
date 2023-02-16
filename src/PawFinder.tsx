@@ -21,6 +21,8 @@ export const PawFinder = () => {
 
   return (
   <>
+    {/* <Banner imgSrc={}/> */}
+
     <div className="banner_TEST">Banner</div>
     <div className="title_categories_case_study_and_www_container">
       <CaseStudyTitle
