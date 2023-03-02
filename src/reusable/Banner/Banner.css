@@ -7,10 +7,45 @@
   background-position: 5% 40%;
 }
 
-@media (min-width: 600px) {
-  .banner {}
+@media (min-width: 500px) {
+  .banner {
+    background-size: 135% auto;
+    background-position: 5% 35%;
+  }
 }
 
-@media (min-width: 1008px) {
-  .banner {}
+@media (min-width: 700px) {
+  .banner {
+    background-size: 135% auto;
+    background-position: 5% 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner {
+    height: 275px;
+    background-size: 100% auto;
+    background-position: 5% 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    background-size: 100% auto;
+    background-position: 5% 43%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .banner {
+    background-size: 100% auto;
+    background-position: 5% 45%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner {
+    background-size: 100% auto;
+    background-position: 5% 47%;
+  }
 }

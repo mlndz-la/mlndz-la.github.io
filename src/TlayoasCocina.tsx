@@ -3,6 +3,6 @@ import { tlayoaCosinaData } from './data/TlayoaCosina';
 
 export const TlayoasCocina = () => (
   <>
-    <Banner endpoint="tlayoas-cocina" imgSrc={tlayoaCosinaData.mockUpImageTopDesktop} />
+    <Banner imgSrc={tlayoaCosinaData.mockUpImageTopDesktop} endpoint="tlayoas-cocina" />
   </>
 );
