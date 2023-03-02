@@ -3,7 +3,7 @@ import './Banner.css';
 
 
 export const Banner = ({ imgSrc, endpoint }: BannerProps) => (
-  <div className={`${endpoint}-banner`} style={{ backgroundImage: `url(${imgSrc})`, backgroundColor: getBackgroundColor(endpoint) }} />
+  <div className={`banner ${endpoint}`} style={{ backgroundImage: `url(${imgSrc})`, backgroundColor: getBackgroundColor(endpoint) }} />
 );
 
 const getBackgroundColor = (endpoint: BannerProps["endpoint"]) => {
