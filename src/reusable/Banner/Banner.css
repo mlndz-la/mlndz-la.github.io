@@ -1,4 +1,15 @@
-.banner {}
+.banner {
+  width: 100%;
+  height: 375px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 230% auto;
+  background-position: 5% 40%;
+}
+
+@media (min-width: 600px) {
+  .banner {}
+}
 
 @media (min-width: 1008px) {
   .banner {}
