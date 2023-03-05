@@ -38,7 +38,9 @@
 
 @media (min-width: 700px) {
   .cosmic-kitchen {
-    background-size: 80%;
+    /* TODO: create a resize custom hook that changes cosmic kitchen's image url in the component and not here */
+    background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png");
+    background-size: 85%;
   }
 
   .pawfinder {}
@@ -49,13 +51,16 @@
   }
 }
 
+@media (min-width: 800px) {
+  .cosmic-kitchen {}
+}
+
 @media (min-width: 1000px) {
   .banner {
     height: 275px;
   }
 
   .cosmic-kitchen {
-    background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png");
     background-position: 80% auto;
   }
 
