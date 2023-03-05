@@ -3,19 +3,8 @@ import './Banner.css';
 
 
 export const Banner = ({ imgSrc, endpoint }: BannerProps) => (
-  <div className={`banner ${endpoint}`} style={{ backgroundImage: `url(${imgSrc})`, backgroundColor: getBackgroundColor(endpoint) }} />
+  <div
+    className={`banner ${endpoint}`}
+    style={{ backgroundImage: imgSrc ? `url(${imgSrc})` : undefined }}
+  />
 );
-
-const getBackgroundColor = (endpoint: BannerProps["endpoint"]) => {
-  switch (endpoint) {
-    case 'tlayoas-cocina': {
-      return '#FFF5EB';
-    }
-    case 'pawfinder': {
-      return '#EFF5F1';
-    }
-    case 'cosmic-kitchen': {
-      return '#2E2E2E';
-    }
-  }
-}

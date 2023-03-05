@@ -12,6 +12,7 @@ import { CompetitiveAnalysisPF } from "./PawFinder/CompetitiveAnalysisPF"
 import { NotableComments } from "./PawFinder/NotableComments";
 import { ResearchSoFar } from "./PawFinder/ResearchSoFar";
 import { Personas } from "./PawFinder/Personas";
+import { Banner } from "./reusable/Banner";
 
 export const PawFinder = () => {
   const data = pawFinderData;
@@ -21,9 +22,7 @@ export const PawFinder = () => {
 
   return (
   <>
-    {/* <Banner imgSrc={}/> */}
-
-    <div className="banner_TEST">Banner</div>
+    <Banner imgSrc={pawFinderData.mockUpImageTopDesktop} endpoint="pawfinder"/>
     <div className="title_categories_case_study_and_www_container">
       <CaseStudyTitle
           title={caseStudyTitle}

@@ -5,18 +5,28 @@
   background-repeat: no-repeat;
 }
 
-.cosmic-kitchen {}
+.cosmic-kitchen {
+  background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-up.png");
+  background-color: var(--primaryCK);
+  background-size: 110% auto;
+  background-position: center center;
+}
 
-.pawfinder {}
+.pawfinder {
+  background-color: var(--primaryPF);
+}
 
 .tlayoas-cocina {
+  background-color: var(--primaryTC);
   background-size: 230% auto;
   background-position: 5% 40%;
 }
 
 
 @media (min-width: 500px) {
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-size: 90%;
+  }
 
   .pawfinder {}
 
@@ -27,7 +37,9 @@
 }
 
 @media (min-width: 700px) {
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-size: 80%;
+  }
 
   .pawfinder {}
 
@@ -42,7 +54,10 @@
     height: 275px;
   }
 
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png");
+    background-position: 80% auto;
+  }
 
   .pawfinder {}
 
