@@ -38,9 +38,7 @@
 
 @media (min-width: 700px) {
   .cosmic-kitchen {
-    /* TODO: create a resize custom hook that changes cosmic kitchen's image url in the component and not here */
-    background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png");
-    background-size: 85%;
+    background-size: 80%;
   }
 
   .pawfinder {}
@@ -52,7 +50,9 @@
 }
 
 @media (min-width: 800px) {
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-size: 60%;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -61,7 +61,10 @@
   }
 
   .cosmic-kitchen {
-    background-position: 80% auto;
+    /* TODO: create a resize custom hook that changes cosmic kitchen's image url in the component and not here */
+    background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png");
+    background-position: center 30%;
+    background-size: 90%;
   }
 
   .pawfinder {}
@@ -72,8 +75,16 @@
   }
 }
 
+@media (min-width: 1100px) {
+  .cosmic-kitchen {
+    background-size: 80%;
+  }
+}
+
 @media (min-width: 1200px) {
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-size: 75%;
+  }
 
   .pawfinder {}
 
@@ -84,7 +95,9 @@
 }
 
 @media (min-width: 1400px) {
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-size: 65%;
+  }
 
   .pawfinder {}
 
@@ -94,9 +107,17 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .cosmic-kitchen {
+    background-size: 60%;
+  }
+}
+
 
 @media (min-width: 1600px) {
-  .cosmic-kitchen {}
+  .cosmic-kitchen {
+    background-size: 55%;
+  }
 
   .pawfinder {}
 
