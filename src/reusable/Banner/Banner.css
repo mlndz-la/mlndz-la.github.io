@@ -1,0 +1,128 @@
+.banner {
+  width: 100%;
+  height: 375px;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.cosmic-kitchen {
+  background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-up.png");
+  background-color: var(--primaryCK);
+  background-size: 110% auto;
+  background-position: center center;
+}
+
+.pawfinder {
+  background-color: var(--primaryPF);
+}
+
+.tlayoas-cocina {
+  background-color: var(--primaryTC);
+  background-size: 230% auto;
+  background-position: 5% 40%;
+}
+
+
+@media (min-width: 500px) {
+  .cosmic-kitchen {
+    background-size: 90%;
+  }
+
+  .pawfinder {}
+
+  .tlayoas-cocina {
+    background-size: 135% auto;
+    background-position: 5% 35%;
+  }
+}
+
+@media (min-width: 700px) {
+  .cosmic-kitchen {
+    background-size: 80%;
+  }
+
+  .pawfinder {}
+
+  .tlayoas-cocina {
+    background-size: 135% auto;
+    background-position: 5% 40%;
+  }
+}
+
+@media (min-width: 800px) {
+  .cosmic-kitchen {
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .banner {
+    height: 275px;
+  }
+
+  .cosmic-kitchen {
+    /* TODO: create a resize custom hook that changes cosmic kitchen's image url in the component and not here */
+    background-image: url("https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-uplanding.png");
+    background-position: center 30%;
+    background-size: 90%;
+  }
+
+  .pawfinder {}
+
+  .tlayoas-cocina {
+    background-size: 100% auto;
+    background-position: 5% 40%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cosmic-kitchen {
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cosmic-kitchen {
+    background-size: 75%;
+  }
+
+  .pawfinder {}
+
+  .tlayoas-cocina {
+    background-size: 100% auto;
+    background-position: 5% 43%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cosmic-kitchen {
+    background-size: 65%;
+  }
+
+  .pawfinder {}
+
+  .tlayoas-cocina {
+    background-size: 100% auto;
+    background-position: 5% 45%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .cosmic-kitchen {
+    background-size: 60%;
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .cosmic-kitchen {
+    background-size: 55%;
+  }
+
+  .pawfinder {}
+
+  .tlayoas-cocina {
+    background-size: 100% auto;
+    background-position: 5% 47%;
+  }
+}

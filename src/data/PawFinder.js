@@ -17,12 +17,12 @@ export const pawFinderData = {
       "Accessibility Evaluation"
     ],
     whatWhereWhy: [
-      {title: "Where", subtitle: "United States, California"},
-      {title: "What", subtitle: "IOS based mobile app"},
-      {title: "Why", subtitle: "Pet Adoption"},
-      {title: "Role", subtitle: "Designer, Researcher"},
-      {title: "Category", subtitle: "Pet, House & Home"},
-      {title: "When", subtitle: "2022"},
+      { title: "Where", subtitle: "United States, California" },
+      { title: "What", subtitle: "IOS based mobile app" },
+      { title: "Why", subtitle: "Pet Adoption" },
+      { title: "Role", subtitle: "Designer, Researcher" },
+      { title: "Category", subtitle: "Pet, House & Home" },
+      { title: "When", subtitle: "2022" },
     ]
   },
   whyThisProduct: {
@@ -49,7 +49,7 @@ export const pawFinderData = {
       title: "Competitive Analysis",
       desc: "I analyzed 3 animal shelter around the United States - I looked at the usability, information architecture and searched for any negative reviews in the app store or any online reviews.",
     },
-    orgsData : [
+    orgsData: [
       {
         title: "Chewy",
         logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Chewy_Logo_RGB_Blue.jpg",

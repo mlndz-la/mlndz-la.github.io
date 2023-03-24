@@ -1,1 +1,7 @@
-export const CosmicKitchen = () => (<p>Cosmic Kitchen</p>);
+import { Banner } from "./reusable/Banner";
+
+export const CosmicKitchen = () => (
+  <>
+    <Banner endpoint={'cosmic-kitchen'} />
+  </>
+);
