@@ -18,11 +18,6 @@
   z-index: 1;
 }
 
-.paw_finder_line {
-  display: none;
-  z-index: 1;
-}
-
 @media (min-width: 1008px) {
   .categories_www_and_case_study_container {
     min-width: 1324px;
@@ -35,23 +30,31 @@
 
   .paw_finder_categories_container {
     max-width: 12.5em;
-    align-content: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-start;
+    top: 0;
+    overflow-y: auto;
   }
 
   .paw_finder_line {
     display: inline;
+    z-index: 1;
+    position: sticky;
+    position: -webkit-sticky;
+    overflow-y: auto;
+    top: 0;
     /* control spacing for categories and WWW */
     margin: 10px;
     width: 5px;
     border-radius: 5px;
     background-color: var(--secondaryPF);
     /* controls hight of line */
-    max-height: 530px;
+    max-height: 560px;
   }
 
   .www_and_case_study_container {
     min-width: 1100px;
-    /* border: 1px solid blue; */
   }
 }
 
