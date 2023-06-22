@@ -191,7 +191,8 @@ export const pawFinderData = {
   lowFidelityUIDesign: {
     title: "Low-fidelity UI Design",
     desc: "Once the designs were established and feedback collected, I began to create low-fidelity wireframes keeping in mind user pain points such as usability, research and social.",
-    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/lowfid.png"
+    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/lowfid.png",
+    elementId: "pf_low_fidelity_ui"
   },
   highFidelityUIDesign: {
     title: "High-fidelity UI Design",
@@ -214,7 +215,8 @@ export const pawFinderData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/search.png",
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/history.png",
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/profile.png"
-    ]
+    ],
+    elementId: "pf_high_fidelity_ui"
   },
   highFidelityDesign: {
     title: "29 high-fidelity design were created",
@@ -227,7 +229,8 @@ export const pawFinderData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Categories-min.png",
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Map-min.png"
     ],
-    imageDesc: "A colorful background was created for the application using the accent color, but, was not used because it removed the focus away from the application. Although the login screen has preserved some of this color."
+    imageDesc: "A colorful background was created for the application using the accent color, but, was not used because it removed the focus away from the application. Although the login screen has preserved some of this color.",
+    elementId: "prototype",
   },
   highFidelityPrototype: {
     title: "High- fidelity Prototype",
@@ -239,7 +242,8 @@ export const pawFinderData = {
   usability: {
     title: "Usability Study",
     desc1: "I carried out an unmoderated usability study with 8 users. All users were given question and prompts to follow on Google Slides. These prompts included things such as \"locate your user profile and edit it\" or \"make an appointment for Izzy.\" That said, the goal of this study was to look for inconsistencies and test basic functions throughout the application.",
-    desc2: "Participants could use any software for recording their session. Prior to starting the test, I meet them to explain the process and answer their questions. As well as gain proper consent to the use of the data collected by me."
+    desc2: "Participants could use any software for recording their session. Prior to starting the test, I meet them to explain the process and answer their questions. As well as gain proper consent to the use of the data collected by me.",
+    elementId: "pf_usability_study"
   },
   studyResults: {
     title: "Study Results",
@@ -254,7 +258,8 @@ export const pawFinderData = {
     title: "Accessibility Check",
     desc1: "Guidelines 3.3 - Input Assistance have been reviewed for the app (WCAG). Error prevention was taken into mind throughout the entire application.",
     desc2: "In one instance, if the passwords do not match before the register button is clicked, a red notice would appear when users registered (left screen). In another situation, entering the wrong password would result in a red notice alerting the user.",
-    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/WCAG-min.png"
+    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/WCAG-min.png",
+    elementId: "pf_accessibility_evaluation"
   },
   productOverview: {
     title: "Product Summary",
