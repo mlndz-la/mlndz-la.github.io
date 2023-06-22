@@ -89,6 +89,7 @@ export const PawFinder = () => {
             personaOne={data.personas.topImage}
             personaTwo={data.personas.bottomImage}
             textColor={themeText}
+            elementId={data.personas.elementId}
           />
         </section>
         </div>
