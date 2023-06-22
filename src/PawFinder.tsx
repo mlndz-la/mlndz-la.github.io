@@ -18,27 +18,26 @@ export const PawFinder = () => {
   const data = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
-  const {whatWhereWhy, categories, caseStudyTitle, caseStudySubtitle} = data.caseStudyStart;
 
   return (
   <>
     <Banner imgSrc={pawFinderData.mockUpImageTopDesktop} endpoint="pawfinder"/>
     <div className="title_categories_case_study_and_www_container">
       <CaseStudyTitle
-          title={caseStudyTitle}
-          subtitle={caseStudySubtitle}
+          title={data.caseStudyStart.caseStudyTitle}
+          subtitle={data.caseStudyStart.caseStudySubtitle}
           textColor={themeText}
       />
       <div className="categories_www_and_case_study_container">
         <div className="paw_finder_categories_container">
           <DisplayCategories
-            categoryList={categories}
+            categoryList={data.caseStudyStart.categories}
             theme={themeColor}
           />
       </div>
       <div className="paw_finder_line"></div>
       <div className="www_and_case_study_container">
-        <WhoWhatWhen theme={themeText} data={whatWhereWhy}/>
+        <WhoWhatWhen theme={themeText} data={data.caseStudyStart.whatWhereWhy}/>
         <section>
           <TypeTwoText
             title={data.whyThisProduct.title}
@@ -56,6 +55,7 @@ export const PawFinder = () => {
               textData={data.marketResearch.desc}
               title={data.marketResearch.title}
               textColor={themeText}
+              elementId={data.marketResearch.elementId}
             />
           </ColoredSection>
         </section>
@@ -65,6 +65,7 @@ export const PawFinder = () => {
             mainData={data.competitiveAnalysis.main}
             orgsData={data.competitiveAnalysis.orgsData}
             badGoodData={data.competitiveAnalysis.badGood}
+            elementId={data.competitiveAnalysis.elementId}
           />
         </section>
         <section>

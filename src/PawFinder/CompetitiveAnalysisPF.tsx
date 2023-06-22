@@ -4,7 +4,8 @@ export const CompetitiveAnalysisPF = ({
   textColor,
   mainData,
   orgsData,
-  badGoodData
+  badGoodData,
+  elementId,
 }:any) => {
   const displayLogos = orgsData.map((data:any, i:any) => {
     return (
@@ -38,7 +39,7 @@ export const CompetitiveAnalysisPF = ({
     )
   })
   return (
-    <div>
+    <div id={elementId}>
       <div className="competitive_analysis_PF_intro_container container_margin">
         <h1 className={`competitive_analysis_PF_title ${textColor}`}>{mainData.title}</h1>
         <p className={`competitive_analysis_PF_desc font_size_desc ${textColor}65`}>{mainData.desc}</p>

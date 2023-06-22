@@ -1,6 +1,6 @@
 import "./MarketResearchPF.css";
 
-export const MarketResearchPF = ({image, title, textData, textColor}:any) => {
+export const MarketResearchPF = ({image, title, textData, textColor, elementId}:any) => {
   const displayDesc = textData.map((textData:any, i:any) => {
     return (
       <article className="market_research_PF_desc_container" key={i}>
@@ -10,7 +10,7 @@ export const MarketResearchPF = ({image, title, textData, textColor}:any) => {
     )
   })
   return (
-    <div className="market_research_PF_container position_relative">
+    <div id={elementId} className="market_research_PF_container position_relative">
       <h1 className="market_research_PF_title">{title}</h1>
       <div className="market_research_PF_flex_column">
         <div className="market_research_PF_text_container">

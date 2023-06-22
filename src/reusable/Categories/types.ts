@@ -7,4 +7,5 @@ export enum ThemesEnum {
 export interface ICategoryProps {
   title: string;
   theme: ThemesEnum;
+  elementId: string;
 }

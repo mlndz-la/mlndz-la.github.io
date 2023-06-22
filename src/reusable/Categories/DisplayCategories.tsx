@@ -1,7 +1,7 @@
 import { Category } from "./Categories";
 
 export const DisplayCategories = ({categoryList, theme}: any) => {
-  const displayList = categoryList.map((string: any, i: any) => <Category title={string} theme={theme} key={i}/>);
+  const displayList = categoryList.map(({title, elementId}: any, i: any) => <Category title={title} theme={theme} elementId={elementId} key={i}/>);
   
   return (
     <>
