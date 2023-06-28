@@ -20,84 +20,78 @@ export const PawFinder = () => {
   const themeText = TextColorEnum.dark;
 
   return (
-  <>
-    <Banner imgSrc={pawFinderData.mockUpImageTopDesktop} endpoint="pawfinder"/>
-    <div className="title_categories_case_study_and_www_container">
-      <CaseStudyTitle
+    <div>
+      <Banner
+        imgSrc={pawFinderData.mockUpImageTopDesktop}
+        endpoint="pawfinder"
+      />
+      <div className="title_categories_case_study_and_www_container">
+        <CaseStudyTitle
           title={data.caseStudyStart.caseStudyTitle}
           subtitle={data.caseStudyStart.caseStudySubtitle}
           textColor={themeText}
-      />
-      <div className="categories_www_and_case_study_container">
-        <div className="paw_finder_categories_container">
-          <DisplayCategories
-            categoryList={data.caseStudyStart.categories}
-            theme={themeColor}
-          />
-      </div>
-      <div className="paw_finder_line"></div>
-      <div className="www_and_case_study_container">
-        <WhoWhatWhen theme={themeText} data={data.caseStudyStart.whatWhereWhy}/>
-        <section>
-          <TypeTwoText
-            title={data.whyThisProduct.title}
-            desc={data.whyThisProduct.desc}
-            textColor={themeText}
-            image={data.whyThisProduct.image}
-            atl="green cartoon with binoculars"
-          />
-        </section>
-        <section>
-          <ColoredSection theme={themeColor}>
-            {/* must have position relative */}
-            <MarketResearchPF
-              image={data.marketResearch.image}
-              textData={data.marketResearch.desc}
-              title={data.marketResearch.title}
+        />
+        <div className="categories_www_and_case_study_container">
+          <div className="paw_finder_categories_container">
+            <DisplayCategories
+              categoryList={data.caseStudyStart.categories}
+              theme={themeColor}
+            />
+          </div>
+          <div className="paw_finder_line"></div>
+          <div className="www_and_case_study_container">
+            <WhoWhatWhen
+              theme={themeText}
+              data={data.caseStudyStart.whatWhereWhy}
+            />
+            <TypeTwoText
+              title={data.whyThisProduct.title}
+              desc={data.whyThisProduct.desc}
               textColor={themeText}
-              elementId={data.marketResearch.elementId}
+              image={data.whyThisProduct.image}
+              atl="green cartoon with binoculars"
             />
-          </ColoredSection>
-        </section>
-        <section>
-          <CompetitiveAnalysisPF
-            textColor={themeText}
-            mainData={data.competitiveAnalysis.main}
-            orgsData={data.competitiveAnalysis.orgsData}
-            badGoodData={data.competitiveAnalysis.badGood}
-            elementId={data.competitiveAnalysis.elementId}
-          />
-        </section>
-        <section>
-          <ColoredSection theme={themeColor}>
-            <NotableComments
-              data={data.notableComments}
-              theme={"comment_light"}
+            <ColoredSection theme={themeColor}>
+              {/* must have position relative */}
+              <MarketResearchPF
+                image={data.marketResearch.image}
+                textData={data.marketResearch.desc}
+                title={data.marketResearch.title}
+                textColor={themeText}
+                elementId={data.marketResearch.elementId}
+              />
+            </ColoredSection>
+            <CompetitiveAnalysisPF
+              textColor={themeText}
+              mainData={data.competitiveAnalysis.main}
+              orgsData={data.competitiveAnalysis.orgsData}
+              badGoodData={data.competitiveAnalysis.badGood}
+              elementId={data.competitiveAnalysis.elementId}
             />
-          </ColoredSection>
-        </section>
-        <section>
-          <ResearchSoFar
-            data={data.researchSoFar}
-            textColor={themeText}
-          />
-        </section>
-        <section>
-          <Personas
-            title={data.personas.title}
-            desc={data.personas.desc}
-            personaOne={data.personas.topImage}
-            personaTwo={data.personas.bottomImage}
-            textColor={themeText}
-            elementId={data.personas.elementId}
-          />
-        </section>
+            <ColoredSection theme={themeColor}>
+              <NotableComments
+                data={data.notableComments}
+                theme={"comment_light"}
+              />
+            </ColoredSection>
+            <ResearchSoFar
+              data={data.researchSoFar}
+              textColor={themeText}
+            />
+            <Personas
+              title={data.personas.title}
+              desc={data.personas.desc}
+              personaOne={data.personas.topImage}
+              personaTwo={data.personas.bottomImage}
+              textColor={themeText}
+              elementId={data.personas.elementId}
+            />
+          </div>
         </div>
       </div>
     </div>
-  </>
-)};
-
+  )
+};
 
 // const test = () => {
 
