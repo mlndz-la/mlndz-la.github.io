@@ -1,0 +1,33 @@
+.time_to_design_title {
+  font-size: .9rem;
+  margin-bottom: 8px;
+}
+
+.time_to_design_container {
+  margin: 0px 4px 32px 18px;
+}
+
+.time_to_design_image {
+  display: none;
+}
+
+@media (min-width: 1008px) {
+  .time_to_design_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time_to_design_text_container {
+    max-width: 488px;
+  }
+
+  .time_to_design_title {
+    font-size: 1rem;
+  }
+
+  .time_to_design_image {
+    display: block;
+    max-width: 196px;
+  }
+}
