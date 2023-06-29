@@ -1,7 +1,6 @@
 import "./Personas.css";
 
 export const Personas = ({title, desc, personaOne, personaTwo, textColor, elementId}:any) => {
-  console.log(elementId)
   return (
     <div className="personas_content white_content_border test" id={elementId}>
       <div className="personas_text_container">

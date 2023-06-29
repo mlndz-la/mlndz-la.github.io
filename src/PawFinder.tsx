@@ -13,28 +13,39 @@ import { NotableComments } from "./PawFinder/NotableComments";
 import { ResearchSoFar } from "./PawFinder/ResearchSoFar";
 import { Personas } from "./PawFinder/Personas";
 import { Banner } from "./reusable/Banner";
+import { TimeToStartDesign } from "./PawFinder/TimeToStartDesign";
 
 export const PawFinder = () => {
-  const data = pawFinderData;
+  const {
+    mockUpImageTopDesktop,
+    caseStudyStart,
+    whyThisProduct,
+    marketResearch,
+    competitiveAnalysis,
+    notableComments,
+    researchSoFar,
+    personas,
+    timeToStartDesign,
+  } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
 
   return (
     <div>
       <Banner
-        imgSrc={pawFinderData.mockUpImageTopDesktop}
+        imgSrc={mockUpImageTopDesktop}
         endpoint="pawfinder"
       />
       <div className="title_categories_case_study_and_www_container">
         <CaseStudyTitle
-          title={data.caseStudyStart.caseStudyTitle}
-          subtitle={data.caseStudyStart.caseStudySubtitle}
+          title={caseStudyStart.caseStudyTitle}
+          subtitle={caseStudyStart.caseStudySubtitle}
           textColor={themeText}
         />
         <div className="categories_www_and_case_study_container">
           <div className="paw_finder_categories_container">
             <DisplayCategories
-              categoryList={data.caseStudyStart.categories}
+              categoryList={caseStudyStart.categories}
               theme={themeColor}
             />
           </div>
@@ -42,49 +53,55 @@ export const PawFinder = () => {
           <div className="www_and_case_study_container">
             <WhoWhatWhen
               theme={themeText}
-              data={data.caseStudyStart.whatWhereWhy}
+              data={caseStudyStart.whatWhereWhy}
             />
             <TypeTwoText
-              title={data.whyThisProduct.title}
-              desc={data.whyThisProduct.desc}
+              title={whyThisProduct.title}
+              desc={whyThisProduct.desc}
               textColor={themeText}
-              image={data.whyThisProduct.image}
+              image={whyThisProduct.image}
               atl="green cartoon with binoculars"
             />
             <ColoredSection theme={themeColor}>
               {/* must have position relative */}
               <MarketResearchPF
-                image={data.marketResearch.image}
-                textData={data.marketResearch.desc}
-                title={data.marketResearch.title}
+                image={marketResearch.image}
+                textData={marketResearch.desc}
+                title={marketResearch.title}
                 textColor={themeText}
-                elementId={data.marketResearch.elementId}
+                elementId={marketResearch.elementId}
               />
             </ColoredSection>
             <CompetitiveAnalysisPF
               textColor={themeText}
-              mainData={data.competitiveAnalysis.main}
-              orgsData={data.competitiveAnalysis.orgsData}
-              badGoodData={data.competitiveAnalysis.badGood}
-              elementId={data.competitiveAnalysis.elementId}
+              mainData={competitiveAnalysis.main}
+              orgsData={competitiveAnalysis.orgsData}
+              badGoodData={competitiveAnalysis.badGood}
+              elementId={competitiveAnalysis.elementId}
             />
             <ColoredSection theme={themeColor}>
               <NotableComments
-                data={data.notableComments}
+                data={notableComments}
                 theme={"comment_light"}
               />
             </ColoredSection>
             <ResearchSoFar
-              data={data.researchSoFar}
+              data={researchSoFar}
               textColor={themeText}
             />
             <Personas
-              title={data.personas.title}
-              desc={data.personas.desc}
-              personaOne={data.personas.topImage}
-              personaTwo={data.personas.bottomImage}
+              title={personas.title}
+              desc={personas.desc}
+              personaOne={personas.topImage}
+              personaTwo={personas.bottomImage}
               textColor={themeText}
-              elementId={data.personas.elementId}
+              elementId={personas.elementId}
+            />
+            <TimeToStartDesign
+              title={timeToStartDesign.title}
+              desc={timeToStartDesign.desc}
+              image={timeToStartDesign.image}
+              textColor={themeText}
             />
           </div>
         </div>
