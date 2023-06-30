@@ -14,6 +14,7 @@ import { ResearchSoFar } from "./PawFinder/ResearchSoFar";
 import { Personas } from "./PawFinder/Personas";
 import { Banner } from "./reusable/Banner";
 import { TimeToStartDesign } from "./PawFinder/TimeToStartDesign";
+import { FlowDiagram } from "./PawFinder/FlowDiagram";
 
 export const PawFinder = () => {
   const {
@@ -26,6 +27,7 @@ export const PawFinder = () => {
     researchSoFar,
     personas,
     timeToStartDesign,
+    flowDiagram,
   } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
@@ -103,6 +105,16 @@ export const PawFinder = () => {
               image={timeToStartDesign.image}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <FlowDiagram
+                title={flowDiagram.title}
+                desc={flowDiagram.desc}
+                imageTitle={flowDiagram.imageTitle}
+                image={flowDiagram.image}
+                elementId={flowDiagram.elementId}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>

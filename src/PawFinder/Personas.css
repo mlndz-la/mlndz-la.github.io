@@ -1,44 +1,44 @@
-.personas_image {
+.personas_image_PF {
   width: 100%;
   border: 1px solid rgba(194, 214, 200, 0.5);
 }
 
-.personas_title {
+.personas_title_PF {
   margin-bottom: 8px;
   font-size: 1.2rem;
 }
 
-.personas_text_container {
+.personas_text_container_PF {
   margin: 0px 4px 24px 18px;
 }
 
-.personas_image_one {
+.personas_image_one_PF {
   margin-bottom: 24px;
 }
 
-.personas_image_two {
+.personas_image_two_PF {
   margin-bottom: 32px;
 }
 
 @media (min-width: 1008px) {
-  .personas_image {
+  .personas_image_PF {
     width: 80%;
     border-radius: 15px;
     border: 1.5px solid rgba(194, 214, 200, 0.5);
 
   }
-  .personas_image_one {
+  .personas_image_one_PF {
     margin-bottom: 46px;
   } 
-  .personas_image_two {
+  .personas_image_two_PF {
     margin-bottom: 64px;
   }
-  .personas_image_container {
+  .personas_image_container_PF {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .personas_content {
+  .personas_content_PF {
     padding-top: 32px;
   }
 }

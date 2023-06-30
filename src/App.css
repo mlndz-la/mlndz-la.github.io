@@ -112,6 +112,9 @@
 .white_content_border {
   border: 0.25px solid white;
 }
+.font_size_title {
+  font-size: .9rem;
+}
 
 @media (min-width: 1008px) {
   .container_margin {
@@ -119,5 +122,8 @@
   }
   .font_size_desc {
     font-size: 1.2rem;
+  }
+  .font_size_title {
+    font-size: 1rem;
   }
 }
