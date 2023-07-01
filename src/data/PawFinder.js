@@ -179,7 +179,7 @@ export const pawFinderData = {
   paperWireframe: {
     title: "Paper Wireframe",
     desc: "Paper wireframes were created and tested for the purposes of catching errors early on in the process. Exercises such as crazy eights and HMW's were used to develop these frames.",
-    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/20221108_161853.png",
+    image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/20221108_161853.jpg",
     imageDesc: "Once the paper wireframes were created, it was time to test these frames in person in order to catch any errors early on.  Note: a digital scanner was used to get these images onto this website.",
     elementId: "pf_paper_wireframe"
   },
