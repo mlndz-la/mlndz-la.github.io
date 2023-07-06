@@ -104,13 +104,13 @@
   position: relative;
 }
 .container_margin {
-  margin: 16px 4px 16px 18px;
+  margin: 24px 4px 24px 18px;
 }
 .font_size_desc {
   font-size: 1.1rem;
 }
 .white_content_border {
-  border: 0.25px solid white;
+  border: 0.10px solid white;
 }
 .font_size_title {
   font-size: .9rem;
