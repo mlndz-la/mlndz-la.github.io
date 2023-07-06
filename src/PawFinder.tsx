@@ -16,6 +16,7 @@ import { Banner } from "./reusable/Banner";
 import { TimeToStartDesign } from "./PawFinder/TimeToStartDesign";
 import { FlowDiagram } from "./PawFinder/FlowDiagram";
 import { PaperWireframe } from "./PawFinder/PaperWireframe";
+import { Testing } from "./PawFinder/Testing";
 
 export const PawFinder = () => {
   const {
@@ -30,6 +31,7 @@ export const PawFinder = () => {
     timeToStartDesign,
     flowDiagram,
     paperWireframe,
+    testing,
   } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
@@ -123,6 +125,12 @@ export const PawFinder = () => {
               image={paperWireframe.image}
               imageDesc={paperWireframe.imageDesc}
               elementId={paperWireframe.elementId}
+              textColor={themeText}
+            />
+            <Testing
+              title={testing.title}
+              desc={testing.desc}
+              image={testing.image}
               textColor={themeText}
             />
           </div>

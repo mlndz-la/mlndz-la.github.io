@@ -3,6 +3,10 @@
   border: 1px solid rgba(194, 214, 200, 0.5);
 }
 
+.personas_content_PF {
+  padding-top: 24px;
+}
+
 .personas_title_PF {
   margin-bottom: 8px;
   font-size: 1.2rem;
