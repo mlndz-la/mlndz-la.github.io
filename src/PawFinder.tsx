@@ -17,6 +17,7 @@ import { TimeToStartDesign } from "./PawFinder/TimeToStartDesign";
 import { FlowDiagram } from "./PawFinder/FlowDiagram";
 import { PaperWireframe } from "./PawFinder/PaperWireframe";
 import { Testing } from "./PawFinder/Testing";
+import { LowFidelity } from "./PawFinder/LowFidelity";
 
 export const PawFinder = () => {
   const {
@@ -32,6 +33,7 @@ export const PawFinder = () => {
     flowDiagram,
     paperWireframe,
     testing,
+    lowFidelityUIDesign,
   } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
@@ -131,6 +133,13 @@ export const PawFinder = () => {
               title={testing.title}
               desc={testing.desc}
               image={testing.image}
+              textColor={themeText}
+            />
+            <LowFidelity
+              title={lowFidelityUIDesign.title}
+              desc={lowFidelityUIDesign.desc}
+              image={lowFidelityUIDesign.image}
+              elementId={lowFidelityUIDesign.elementId}
               textColor={themeText}
             />
           </div>
