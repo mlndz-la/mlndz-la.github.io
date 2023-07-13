@@ -3,20 +3,24 @@
 }
 
 .low_fidelity_title_PF {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   font-size: 1.2rem;
 }
 
 .low_fidelity_image_PF {
   max-width: 100%;
+  padding-bottom: 24px;
 }
 
 @media (min-width: 1008px) {
+  .low_fidelity_text_container_PF {
+    padding-top: 46px;
+  }
   .low_fidelity_container_PF {
-    margin: 0px 8px 0px 18px;
+    padding: 0px 8px 0px 18px;
   }
   .low_fidelity_image_PF {
-    max-width: 751px;
+    max-width: 951px;
   }
   .low_fidelity_image_container_PF {
     display: flex;
