@@ -1,0 +1,134 @@
+.high_fidelity_section_PF {
+  position: relative;
+}
+
+.hf_text_container_PF {
+  padding: 24px 8px 0px 18px;
+}
+
+.hf_title_PF {
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.hf_cp_font_size_title_PF {
+  margin-bottom: 4px;
+}
+.hf_cp_font_size_desc_PF {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.hf_main_content_PF {
+  padding: 24px 18px 24px 18px;
+}
+
+.hf_color_palette_container_PF {
+  padding-bottom: 24px;
+}
+.hf_color_circles_container_PF {
+  display: flex;
+  gap: 12px;
+}
+.circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+}
+.first_PF {
+  background-color: var(--color1PF);
+}
+.second_PF {
+  background-color: var(--color2PF);
+}
+.third_PF {
+  background-color: var(--color3PF);
+}
+.fourth_PF {
+  background-color: var(--color4PF);
+}
+.fifth_PF {
+  background-color: var(--color5PF);
+}
+
+.hf_font_container_PF {
+  padding-bottom: 24px;
+}
+.hf_cp_font_size_alphabet_PF {
+  font-size: 2rem;
+}
+
+.hf_look_and_feel_container_PF {
+  padding-bottom: 24px;
+}
+
+.hf_button_container_PF {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 24px;
+}
+.hf_button_PF {
+  width: 40%;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hf_dark_button_PF {
+  background-color: var(--color2PF);
+}
+.hf_dark_button_text_PF {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.hf_light_button_PF {
+  background-color: var(--color5PF);
+}
+.hf_light_button_text_PF {
+  font-size: 1rem;
+  color: var(--color3PF);
+}
+.hf_icons_container_PF {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hf_icon_PF {
+  max-width: 30px;
+}
+
+@media (min-width: 1008px) {
+  .hf_text_container_PF {
+    padding: 46px 18px 0px 18px;
+  }
+  .hf_main_content_PF {
+    padding: 46px 64px;
+  }
+  .hf_font_and_color_container_PF {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hf_feel_and_imagery_container_PF {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hf_cp_font_feel_PF {
+    max-width: 450px;
+  }
+  .hf_imagery_container_PF {
+    min-width: 450px;
+  }
+  .hf_icon_PF {
+    max-width: 34px;
+  }
+  .hf_look_and_feel_container_PF {
+    padding-bottom: 0px;
+  }
+  .hf_color_palette_container_PF {
+    padding-bottom: 46px;
+  }
+  .hf_font_container_PF {
+    padding-bottom: 46px;
+  }
+}
