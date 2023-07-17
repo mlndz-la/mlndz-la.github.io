@@ -21,6 +21,7 @@ import { LowFidelity } from "./PawFinder/LowFidelity";
 import { HighFidelityPF } from "./PawFinder/HighFidelityPF";
 import { TwentyNineDesigns } from "./PawFinder/TwentyNineDesigns";
 import { HighFidPrototypePF } from "./PawFinder/HighFidPrototypePF";
+import { UsabilityStudyPF } from "./PawFinder/UsabilityStudyPF";
 
 export const PawFinder = () => {
   const {
@@ -39,7 +40,9 @@ export const PawFinder = () => {
     lowFidelityUIDesign,
     highFidelityUIDesign,
     highFidelityDesign,
-    highFidelityPrototype
+    highFidelityPrototype,
+    usability,
+    studyResults,
   } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
@@ -161,6 +164,10 @@ export const PawFinder = () => {
             />
             <HighFidPrototypePF
               data={highFidelityPrototype}
+              textColor={themeText}
+            />
+            <UsabilityStudyPF
+              data={{usability, studyResults}}
               textColor={themeText}
             />
           </div>
