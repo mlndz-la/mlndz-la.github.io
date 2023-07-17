@@ -1,0 +1,29 @@
+.hf_prototype_container_PF {
+  padding: 24px 8px 484px 18px;
+}
+
+.hf_prototype_title_PF {
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.hf_prototype_image_container_PF {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0px;
+}
+.hf_prototype_image_PF {
+  max-width: 100vw;
+}
+.hf_prototype_link_PF {
+  color: #3385FF;
+  opacity: .75;
+}
+
+@media (min-width: 1008px) {
+  .hf_prototype_container_PF {
+    padding: 0px 8px 46px 18px;
+  }
+}
