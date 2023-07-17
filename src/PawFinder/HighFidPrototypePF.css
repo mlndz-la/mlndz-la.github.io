@@ -1,5 +1,5 @@
 .hf_prototype_container_PF {
-  padding: 24px 8px 484px 18px;
+  padding: 24px 8px 24px 18px;
 }
 
 .hf_prototype_title_PF {
@@ -24,6 +24,6 @@
 
 @media (min-width: 1008px) {
   .hf_prototype_container_PF {
-    padding: 0px 8px 46px 18px;
+    padding: 0px 8px 20px 18px;
   }
 }
