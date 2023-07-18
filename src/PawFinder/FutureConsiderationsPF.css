@@ -1,0 +1,25 @@
+.future_consideration_text_container_PF {
+  padding: 0px 8px 0px 18px;
+}
+
+.future_consideration_title_PF {
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.future_consideration_image_container_PF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.future_consideration_image_PF {
+  max-width: 100%;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 1008px) {
+  .future_consideration_image_PF {
+    max-width: 951px;
+    padding-bottom: 0px;
+  }
+}
