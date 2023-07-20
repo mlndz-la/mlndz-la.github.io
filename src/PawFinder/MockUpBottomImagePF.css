@@ -1,0 +1,20 @@
+.mubi_image_container_PF {
+  position: relative;
+}
+
+.mubi_image_PF {
+  max-width: 100%;
+  margin: 12px 0px;
+}
+
+@media (min-width: 1008px) {
+  .mubi_image_PF {
+    max-width: 1017px;
+    margin: 0px 0px;
+  }  
+  .mubi_image_container_PF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
