@@ -1,5 +1,5 @@
 .case_study_title_container {
-  margin: 15px;
+  padding: 15px 18px 24px;
 }
 
 .case_study_title {
@@ -9,6 +9,13 @@
 .case_study_subtitle {
   font-size: 1rem;
 }
+
+@media (min-width: 700px) {
+  .case_study_title_container {
+    min-width: 1324px;
+  }
+}
+
 
 @media (min-width: 1008px) {
   .case_study_title_container {

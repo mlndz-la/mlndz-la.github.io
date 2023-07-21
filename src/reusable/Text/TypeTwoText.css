@@ -14,6 +14,18 @@
 .type_two_paragraph {
 }
 
+@media (min-width: 700px) {
+  .type_two_text_container {
+    max-width: 429px;
+    padding: 48px 4px 48px 18px;
+  }
+  .type_two_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (min-width: 1008px) {
   .type_two_container {
     display: flex;
