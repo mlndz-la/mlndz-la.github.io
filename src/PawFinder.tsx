@@ -24,6 +24,8 @@ import { HighFidPrototypePF } from "./PawFinder/HighFidPrototypePF";
 import { UsabilityStudyPF } from "./PawFinder/UsabilityStudyPF";
 import { FutureConsiderationsPF } from "./PawFinder/FutureConsiderationsPF";
 import { AccessibilityCheckPF } from "./PawFinder/AccessibilityCheckPF";
+import { ProductSummaryPF } from "./PawFinder/ProductSummaryPF";
+import { MockUpBottomImagePF } from "./PawFinder/MockUpBottomImagePF";
 
 export const PawFinder = () => {
   const {
@@ -46,7 +48,9 @@ export const PawFinder = () => {
     usability,
     studyResults,
     futureConsideration,
-    accessibilityCheck
+    accessibilityCheck,
+    productOverview,
+    mockUpImageBottom,
   } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
@@ -184,6 +188,16 @@ export const PawFinder = () => {
                 textColor={themeText}
               />
             </ColoredSection>
+            <ProductSummaryPF
+              data={productOverview}
+              textColor={themeText}
+            />
+            <ColoredSection theme={themeColor}>
+              <MockUpBottomImagePF
+                image={mockUpImageBottom}
+              />
+            </ColoredSection>
+            {/* Recommendations are added here */}
           </div>
         </div>
       </div>
