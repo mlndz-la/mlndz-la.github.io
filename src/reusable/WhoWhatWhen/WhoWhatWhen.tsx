@@ -7,7 +7,7 @@ export const WhoWhatWhen = ({data, theme}:any) => {
   })
 
   return (
-    <div className="WhoWhatWhen_container www_TEST">
+    <div className="WhoWhatWhen_container">
       {displayWhoWhatWhen}
     </div>
   )
