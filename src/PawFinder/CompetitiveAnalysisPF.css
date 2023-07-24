@@ -52,7 +52,21 @@
 .competitive_analysis_PF_screenshot_container {
   display: none;
 }
-
+@media (min-width: 700px) {
+    .competitive_analysis_PF_companies_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 24px 8px 32px 18px;
+    gap: 24px;
+  }
+  .competitive_analysis_PF_logo_title_container {
+    justify-content: space-evenly;
+    gap: 12px;
+  }
+  .competitive_analysis_PF_intro_container{
+    margin: 32px 18px 0px 18px;
+  }
+}
 @media (min-width: 1008px) {
   .competitive_analysis_PF_good_bad_container {
     gap: 16px;

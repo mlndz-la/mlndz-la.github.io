@@ -10,7 +10,11 @@
 .study_results_text_container_PF {
   padding-top: 24px;
 }
-
+@media (min-width: 700px) {
+.usability_container_PF {
+  padding: 32px 8px 48px 18px;
+}
+}
 @media (min-width: 1008px) {
   .usability_container_PF {
     padding: 46px 8px 64px 18px;

@@ -22,6 +22,15 @@
   margin-bottom: 11px;
 }
 
+@media (min-width: 700px) {
+  .flow_diagram_text_container_PF {
+    padding: 32px 12px 32px 18px;
+  }
+  .flow_diagram_image_PF {
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+}
 @media (min-width: 1008px) {
   .flow_diagram_image_PF {
     max-width: 80%;

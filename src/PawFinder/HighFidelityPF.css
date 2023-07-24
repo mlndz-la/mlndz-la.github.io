@@ -97,7 +97,34 @@
 .hf_icon_PF {
   max-width: 30px;
 }
-
+@media (min-width: 700px) {
+  .hf_font_and_color_container_PF {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hf_feel_and_imagery_container_PF {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hf_text_container_PF {
+    padding: 32px 8px 0px 18px;
+  }
+  .hf_main_content_PF {
+    padding: 32px 18px;
+  }
+  .hf_color_palette_container_PF {
+    padding-bottom: 32px;
+  }
+  .hf_font_container_PF {
+    padding-bottom: 32px;
+  }
+  .hf_cp_font_feel_PF {
+    min-width: 50%;
+  }
+  .hf_imagery_container_PF {
+    min-width: 50%;
+  }
+}
 @media (min-width: 1008px) {
   .hf_text_container_PF {
     padding: 46px 18px 0px 18px;

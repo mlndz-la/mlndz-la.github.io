@@ -22,6 +22,14 @@
   color: #3385FF;
   opacity: .75;
 }
+@media (min-width: 700px) {
+  .hf_prototype_text_container_PF{
+    padding: 32px 8px 0px 18px;
+  }
+  .hf_prototype_text_link_PF {
+    padding: 0px 8px 16px 18px;
+  }
+}
 
 @media (min-width: 1008px) {
   .hf_prototype_text_container_PF{

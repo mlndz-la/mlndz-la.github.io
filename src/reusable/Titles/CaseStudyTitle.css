@@ -12,7 +12,8 @@
 
 @media (min-width: 700px) {
   .case_study_title_container {
-    min-width: 1324px;
+    min-width: 100%;
+    padding: 24px 18px 24px;
   }
 }
 
