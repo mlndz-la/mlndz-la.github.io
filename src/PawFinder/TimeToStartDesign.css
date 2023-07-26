@@ -10,7 +10,20 @@
 .time_to_design_image {
   display: none;
 }
-
+@media (min-width: 700px) {
+  .time_to_design_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .time_to_design_text_container {
+    max-width: 488px;
+  }
+  .time_to_design_container {
+    margin: 0px 4px 46px 18px;
+  }
+}
 @media (min-width: 1008px) {
   .time_to_design_container {
     display: flex;

@@ -9,7 +9,17 @@
 .ps_image_PF {
   display: none;
 }
-
+@media (min-width: 700px) {
+  .ps_container_PF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ps_text_container_PF {
+    padding: 46px 0px;
+    max-width: 450px;
+  }
+}
 @media (min-width: 1008px) {
   .ps_text_container_PF {
     padding: 0px 0px;

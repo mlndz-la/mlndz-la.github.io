@@ -134,7 +134,7 @@ export const pawFinderData = {
     {
       name: "Fiona",
       profilePic: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Fiona.png",
-      comment: "Looking for a dog for my small apartment, it is a lot of work to search through multiple apps for the \"one\"."
+      comment: "I want a dog for my home, its a lot of work to search through multiple apps for the \"one.\""
     },
     {
       name: "Sam",
@@ -149,7 +149,7 @@ export const pawFinderData = {
     {
       name: "Jesse",
       profilePic: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Jesse.png",
-      comment: "Finding a new puppy can be hard but finding a good collection of puppies is harder."
+      comment: "Finding a new dog can be hard but finding a good collection of puppies is harder."
     }
   ],
   researchSoFar: {

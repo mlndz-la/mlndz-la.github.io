@@ -25,10 +25,20 @@
   padding: 2px;
   border-radius: 5px;
 }
-
 .WhoWhatWhen_line_PF { background-color: var(--secondaryPF); }
 .WhoWhatWhen_line_CK { background-color: var(--secondaryCK); }
 .WhoWhatWhen_line_TC { background-color: var(--secondaryTC); }
+
+@media (min-width: 700px) {
+  .WhoWhatWhen_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .WhoWhatWhen_Card {
+    min-width: 25.3%;
+  }
+}
 
 @media (min-width: 1008px) {
   .WhoWhatWhen_Card {
@@ -39,6 +49,7 @@
   }
 
   .WhoWhatWhen_Card {
+    min-width: auto;
     width: 33.3%;
   }
 

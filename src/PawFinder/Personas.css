@@ -24,6 +24,14 @@
   margin-bottom: 32px;
 }
 
+@media (min-width: 700px) {
+  .personas_content_PF {
+    padding-top: 32px;
+  }
+  .personas_image_two_PF {
+    margin-bottom: 46px;
+  }
+}
 @media (min-width: 1008px) {
   .personas_image_PF {
     width: 80%;
@@ -44,5 +52,8 @@
   }
   .personas_content_PF {
     padding-top: 46px;
+  }
+  .personas_text_container_PF {
+    margin: 0px 4px 46px 18px;
   }
 }

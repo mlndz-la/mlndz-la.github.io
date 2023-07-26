@@ -13,7 +13,17 @@
   font-size: 1.2rem;
   margin-bottom: 24px;
 }
-
+@media (min-width: 700px) {
+  .notable_comments_comment_box_container {
+    flex-wrap: wrap;
+    align-items: normal;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .notable_comments_content {
+    padding: 32px 18px 32px 18px;
+    }
+}
 @media (min-width: 1008px) {
   .notable_comments_content {
   padding: 46px 18px 46px 18px;
@@ -21,6 +31,7 @@
   .notable_comments_comment_box_container {
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
   }
   .notable_comments_title {
     font-size: 1.2rem;
