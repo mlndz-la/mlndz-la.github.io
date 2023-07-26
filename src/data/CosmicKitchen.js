@@ -6,17 +6,47 @@ export const cosmicKitchenData = {
   caseStudyStart: {
     caseStudyTitle: "Cosmic Kitchen",
     caseStudySubtitle: "The kitchen of tomorrow",
-    caseStudyCategories: [
-      "Research & Analysis",
-      "Global Market Research",
-      "Target Audience",
-      "Pain Points",
-      "Information Architecture",
-      "Low-fidelity UI",
-      "High-fidelity UI",
-      "Prototype",
-      "Usability Study",
-      "Accessibility Check",
+    categories: [
+      {
+        title: "Research",
+        elementId: "kc_research_and_analysis"
+      },
+      {
+        title: "Global Market Research",
+        elementId: "kc_global_market_research"
+      },
+      {
+        title: "Target Audience",
+        elementIdL: "kc_target_audience"
+      },
+      {
+        title: "Pain Points",
+        elementId: "kc_pain_points"
+      },
+      {
+        title: "Information Architecture",
+        elementId: "kc_information_architecture"
+      },
+      {
+        title: "Low-fidelity UI",
+        elementId: "kc_low_fidelity_ui"
+      },
+      {
+        title: "High-fidelity UI",
+        elementId: "kc_high_fidelity_ui"
+      },
+      {
+        title: "Prototype",
+        elementId: "kc_prototype"
+      },
+      {
+        title: "Usability Study",
+        elementId: "kc_usability_study"
+      },
+      {
+        title: "Accessibility Check",
+        elementId: "kc_accessibility_check"
+      }
     ],
     whatWhereWhy: [
       {

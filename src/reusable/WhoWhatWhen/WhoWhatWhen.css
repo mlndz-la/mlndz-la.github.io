@@ -21,11 +21,14 @@
   font-size: 1.2rem;
 }
 
-.WhoWhatWhen_line_pf {
-  width: 4px;
+.WhoWhatWhen_line {
+  padding: 2px;
   border-radius: 5px;
-  background-color: var(--secondaryPF);
 }
+
+.WhoWhatWhen_line_PF { background-color: var(--secondaryPF); }
+.WhoWhatWhen_line_CK { background-color: var(--secondaryCK); }
+.WhoWhatWhen_line_TC { background-color: var(--secondaryTC); }
 
 @media (min-width: 1008px) {
   .WhoWhatWhen_Card {

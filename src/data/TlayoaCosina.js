@@ -6,17 +6,47 @@ export const tlayoaCosinaData = {
   caseStudyStart: {
     caseStudyTitle: "Tlayoa's Cosina",
     caseStudySubtitle: "Authentic Mexican food at your finger tips",
-    caseStudyCategories: [
-      "Market Research",
-      "Competitive Analysis",
-      "User Survey",
-      "Personas",
-      "Flow Diagram",
-      "Low-fidelity UI",
-      "High-fidelity UI",
-      "Prototype",
-      "Usability Study",
-      "Accessibility Evaluation",
+    categories: [
+      {
+        title: "Market Research",
+        elementId: "tc_market_research"
+      },
+      {
+        title: "Competitive Analysis",
+        elementId: "tc_competitive_analysis"
+      },
+      {
+        title: "User Survey",
+        elementId: "tc_user_survey"
+      },
+      {
+        title: "Personas",
+        elementId: "tc_personas"
+      },
+      {
+        title: "Flow Diagram",
+        elementId: "tc_flow_diagram"
+      },
+      {
+        title: "Low-fidelity UI",
+        elementId: "tc_low_fidelity_ui"
+      },
+      {
+        title: "High-fidelity UI",
+        elementId: "tc_high_fidelity_ui"
+      },
+      {
+        title: "Prototype",
+        elementId: "tc_prototype"
+      },
+      {
+        title: "Usability Study",
+        elementId: "tc_usability_study"
+      },
+      {
+        title: "Accessibility Check",
+        elementId: "tc_accessibility_check"
+      }
     ],
     whatWhereWhy: [
       {

@@ -26,6 +26,7 @@ import { FutureConsiderationsPF } from "./PawFinder/FutureConsiderationsPF";
 import { AccessibilityCheckPF } from "./PawFinder/AccessibilityCheckPF";
 import { ProductSummaryPF } from "./PawFinder/ProductSummaryPF";
 import { MockUpBottomImagePF } from "./PawFinder/MockUpBottomImagePF";
+import { ColoredLine } from "./reusable/ColoredLine";
 
 export const PawFinder = () => {
   const {
@@ -54,6 +55,7 @@ export const PawFinder = () => {
   } = pawFinderData;
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
+  const themeName = ThemesEnum.pf
 
   return (
     <div>
@@ -68,17 +70,18 @@ export const PawFinder = () => {
           textColor={themeText}
         />
         <div className="categories_www_and_case_study_container">
-          <div className="paw_finder_categories_container">
+          <div className="categories_container">
             <DisplayCategories
               categoryList={caseStudyStart.categories}
               theme={themeColor}
             />
           </div>
-          <div className="paw_finder_line"></div>
+          <ColoredLine themeName={themeName}/>
           <div className="www_and_case_study_container">
             <WhoWhatWhen
               theme={themeText}
               data={caseStudyStart.whatWhereWhy}
+              themeName={themeName}
             />
             <TypeTwoText
               title={whyThisProduct.title}
@@ -198,7 +201,7 @@ export const PawFinder = () => {
               />
             </ColoredSection>
             {/* Recommendations are added here */}
-          </div>
+          C</div>
         </div>
       </div>
     </div>
@@ -212,7 +215,7 @@ export const PawFinder = () => {
 //     <div className="banner_TEST">Banner</div>
 //       <div className="title_categories_case_study_and_www_container">
 //         <div className="categories_www_and_case_study_container">
-//           <div className="CASE_STUDY_categories_container">
+//           <div className="categories_container">
             
 //           </div>
 //           <div className="CASE_STUDY_line"></div>
