@@ -1,0 +1,16 @@
+.wtp_container_ck {
+  padding: 30px 8px 30px 18px;
+}
+
+@media (min-width: 700px) {
+  .wtp_container_ck {
+    padding: 46px 0px;
+    max-width: 429px;
+    margin: auto;
+  }
+}
+@media (min-width: 1008px) {
+  .wtp_container_ck {
+    max-width: 600px;
+  }
+}

@@ -87,12 +87,18 @@
 .dark {
   color: var(--dark);
 }
+.dark50 {
+  color: var(--dark50);
+}
 .dark65 {
   color: var(--dark65);
 }
 
 .light {
   color: var(--light);
+}
+.light50 {
+  color: var(--light50);
 }
 .light65 {
   color: var(--light65);
@@ -113,9 +119,26 @@
   border: 0.10px solid white;
 }
 .font_size_title {
-  font-size: .9rem;
+  padding-bottom: 8px;
+  font-size: 1.2rem;
 }
-
+.title_categories_case_study_and_www_container {
+  display: flex;
+  flex-direction: column;
+}
+.categories_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  max-height: 600px;
+  z-index: 1;
+}
+.categories_www_and_case_study_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1324px;
+}
 @media (min-width: 1008px) {
   .container_margin {
     margin: 16px 18px 16px 18px;
@@ -125,5 +148,23 @@
   }
   .font_size_title {
     font-size: 1rem;
+  }
+  .title_categories_case_study_and_www_container {
+    align-items: center;
+  }
+  .categories_container {
+    max-width: 12.5em;
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-start;
+    top: 0;
+    overflow-y: auto;
+  }
+  .categories_www_and_case_study_container {
+    min-width: 1324px;
+    flex-direction: row;
+  }
+  .www_and_case_study_container {
+    min-width: 1100px;
   }
 }
