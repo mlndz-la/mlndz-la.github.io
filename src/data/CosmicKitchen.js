@@ -103,6 +103,7 @@ export const cosmicKitchenData = {
         "French Door Refrigerators",
       ],
     },
+    elementId: "kc_research_and_analysis",
   },
   globalMarketResearch: {
     title: "Global Market Research",

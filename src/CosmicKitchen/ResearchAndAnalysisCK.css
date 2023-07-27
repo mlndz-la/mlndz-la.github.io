@@ -1,0 +1,52 @@
+.raa_container_ck {
+  position: relative;
+}
+.raa_text_container_ck {
+  padding: 24px 8px 24px 18px;
+}
+.raa_text_title_ck {
+  padding-bottom: 0px;
+}
+.raa_refrigerator_list_ck {
+  padding-top: 24px;
+}
+.raa_leaders_list_ck {
+  padding-top: 24px;
+}
+.raa_image_container_ck{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+.raa_image_ck {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 700px) {
+  .raa_container_ck {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 18px;
+  }
+  .raa_image_container_ck{
+    padding-bottom: 0px;
+  }
+  .raa_image_ck {
+    width: 400px;
+  }
+  .raa_text_container_ck {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .raa_container_ck {
+    justify-content: space-around;
+    padding: 46px 18px;
+  }
+}
