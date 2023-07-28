@@ -17,7 +17,7 @@ export const cosmicKitchenData = {
       },
       {
         title: "Target Audience",
-        elementIdL: "kc_target_audience"
+        elementId: "kc_target_audience"
       },
       {
         title: "Pain Points",
@@ -110,6 +110,7 @@ export const cosmicKitchenData = {
     desc: "The popularity of smart refrigerators is rising rapidly in Asia. Europe is currently in second place, and smart refrigerators are beginning to gain popularity in the Western world. In 2025, its value is predicted to increase by $4.56 billion.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Potential_Growth.png",
+    elementId: "kc_global_market_research"
   },
   targetAudience: {
     title: "Target Audience",
@@ -118,6 +119,7 @@ export const cosmicKitchenData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Range.png",
     imageDesc:
       "People spend more money on advanced smart refrigerators in general.",
+    elementId: "kc_target_audience"
   },
   users: {
     title: "Users",

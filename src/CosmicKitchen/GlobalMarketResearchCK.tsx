@@ -13,8 +13,8 @@ export const GlobalMarketResearchCK = ({
   ));
 
   return (
-    <div className="gmr_container_ck">
-      <div className="gmr_text_container_ck">
+    <div className="gmr_and_ta_container_ck">
+      <div id={globalMarketResearchData.elementId} className="gmr_text_container_ck">
         <h1
           className={`font_size_main_title margin_bottom_main_title ${textColor}`}
         >
@@ -28,7 +28,7 @@ export const GlobalMarketResearchCK = ({
         <img className="gmr_image_ck" src={globalMarketResearchData.image} />
       </div>
 
-      <div className="ta_text_container_ck">
+      <div id={targetAudienceData.elementId} className="ta_text_container_ck">
         <h1
           className={`font_size_main_title margin_bottom_main_title ${textColor}`}
         >
