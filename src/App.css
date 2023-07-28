@@ -142,6 +142,9 @@
   flex-direction: column;
   max-width: 1324px;
 }
+.margin_bottom_main_title {
+  margin-bottom: 8px;
+}
 @media (min-width: 1008px) {
   .container_margin {
     margin: 16px 18px 16px 18px;

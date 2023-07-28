@@ -10,6 +10,7 @@ import { WhoWhatWhen } from "./reusable/WhoWhatWhen/WhoWhatWhen";
 import { WhyThisProduct } from "./CosmicKitchen/WhyThisProduct";
 import { ResearchAndAnalysisCK } from "./CosmicKitchen/ResearchAndAnalysisCK";
 import { ColoredSection } from "./reusable/ColoredSection";
+import { GlobalMarketResearchCK } from "./CosmicKitchen/GlobalMarketResearchCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -19,6 +20,9 @@ export const CosmicKitchen = () => {
     caseStudyStart,
     whyThisProduct,
     researchAndAnalysis,
+    globalMarketResearch,
+    targetAudience,
+    users,
   } = cosmicKitchenData;
 
   return (
@@ -54,6 +58,12 @@ export const CosmicKitchen = () => {
                 textColor={themeText}
               />
             </ColoredSection>
+            <GlobalMarketResearchCK
+              globalMarketResearchData={globalMarketResearch}
+              targetAudienceData={targetAudience}
+              usersData={users}
+              textColor={themeText}
+            />
           </div>
         </div>
       </div>
