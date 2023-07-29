@@ -13,6 +13,11 @@
 }
 .ta_image_container_ck {
   margin-bottom: 24px;
+  flex-direction: column;
+}
+.ta_image_desc_ck {
+  padding-top: 8px;
+  text-align: center;
 }
 
 .gmr_image_ck, .ta_image_ck {
@@ -45,7 +50,10 @@
   .ta_text_container_ck {
   padding: 32px 18px 24px 18px;
   }
-
+  .ta_image_desc_ck {
+    padding-left: 0px;
+    padding-top: 12px;
+  }
   .ta_image_ck {
     width: 90%;
     border-radius: 15px;

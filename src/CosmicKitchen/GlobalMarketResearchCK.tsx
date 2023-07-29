@@ -40,6 +40,7 @@ export const GlobalMarketResearchCK = ({
       </div>
       <div className="ta_image_container_ck">
         <img className="ta_image_ck" src={targetAudienceData.image} />
+        <p className={`ta_image_desc_ck font_size_desc ${textColor}50`}>{targetAudienceData.imageDesc}</p>
       </div>
 
       <div className="users_text_container_ck">
