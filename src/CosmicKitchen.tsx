@@ -11,6 +11,8 @@ import { WhyThisProduct } from "./CosmicKitchen/WhyThisProduct";
 import { ResearchAndAnalysisCK } from "./CosmicKitchen/ResearchAndAnalysisCK";
 import { ColoredSection } from "./reusable/ColoredSection";
 import { GlobalMarketResearchCK } from "./CosmicKitchen/GlobalMarketResearchCK";
+import { PainPointsCK } from "./CosmicKitchen/PainPointsCK";
+import { SolutionsCK } from "./CosmicKitchen/SolutionsCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -23,6 +25,8 @@ export const CosmicKitchen = () => {
     globalMarketResearch,
     targetAudience,
     users,
+    painPoints,
+    solutions,
   } = cosmicKitchenData;
 
   return (
@@ -64,6 +68,16 @@ export const CosmicKitchen = () => {
               usersData={users}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <PainPointsCK
+                data={painPoints}
+                textColor={themeText}
+              />
+              <SolutionsCK 
+                data={solutions}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>
