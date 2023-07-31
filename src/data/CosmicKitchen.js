@@ -142,6 +142,7 @@ export const cosmicKitchenData = {
       "Inconvenient refrigerator service.",
       "Better management of the fridge.",
     ],
+    elementId: "kc_pain_points",
   },
   solutions: {
     title: "Solutions",
