@@ -15,6 +15,7 @@ import { PainPointsCK } from "./CosmicKitchen/PainPointsCK";
 import { SolutionsCK } from "./CosmicKitchen/SolutionsCK";
 import { ResearchSoFarCK } from "./CosmicKitchen/ResearchSoFarCK";
 import { PersonaCK } from "./CosmicKitchen/PersonaCK";
+import { TimeToStartDesignCK } from "./CosmicKitchen/TimeToStartDesignCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -30,7 +31,8 @@ export const CosmicKitchen = () => {
     painPoints,
     solutions,
     researchSoFar,
-    personas
+    personas,
+    timeToStartDesign,
   } = cosmicKitchenData;
 
   return (
@@ -88,6 +90,10 @@ export const CosmicKitchen = () => {
             />
             <PersonaCK
               data={personas}
+              textColor={themeText}
+            />
+            <TimeToStartDesignCK
+              data={timeToStartDesign}
               textColor={themeText}
             />
           </div>
