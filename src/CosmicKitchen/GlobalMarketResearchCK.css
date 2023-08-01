@@ -59,7 +59,7 @@
     border-radius: 15px;
   }
   .ta_image_container_ck  {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
   .user_list_container_ck {
     padding-left: 24px;
@@ -68,7 +68,7 @@
 
 @media (min-width: 1008px) {
   .gmr_and_ta_container_ck {
-    padding-bottom: 46px;
+    padding-bottom: 64px;
   }
   .ta_text_container_ck, .gmr_text_container_ck {
     padding: 46px 18px 46px 18px;

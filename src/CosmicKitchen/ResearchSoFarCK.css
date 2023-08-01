@@ -1,0 +1,31 @@
+.rsf_container_ck {
+  padding: 32px 0px;
+}
+
+.rsf_text_container_ck {
+  text-align: center;
+  padding: 0px 18px;
+}
+
+.rsf_line {
+  padding: 1px;
+  background-color: var(--light50);
+}
+
+@media (min-width: 700px) {
+  .rsf_text_container_ck {
+    max-width: 500px;
+    margin: auto;
+  }
+  .rsf_container_ck {
+    padding: 46px 0px;
+  }
+}
+@media (min-width: 700px) {
+  .rsf_text_container_ck {
+    max-width: 600px;
+  }
+  .rsf_line {
+    border-radius: 100%;
+  }
+}
