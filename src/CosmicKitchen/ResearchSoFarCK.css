@@ -14,17 +14,15 @@
 
 @media (min-width: 700px) {
   .rsf_text_container_ck {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
+    padding: 0px 0px;
   }
   .rsf_container_ck {
     padding: 46px 0px;
   }
 }
-@media (min-width: 700px) {
-  .rsf_text_container_ck {
-    max-width: 600px;
-  }
+@media (min-width: 1080px) {
   .rsf_line {
     border-radius: 100%;
   }
