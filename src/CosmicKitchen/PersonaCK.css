@@ -1,0 +1,48 @@
+.persona_container_ck {
+  padding: 24px 0px 0px;
+}
+
+.persona_text_container_ck {
+  padding: 0px 8px 24px 18px;
+}
+
+.persona_image_top, .persona_image_bottom {
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.persona_image_top {
+  margin-bottom: 24px;
+}
+.persona_image_container_ck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .persona_image_top {
+    margin-bottom: 32px;
+  }
+  .persona_container_ck {
+    padding: 32px 0px 0px;
+  }
+  .persona_text_container_ck {
+    padding: 0px 8px 32px 18px;
+  }
+  .persona_image_top, .persona_image_bottom {
+    max-width: 850px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .persona_text_container_ck {
+    padding: 0px 8px 46px 18px;
+  }
+  .persona_image_top {
+    margin-bottom: 46px;
+  }
+  .persona_container_ck {
+    padding: 46px 0px 0px;
+  }
+}

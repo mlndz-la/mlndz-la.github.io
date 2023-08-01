@@ -12,7 +12,7 @@ export const cosmicKitchenData = {
         elementId: "kc_research_and_analysis"
       },
       {
-        title: "Global Market Research",
+        title: "Global Market",
         elementId: "kc_global_market_research"
       },
       {
@@ -24,7 +24,7 @@ export const cosmicKitchenData = {
         elementId: "kc_pain_points"
       },
       {
-        title: "Information Architecture",
+        title: "Information ( IA )",
         elementId: "kc_information_architecture"
       },
       {

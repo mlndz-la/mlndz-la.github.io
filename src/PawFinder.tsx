@@ -201,7 +201,7 @@ export const PawFinder = () => {
               />
             </ColoredSection>
             {/* Recommendations are added here */}
-          C</div>
+          </div>
         </div>
       </div>
     </div>
