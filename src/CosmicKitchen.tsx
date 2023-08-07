@@ -16,6 +16,7 @@ import { SolutionsCK } from "./CosmicKitchen/SolutionsCK";
 import { ResearchSoFarCK } from "./CosmicKitchen/ResearchSoFarCK";
 import { PersonaCK } from "./CosmicKitchen/PersonaCK";
 import { TimeToStartDesignCK } from "./CosmicKitchen/TimeToStartDesignCK";
+import { InformationArchitectureCK } from "./CosmicKitchen/InformationArchitectureCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -33,6 +34,7 @@ export const CosmicKitchen = () => {
     researchSoFar,
     personas,
     timeToStartDesign,
+    informationArchitecture,
   } = cosmicKitchenData;
 
   return (
@@ -96,6 +98,12 @@ export const CosmicKitchen = () => {
               data={timeToStartDesign}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <InformationArchitectureCK
+                data={informationArchitecture}
+                textColor ={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>
