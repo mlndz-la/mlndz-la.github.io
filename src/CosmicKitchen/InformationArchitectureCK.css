@@ -1,0 +1,40 @@
+.ia_container_ck {
+  position: relative;
+  padding: 24px 0px;
+}
+
+.ia_text_container_ck {
+  padding: 0px 8px 0px 18px;
+}
+
+.ia_image_container_ck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+.ia_image_ck {
+  max-width: 100%;
+}
+
+@media (min-width: 700px) {
+  .ia_container_ck {
+    padding: 32px 0px;
+  }
+  .ia_image_container_ck {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 700px) {
+  .ia_container_ck {
+    padding: 46px 0px;
+  }
+  .ia_image_container_ck {
+    margin-top: 46px;
+  }
+  .ia_image_ck {
+    max-width: 800px;
+  }
+}
