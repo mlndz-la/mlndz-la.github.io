@@ -1,10 +1,10 @@
 import "./InformationArchitectureCK.css";
 
 export const InformationArchitectureCK = ({ data, textColor }: any) => {
-  const { title, desc, image, imageTitle } = data;
+  const { title, desc, image, imageTitle, elementId } = data;
 
   return (
-    <div className="ia_container_ck">
+    <div id={elementId} className="ia_container_ck">
       <div className="ia_text_container_ck">
         <h1
           className={`font_size_main_title margin_bottom_main_title ${textColor}`}

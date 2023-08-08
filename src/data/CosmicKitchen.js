@@ -178,12 +178,14 @@ export const cosmicKitchenData = {
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/FlowDiagram.png",
     imageTitle: "Client FLow",
+    elementId: "kc_information_architecture",
   },
   lowFidelityUIDesign: {
     title: "Low-fidelity UI Design",
     desc: "Now that the IA was finished, I could start making basic wire frames for the app's functionality. This panel demonstrates how a user might navigate between the three different views (recipes, refrigerator, and item details).",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/lowfid.png",
+    elementId: "kc_low_fidelity_ui",
   },
   highFidelityUIDesign: {
     title: "High-fidelity UI Design",
