@@ -26,4 +26,11 @@
   .lf_text_container {
     padding: 0px 0px 46px 18px;
   }
+  .lf_image_container_ck {
+    display: flex;
+    justify-content: center;
+  }
+  .lf_image_ck {
+    max-width: 800px;
+  }
 }

@@ -12,7 +12,7 @@ export const LowFidCK = ({ data, textColor }: any) => {
         </h1>
         <p className={`font_size_desc ${textColor}50`}>{desc}</p>
       </div>
-      <div>
+      <div className="lf_image_container_ck">
         <img className="lf_image_ck" src={image} />
       </div>
     </div>

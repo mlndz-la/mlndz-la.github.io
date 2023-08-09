@@ -18,6 +18,7 @@ import { PersonaCK } from "./CosmicKitchen/PersonaCK";
 import { TimeToStartDesignCK } from "./CosmicKitchen/TimeToStartDesignCK";
 import { InformationArchitectureCK } from "./CosmicKitchen/InformationArchitectureCK";
 import { LowFidCK } from "./CosmicKitchen/LowFidCK";
+import { HighFidCK } from "./CosmicKitchen/HighFidCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -37,6 +38,7 @@ export const CosmicKitchen = () => {
     timeToStartDesign,
     informationArchitecture,
     lowFidelityUIDesign,
+    highFidelityUIDesign,
   } = cosmicKitchenData;
 
   return (
@@ -110,6 +112,12 @@ export const CosmicKitchen = () => {
               data={lowFidelityUIDesign}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <HighFidCK
+                data={highFidelityUIDesign}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>
