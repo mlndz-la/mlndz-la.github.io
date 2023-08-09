@@ -210,6 +210,7 @@ export const cosmicKitchenData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/add_shopping_cart@2x.png",
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/recipe-book-47@2x.png",
     ],
+    elementId: "kc_high_fidelity_ui",
   },
   highFidelityDesign: {
     title: "20 high-fidelity design were created",
