@@ -20,7 +20,7 @@ export const TwentyNineDesigns = ({data, textColor}: any) => {
         <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <div>
-        <div className="hf_design_screenshot_container_PF">
+        <div className="show_case_designs_module">
           {displayScreenshots}
         </div>
         <div className="hf_design_image_desc_container_PF">
