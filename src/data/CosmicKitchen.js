@@ -213,7 +213,7 @@ export const cosmicKitchenData = {
     elementId: "kc_high_fidelity_ui",
   },
   highFidelityDesign: {
-    title: "20 high-fidelity design were created",
+    title: "+20 high-fidelity design were created",
     desc: "Previously, the app could be navigated using a hamburger menu. We didn't implement it because we believed that was better suited for a mobile device.",
     screenshots: [
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Notes.png",
@@ -222,10 +222,10 @@ export const cosmicKitchenData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/AmazonStore.png",
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/RecipeDetails.png",
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Home.png",
-      "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Apps-ClimateControlclicked.png",
     ],
     imageDesc:
       "Before the current matte black aesthetic, a white and blue color scheme was in use. The user interface was a mishmash of colors that didn't go well together and stood in stark contrast to the sleek black and silver appearance of the refrigerator. In the end, we plan to implement a light mode so that users can select their favorite user interface.",
+    elementId: "kc_prototype",
   },
   highFidelityPrototype: {
     title: "High- fidelity Prototype",

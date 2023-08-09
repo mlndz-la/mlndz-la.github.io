@@ -145,6 +145,29 @@
 .margin_bottom_main_title {
   margin-bottom: 8px;
 }
+.show_case_designs_module {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 46px 0px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  margin-bottom: -12px;
+  margin-top: -12px;
+}
+.show_case_designs_module::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .show_case_designs_module {
+    justify-content: space-evenly;
+  }
+}
+
 @media (min-width: 1008px) {
   .container_margin {
     margin: 16px 18px 16px 18px;
@@ -175,5 +198,12 @@
   }
   .www_and_case_study_container {
     min-width: 1100px;
+  }
+  .show_case_designs_module {
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 46px 0px;
+    gap: 15px;
   }
 }
