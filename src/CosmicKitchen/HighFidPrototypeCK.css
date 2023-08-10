@@ -1,0 +1,35 @@
+.hfp_container_ck {
+  padding-bottom: 48px;
+}
+
+.hfp_text_container_ck {
+  padding: 0px 8px 0px 18px;
+}
+
+.hfp_image_container_ck {
+  display: flex;
+  justify-content: center;
+}
+.hfp_image_ck {
+  max-width: 100%;
+  padding: 12px 0px;
+}
+
+.hfp_link_ck {
+  padding: 0px 22px 0px 18px;
+}
+.hfp_link_text_ck {
+  color: #3385FF;
+}
+
+@media (min-width: 700px) {
+  .hfp_image_ck {
+    padding: 0px;
+  }
+}
+@media (min-width: 1080px) {
+  .hfp_image_ck {
+    max-width: 800px;
+    padding: 24px 0px;
+  }
+}

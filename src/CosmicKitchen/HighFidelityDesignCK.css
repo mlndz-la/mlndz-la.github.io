@@ -1,5 +1,5 @@
 .hfd_container_ck {
-  padding: 24px 0px;
+  padding: 24px 0px 48px;
 }
 
 .hfd_text_container {
@@ -12,7 +12,7 @@
 
 @media (min-width: 700px) {
   .hfd_container_ck {
-    padding: 32px 0px;
+    padding: 32px 0px 46;
   }
 }
 @media (min-width: 1080px) {
