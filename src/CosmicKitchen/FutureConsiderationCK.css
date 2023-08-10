@@ -1,0 +1,27 @@
+.fc_container_ck {
+  padding-bottom: 12px;
+}
+
+.fc_text_container_ck {
+  padding: 0px 8px 12px 18px;
+}
+
+.fc_image_ck {
+  max-width: 100%;
+}
+
+@media (min-width: 1080px) {
+  .fc_image_container_ck {
+    display: flex;
+    justify-content: center;
+  }
+  .fc_container_ck {
+    padding-bottom: 24px;
+  }
+  .fc_text_container_ck {
+    padding: 0px 8px 24px 18px;
+  }  
+  .fc_image_ck {
+    max-width: 800px;
+  }
+}
