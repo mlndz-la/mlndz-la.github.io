@@ -1,4 +1,5 @@
 .u_container_ck {
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 
@@ -6,5 +7,13 @@
   padding: 0px 8px 0px 18px;
 }
 
-@media (min-width: 700px) {}
-@media (min-width: 1080px) {}
+@media (min-width: 700px) {
+  .u_container_ck {
+    padding-top: 32px;
+  }
+}
+@media (min-width: 1080px) {
+  .u_container_ck {
+    padding-top: 46px;
+  }
+}

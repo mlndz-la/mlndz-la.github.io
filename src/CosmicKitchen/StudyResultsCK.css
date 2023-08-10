@@ -1,0 +1,14 @@
+.sr_container_ck {
+  padding-bottom: 48px;
+}
+
+.sr_text_container_ck {
+  padding: 0px 8px 0px 18px;
+}
+
+@media (min-width: 700px) {}
+@media (min-width: 1080px) {
+  .sr_container_ck {
+    padding-bottom: 64px;
+  }
+}

@@ -1,5 +1,5 @@
 .hfp_container_ck {
-  padding-bottom: 48px;
+  padding-bottom: 24px;
 }
 
 .hfp_text_container_ck {
@@ -26,6 +26,9 @@
   .hfp_image_ck {
     padding: 0px;
   }
+  .hfp_container_ck {
+    padding-bottom: 16px;
+  }
 }
 @media (min-width: 1080px) {
   .hfp_image_ck {
@@ -33,7 +36,6 @@
     padding: 24px 0px;
   }
   .hfp_container_ck {
-    padding-bottom: 64px;
+    padding-bottom: 18px;
   }
-  
 }

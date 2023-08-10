@@ -1,10 +1,10 @@
 import "./UsabilityCK.css";
 
 export const UsabilityCK = ({ data, textColor }: any) => {
-  const { title, desc1, desc2 } = data;
+  const { title, desc1, desc2, elementId } = data;
 
   return (
-    <div className="u_container_ck">
+    <div className="u_container_ck" id={elementId}>
       <div className="u_text_container_ck">
         <h1
           className={`font_size_main_title margin_bottom_main_title ${textColor}`}
