@@ -232,7 +232,7 @@ export const cosmicKitchenData = {
     desc: "I linked my high-fidelity designs to a click-through prototype that will let me test the application with an initial set of users.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/MapFlow.png",
-    imageDesc: "The prototype can be live-previewed at: [ link ]",
+    imageDesc: "The prototype can be live-previewed at: ",
     link: "https://www.figma.com/proto/H0lxfPEPj8WoqfsUMSD6YI/UI-%2F-UX-Portfolio?page-id=408%3A336&node-id=408%3A337&viewport=-264%2C349%2C0.18&scaling=min-zoom&starting-point-node-id=408%3A337",
   },
   usability: {
