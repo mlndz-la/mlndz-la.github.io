@@ -238,9 +238,9 @@ export const cosmicKitchenData = {
   usability: {
     title: "Usability Study",
     desc1:
-      "This app was tested using an unmoderated usability study. Eight people were selected to based on our personas. In order to proceed, users were directed to a PDF file, which they had to open in order to receive more instructions. The pdf had both multiple-choice questions and blank spaces for them to fill in with their answers. They were urged to take notes and send those in as well.",
+      "This app was tested using a usability study that was unmoderated. Eight people were selected to based on our personas. In order to proceed, users were directed to a PDF file, which they had to open in order to receive more instructions. The pdf had both multiple-choice questions and blank spaces for them to fill in with their answers. They were urged to take notes and send those in as well.",
     desc2:
-      "In this study, participants were asked to videotape themselves using a video-capture program as they navigated the app. yet few submitted any video. information was still gathered and synthesized via pen and paper.",
+      "In this study, participants were asked to videotape themselves using a video-capture program as they navigated the app, yet few submitted any video. Valuable information was still gathered and synthesized via pen and paper.",
   },
   studyResults: {
     title: "Study Results",

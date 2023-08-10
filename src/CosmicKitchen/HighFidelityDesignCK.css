@@ -12,11 +12,11 @@
 
 @media (min-width: 700px) {
   .hfd_container_ck {
-    padding: 32px 0px 46;
+    padding: 32px 0px 48px;
   }
 }
 @media (min-width: 1080px) {
   .hfd_container_ck {
-    padding: 46px 0px;
+    padding: 64px 0px;
   }
 }

@@ -21,6 +21,7 @@ import { LowFidCK } from "./CosmicKitchen/LowFidCK";
 import { HighFidCK } from "./CosmicKitchen/HighFidCK";
 import { HighFidelityDesignCK } from "./CosmicKitchen/HighFidelityDesignCK";
 import { HighFidPrototypeCK } from "./CosmicKitchen/HighFidPrototypeCK";
+import { UsabilityCK } from "./CosmicKitchen/UsabilityCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -43,6 +44,7 @@ export const CosmicKitchen = () => {
     highFidelityUIDesign,
     highFidelityDesign,
     highFidelityPrototype,
+    usability,
   } = cosmicKitchenData;
 
   return (
@@ -128,6 +130,10 @@ export const CosmicKitchen = () => {
             />
             <HighFidPrototypeCK
               data={highFidelityPrototype}
+              textColor={themeText}
+            />
+            <UsabilityCK
+              data={usability}
               textColor={themeText}
             />
           </div>
