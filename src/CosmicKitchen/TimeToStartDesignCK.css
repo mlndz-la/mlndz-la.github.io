@@ -17,4 +17,8 @@
     padding: 46px 0px;
   }
 }
-@media (min-width: 1080px) {}
+@media (min-width: 1080px) {
+  .ttsd_container_ck {
+    padding: 64px 0px;
+  }
+}

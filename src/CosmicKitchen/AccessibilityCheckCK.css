@@ -1,0 +1,31 @@
+.ac_container_ck {
+  position: relative;
+  padding-bottom: 12px;
+  padding-top: 24px;
+}
+
+.ac_text_container_ck {
+  padding: 0px 8px 12px 18px;
+}
+
+.ac_image_container_ck {
+  display: flex;
+  justify-content: center;
+}
+.ac_image_ck {
+  max-width: 100%;
+}
+
+@media (min-width: 700px) {
+  .ac_container_ck {
+    padding-top: 32px;
+  }
+}
+@media (min-width: 1080px) {
+  .ac_container_ck {
+    padding-top: 46px;
+  }
+  .ac_image_ck {
+    max-width: 870px;
+  }
+}
