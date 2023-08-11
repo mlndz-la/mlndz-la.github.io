@@ -261,6 +261,7 @@ export const cosmicKitchenData = {
       "As a side note, there was no text that was smaller than 12 pixels, with the sole exception being the navigation bar that was located at the bottom of each page.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/WCAG.png",
+    elementId: "kc_accessibility_check",
   },
   productOverview: {
     title: "Product Overview",
