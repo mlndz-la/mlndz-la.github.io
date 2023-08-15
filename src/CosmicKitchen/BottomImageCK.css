@@ -1,0 +1,26 @@
+.bi_container_ck {
+  position: relative;
+}
+
+.bi_image_ck {
+  max-width: 100%;
+  -webkit-filter: drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width: 700px) {
+  .bi_image_ck {
+    -webkit-filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.25));
+  } 
+}
+
+@media (min-width: 1080px) {
+  .bi_container_ck {
+    display: flex;
+    justify-content: center;
+  }
+  .bi_image_ck {
+    max-width: 900px;
+  }
+}
