@@ -25,6 +25,8 @@ import { UsabilityCK } from "./CosmicKitchen/UsabilityCK";
 import { StudyResultsCK } from "./CosmicKitchen/StudyResultsCK";
 import { FutureConsiderationCK } from "./CosmicKitchen/FutureConsiderationCK";
 import { AccessibilityCheckCK } from "./CosmicKitchen/AccessibilityCheckCK";
+import { ProductOverviewCK } from "./CosmicKitchen/ProductOverviewCK";
+import { BottomImageCK } from "./CosmicKitchen/BottomImageCK";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -50,7 +52,9 @@ export const CosmicKitchen = () => {
     usability,
     studyResults,
     futureConsideration,
-    accessibilityCheck
+    accessibilityCheck,
+    productOverview,
+    mockUpImageBottom,
   } = cosmicKitchenData;
 
   return (
@@ -154,6 +158,15 @@ export const CosmicKitchen = () => {
               <AccessibilityCheckCK
                 data={accessibilityCheck}
                 textColor={themeText}
+              />
+            </ColoredSection>
+            <ProductOverviewCK
+              data={productOverview}
+              textColor={themeText}
+            />
+            <ColoredSection theme={themeColor}>
+              <BottomImageCK
+                data={mockUpImageBottom}
               />
             </ColoredSection>
           </div>

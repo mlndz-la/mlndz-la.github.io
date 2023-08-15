@@ -1,0 +1,26 @@
+.po_container_ck {
+  padding: 32px 14px;
+}
+
+.po_text_container_ck {
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .po_text_container_ck {
+    max-width: 600px;
+  }  
+  .po_container_ck {
+    padding: 46px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1080px) {
+  .po_text_container_ck {
+    max-width: 700px;
+  }  
+  .po_container_ck {
+    padding: 64px 0px;
+  }
+}
