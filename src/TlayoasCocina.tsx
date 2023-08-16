@@ -6,6 +6,7 @@ import { CaseStudyTitle } from "./reusable/Titles/CaseStudyTitle";
 import { DisplayCategories } from "./reusable/Categories/DisplayCategories";
 import { ColoredLine } from "./reusable/ColoredLine";
 import { WhoWhatWhen } from "./reusable/WhoWhatWhen/WhoWhatWhen";
+import { WhyThisProductTC } from "./TlayoasCosina/WhyThisProductTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -41,6 +42,10 @@ export const TlayoasCocina = () => {
               theme={themeText}
               data={caseStudyStart.whatWhereWhy}
               themeName={themeName}
+            />
+            <WhyThisProductTC
+              data={whyThisProduct}
+              textColor={themeText}
             />
           </div>
         </div>
