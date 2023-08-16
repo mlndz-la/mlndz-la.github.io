@@ -27,7 +27,7 @@
 }
 .WhoWhatWhen_line_PF { background-color: var(--secondaryPF); }
 .WhoWhatWhen_line_CK { background-color: var(--secondaryCK); }
-.WhoWhatWhen_line_TC { background-color: var(--secondaryTC); }
+.WhoWhatWhen_line_TC { background-color: var(--color4TC); }
 
 @media (min-width: 700px) {
   .WhoWhatWhen_container {
