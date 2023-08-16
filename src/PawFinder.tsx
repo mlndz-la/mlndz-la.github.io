@@ -207,30 +207,3 @@ export const PawFinder = () => {
     </div>
   )
 };
-
-// const test = () => {
-
-// return (
-//   <>
-//     <div className="banner_TEST">Banner</div>
-//       <div className="title_categories_case_study_and_www_container">
-//         <div className="categories_www_and_case_study_container">
-//           <div className="categories_container">
-            
-//           </div>
-//           <div className="CASE_STUDY_line"></div>
-//           <div className="www_and_case_study_container">
-//             <section>
-
-//             </section>
-//             <section>
-
-//             </section>
-//             <section>
-
-//             </section>
-//         </div>
-//       </div>
-//     </div>
-//   </>
-// )}
