@@ -1,0 +1,35 @@
+.wtp_container_tc {
+  padding: 32px 18px;
+}
+
+.wtp_text_container_tc {
+  text-align: center;
+}
+
+.wtp_image_tc {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .wtp_container_tc {
+    padding: 46px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .wtp_text_container_tc {
+    text-align: center;
+    max-width: 460px;
+  }
+}
+@media (min-width: 1080px) {
+  .wtp_container_tc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wtp_image_tc {
+    display: block;
+    max-width: 200px;
+    margin-left: 24px;
+  }
+}
