@@ -7,6 +7,8 @@ import { DisplayCategories } from "./reusable/Categories/DisplayCategories";
 import { ColoredLine } from "./reusable/ColoredLine";
 import { WhoWhatWhen } from "./reusable/WhoWhatWhen/WhoWhatWhen";
 import { WhyThisProductTC } from "./TlayoasCosina/WhyThisProductTC";
+import { MarketResearchTC } from "./TlayoasCosina/MarketResearchTC";
+import { ColoredSection } from "./reusable/ColoredSection";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -47,6 +49,12 @@ export const TlayoasCocina = () => {
               data={whyThisProduct}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <MarketResearchTC
+                data={marketResearch}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>

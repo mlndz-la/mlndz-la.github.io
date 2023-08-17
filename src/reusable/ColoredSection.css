@@ -17,7 +17,7 @@
   background-color: var(--primaryCK);
 }
 .theme_section_TC {
-  background-color: var(--color1CK);
+  background-color: var(--primaryTC);
 }
 
 @media (min-width: 1008px) {
