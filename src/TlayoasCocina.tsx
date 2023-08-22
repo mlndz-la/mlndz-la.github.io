@@ -9,6 +9,7 @@ import { WhoWhatWhen } from "./reusable/WhoWhatWhen/WhoWhatWhen";
 import { WhyThisProductTC } from "./TlayoasCosina/WhyThisProductTC";
 import { MarketResearchTC } from "./TlayoasCosina/MarketResearchTC";
 import { ColoredSection } from "./reusable/ColoredSection";
+import { CompetitiveAnalysisTC } from "./TlayoasCosina/CompetitiveAnalysisTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -20,6 +21,7 @@ export const TlayoasCocina = () => {
     caseStudyStart,
     whyThisProduct,
     marketResearch,
+    competitiveAnalysis,
   } = tlayoaCosinaData;
 
   return (
@@ -55,6 +57,10 @@ export const TlayoasCocina = () => {
                 textColor={themeText}
               />
             </ColoredSection>
+            <CompetitiveAnalysisTC
+              data={competitiveAnalysis}
+              textColor={themeText}
+            />
           </div>
         </div>
       </div>

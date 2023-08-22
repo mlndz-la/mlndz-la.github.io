@@ -93,10 +93,11 @@ export const tlayoaCosinaData = {
       title: "The Problem",
       desc: "As a result, many restaurants across California have seen an increase in Mexican-style tacos. Not many of them can cook a wide variety of Mexican cuisines. Most Mexican style restaurants serve tacos or tamales as their main dish.",
     },
+    elementId: "tc_market_research",
   },
   competitiveAnalysis: {
     title: "Competitive Analysis",
-    desc: "I analyzed 3 restaurants local to Los Angeles, California - I looked at the user flow and searched for any negative reviews in the app store or any online reviews.",
+    desc: "I analyzed 3 restaurants local to Los Angeles, California and looked into each of their user flows and searched for any negative reviews in the app store or any online reviews.",
     chickenItza: {
       title: "Chicken Itza",
       logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/21496logo.png",
@@ -107,7 +108,7 @@ export const tlayoaCosinaData = {
     },
     tamalesLosAngeles: {
       title: "Tamales Los Angeles",
-      logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/logo_-_CAC620e63c007ae1.png",
+      logo: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/logo_-_CAC620e63c007ae1.jpg",
     },
     theGood: {
       title: "The Good",
@@ -117,36 +118,37 @@ export const tlayoaCosinaData = {
       title: "The Bad",
       desc: "They're focus on a wide variety of Mexican cuisines is lacking (Indiana Tamales, Tamales Los Angeles). The user experience is lacking for LA Indiana Tamales, particularly the ability to navigate and search through the menu.",
     },
-    comments: {
-      julia: {
+    comments: [
+      {
         name: "Julia",
         profilePic:
           "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/julia.png",
         comment:
           "The app is really difficult to navigate. I can't search for keywords and I'm unsure of where to find them.",
       },
-      markus: {
+      {
         name: "Markus",
         profilePic:
           "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/markus.png",
         comment:
           "Tamales are great but I'd like to try other Mexicans foods - too many tamales IMO.",
       },
-      sophie: {
+      {
         name: "Sophie",
         profilePic:
           "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/sophie.png",
         comment:
           "I always love to see what others have to say about the restaurant.",
       },
-      jacob: {
+      {
         name: "Jacob",
         profilePic:
           "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/jacob.png",
         comment:
           "People have to realize, when you make an app it can't be boring.",
       },
-    },
+    ],
+    elementId: "tc_competitive_analysis",
   },
   userSurvey: {
     title: "User Survey",
