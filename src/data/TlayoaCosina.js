@@ -9,44 +9,44 @@ export const tlayoaCosinaData = {
     categories: [
       {
         title: "Market Research",
-        elementId: "tc_market_research"
+        elementId: "tc_market_research",
       },
       {
         title: "Competitive Analysis",
-        elementId: "tc_competitive_analysis"
+        elementId: "tc_competitive_analysis",
       },
       {
         title: "User Survey",
-        elementId: "tc_user_survey"
+        elementId: "tc_user_survey",
       },
       {
         title: "Personas",
-        elementId: "tc_personas"
+        elementId: "tc_personas",
       },
       {
         title: "Flow Diagram",
-        elementId: "tc_flow_diagram"
+        elementId: "tc_flow_diagram",
       },
       {
         title: "Low-fidelity UI",
-        elementId: "tc_low_fidelity_ui"
+        elementId: "tc_low_fidelity_ui",
       },
       {
         title: "High-fidelity UI",
-        elementId: "tc_high_fidelity_ui"
+        elementId: "tc_high_fidelity_ui",
       },
       {
         title: "Prototype",
-        elementId: "tc_prototype"
+        elementId: "tc_prototype",
       },
       {
         title: "Usability Study",
-        elementId: "tc_usability_study"
+        elementId: "tc_usability_study",
       },
       {
         title: "Accessibility Check",
-        elementId: "tc_accessibility_check"
-      }
+        elementId: "tc_accessibility_check",
+      },
     ],
     whatWhereWhy: [
       {
@@ -112,7 +112,7 @@ export const tlayoaCosinaData = {
     },
     theGood: {
       title: "The Good",
-      desc: "All apps allow users to browse the store with out having to create an account. Chicken Itza has a particularly robust search engine for their menu.",
+      desc: "All apps allow users to browse the store with out having to create an account. Chicken Itza has a particularly robust search engine for their menu. Furthermore, Itza has a superior UX experience and a slick UI with an authentic mexican theme.",
     },
     theBad: {
       title: "The Bad",
@@ -159,43 +159,44 @@ export const tlayoaCosinaData = {
       subtitle: "26 Participants",
       redditLogo:
         "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/reddit-icon.png",
-      surveyCategories: {
-        categoryOne: ["Price", "31%"],
-        categoryTwo: ["Flavor", "25%"],
-        categoryThree: ["Variety", "34%"],
-        categoryFour: ["Other (please comment)", "10%"],
-      },
-      notableComments: {
-        olivia: {
+      surveyCategories: [
+        { title: "Price", percent: "31%", css: "price" },
+        { title: "Flavor", percent: "25%", css: "flavor" },
+        { title: "Variety", percent: "34%", css: "variety" },
+        { title: "Other (comment)", percent: "10%", css: "other" },
+      ],
+      notableComments: [
+        {
           name: "Olivia",
           profilePic:
             "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/olivia.png",
           comment:
             "A variety of dishes is great but you still have to be able to do the basics tacos, tamales, etc.",
         },
-        dave: {
+        {
           name: "Dave",
           profilePic:
             "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/dave.png",
           comment:
             "I'd like to know if the food I pick out will be spicy or not, Too many Mexican dishes are spicy for me.",
         },
-        jackson: {
+        {
           name: "Jackson",
           profilePic:
             "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/jackson.png",
           comment:
             "The most important thing for myself is the quality of the service.",
         },
-        jasper: {
+        {
           name: "Jasper",
           profilePic:
             "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/jasper.png",
           comment:
             "I like it when the app lets me take control of my search results.",
         },
-      },
+      ],
     },
+    elementId: "tc_user_survey",
   },
   researchSoFar: {
     title: "The initial research shows",

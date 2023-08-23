@@ -96,6 +96,11 @@
   }
   .ca_text_container_bad_tc,
   .ca_text_container_good_tc {
-    width: 50%;
+    width: 457px;
+  }
+  .ca_text_container_good_bad_tc {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }

@@ -27,6 +27,10 @@
   margin-top: 15px;
 }
 
+.comment_light_background {
+  background-color: white;
+}
+
 @media (min-width: 1008px) {
   .comment_box_image {
     max-width: 28px;

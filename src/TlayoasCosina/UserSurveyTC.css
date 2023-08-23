@@ -1,0 +1,62 @@
+.us_container_tc {
+  position: relative;
+  padding: 24px 0px;
+}
+
+.us_text_container_tc {
+  padding: 0px 8px 0px 18px;
+}
+
+.us_reddit_survey_container_tc {
+  display: flex;
+  align-items: start;
+  padding: 24px 8px 24px 18px;
+}
+
+.us_reddit_image_tc {
+  width: 32px;
+  margin-right: 16px;
+  display: none;
+}
+
+.us_reddit_display_data_container_tc {
+  padding: 0px 18px 16px 18px;
+}
+
+.us_reddit_display_data_text_container_tc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.us_reddit_display_data_line_tc {
+  margin: 8px 0px;
+  height: 8px;
+  background-color: var(--backgroundTC);
+}
+.us_reddit_display_data_line_tc,
+.us_percent_bar_tc {
+  border-radius: 15px;
+}
+.us_percent_bar_tc {
+  height: 8px;
+  background-color: var(--color4TC);
+}
+.us_percent_price_tc {
+  width: 31%;
+}
+.us_percent_flavor_tc {
+  width: 25%;
+}
+.us_percent_variety_tc {
+  width: 34%;
+}
+.us_percent_other_tc {
+  width: 10%
+}
+
+.us_reddit_comments_container_tc {
+
+}
+.us_reddit_text_container_tc{
+  padding: 0px 0px 24px 18px;
+}
