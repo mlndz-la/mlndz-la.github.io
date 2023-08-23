@@ -45,20 +45,22 @@ export const UserSurveyTC = ({ data, textColor }: any) => {
         <p className={`font_size_desc ${textColor}50`}>{desc}</p>
       </div>
       <div className="us_reddit_survey_container_tc">
-        <img
-          className="us_reddit_image_tc"
-          src={redditInfoGraphic.redditLogo}
-          alt="reddit logo"
-        />
         <div>
           <h1
             className={`font_size_main_title margin_bottom_main_title ${textColor}`}
           >
             {redditInfoGraphic.title}
           </h1>
-          <h2 className={`font_size_desc ${textColor}50`}>
-            {redditInfoGraphic.subtitle}
-          </h2>
+          <div className="us_reddit_survey_subtitle_container">
+            <img
+              className="us_reddit_image_tc"
+              src={redditInfoGraphic.redditLogo}
+              alt="reddit logo"
+            />
+            <h2 className={`font_size_desc ${textColor}50`}>
+              {redditInfoGraphic.subtitle}
+            </h2>
+          </div>
         </div>
       </div>
       <div className="us_reddit_display_data_container_tc">
