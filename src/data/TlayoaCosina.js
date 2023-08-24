@@ -116,16 +116,9 @@ export const tlayoaCosinaData = {
     },
     theBad: {
       title: "The Bad",
-      desc: "They're focus on a wide variety of Mexican cuisines is lacking (Indiana Tamales, Tamales Los Angeles). The user experience is lacking for LA Indiana Tamales, particularly the ability to navigate and search through the menu.",
+      desc: "Their focus on a wide variety of Mexican cuisines is lacking (Indiana Tamales, Tamales Los Angeles). The user experience is lacking for LA Indiana Tamales, particularly the ability to navigate and search through the menu.",
     },
     comments: [
-      {
-        name: "Julia",
-        profilePic:
-          "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/julia.png",
-        comment:
-          "The app is really difficult to navigate. I can't search for keywords and I'm unsure of where to find them.",
-      },
       {
         name: "Markus",
         profilePic:
@@ -181,18 +174,11 @@ export const tlayoaCosinaData = {
             "I'd like to know if the food I pick out will be spicy or not, Too many Mexican dishes are spicy for me.",
         },
         {
-          name: "Jackson",
-          profilePic:
-            "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/jackson.png",
-          comment:
-            "The most important thing for myself is the quality of the service.",
-        },
-        {
           name: "Jasper",
           profilePic:
             "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/jasper.png",
           comment:
-            "I like it when the app lets me take control of my search results.",
+            "I like it when the apps let me filter my search results through keywords, visuals, and price.",
         },
       ],
     },
