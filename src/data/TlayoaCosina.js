@@ -171,7 +171,7 @@ export const tlayoaCosinaData = {
           profilePic:
             "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/dave.png",
           comment:
-            "I'd like to know if the food I pick out will be spicy or not, Too many Mexican dishes are spicy for me.",
+            "I'd like to know if the food I pick out will be spicy or not, you know what I mean.",
         },
         {
           name: "Jasper",

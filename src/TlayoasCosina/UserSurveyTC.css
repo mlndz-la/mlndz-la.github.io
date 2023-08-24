@@ -64,12 +64,11 @@
     padding: 32px 0px;
   }
   .us_text_container_tc {
-    padding: 0px 18px 0px 18px;
+    padding: 0px 24px 0px 24px;
   }
   .us_reddit_survey_container_tc {
-    padding: 46px 0px 24px 0px;
-    max-width: 85%;
-    margin: auto;
+    padding: 46px 24px 24px 24px;
+    max-width: 100%;
   }
   .us_reddit_image_tc {
     width: 22px;
@@ -80,9 +79,8 @@
     display: flex;
   }
   .us_reddit_display_data_container_tc {
-    padding: 0px 0px 38px 0px;
-    max-width: 85%;
-    margin: auto;
+    padding: 0px 24px 38px 24px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1080px) {
@@ -95,12 +93,10 @@
   .us_reddit_survey_container_tc {
     padding: 46px 0px 24px 46px;
     max-width: 100%;
-    margin: 0;
   }
   .us_reddit_display_data_container_tc {
     padding: 0px 0px 38px 46px;
     max-width: 90%;
-    margin: 0;
   }
   .us_reddit_text_container_tc{
     padding: 0px 0px 32px 46px;
