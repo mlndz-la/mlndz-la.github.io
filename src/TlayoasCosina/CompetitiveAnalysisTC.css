@@ -3,7 +3,7 @@
 }
 
 .ca_text_container_tc {
-  padding: 0px 8px 24px 18px;
+  padding: 0px 18px 24px 18px;
 }
 
 .ca_logo_card_tc {
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 18px;
 }
 .ca_image_container_tc {
   /* border: 1px solid red; */
@@ -46,6 +47,9 @@
   padding: 48px 0px 0px 0px;
 }
 @media (min-width: 700px) {
+  .ca_logo_card_tc {
+    padding: 0px 0x;
+  }
   .ca_logo_container_tc {
     display: flex;
     justify-content: space-around;

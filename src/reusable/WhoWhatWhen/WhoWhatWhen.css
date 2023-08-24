@@ -1,5 +1,5 @@
 .WhoWhatWhen_container {
-  padding: 20px 8px 0px;
+  padding: 20px 10px 0px 10px;
 }
 
 .WhoWhatWhen_Card {
@@ -35,7 +35,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 24px;
-    padding-top: 11px;
+    padding-top: 22px;
   }
   .WhoWhatWhen_Card {
     min-width: 25.3%;
@@ -64,5 +64,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0px 46px;
+  }
+  .www_data_container_tc {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
   }
 }
