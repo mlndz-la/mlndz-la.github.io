@@ -44,7 +44,7 @@ export const tlayoaCosinaData = {
         elementId: "tc_usability_study",
       },
       {
-        title: "Accessibility Check",
+        title: "Accessibility",
         elementId: "tc_accessibility_check",
       },
     ],

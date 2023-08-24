@@ -54,7 +54,7 @@
     padding: 32px 0px;
   }
   .ca_text_container_tc {
-    padding: 0px 8px 32px 18px;
+    padding: 0px 24px 32px 24px;
   }
   .ca_image_container_tc {
     width: 100%;
@@ -77,6 +77,7 @@
     display: flex;
     align-items: baseline;
     gap: 24px;
+    margin: 0px 24px;
   }
 }
 @media (min-width: 1080px) {
@@ -108,8 +109,6 @@
     align-items: baseline;
     justify-content: space-between;
     padding: 0px 46px;
-  }
-  .ca_text_container_good_bad_tc {
     margin: 0px 0px;
   }
 }
