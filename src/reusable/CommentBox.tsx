@@ -18,7 +18,7 @@ export const CommentBox = (props: Props) => {
           src={link} alt="Profile Picture"
         />
         <div className='comment_box_comment_title_container'>
-          <p className='font_size_desc'>{comment}</p>
+          <p className='comment_box_comment'>{comment}</p>
           <h2 className='comment_box_title'>{name}</h2>
         </div>
       </div>
