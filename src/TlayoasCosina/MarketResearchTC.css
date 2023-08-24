@@ -3,11 +3,11 @@
   padding: 24px 0px;
 }
 .mr_main_title_tc {
-  padding: 0px 8px 24px 18px;
+  padding: 0px 18px 24px 18px;
 }
 
 .mr_text_container_tc {
-  padding: 0px 8px 0px 18px;
+  padding: 0px 18px 0px 18px;
 }
 .mr_the_problem_container_tc {
   padding: 24px 0px;
@@ -31,7 +31,7 @@
   .mr_content_container_tc {
     display: flex;
     align-items: center;
-    padding: 0px 18px;
+    padding: 0px 24px;
   }
   .mr_image_tc {
     max-width: 380px;
@@ -39,19 +39,26 @@
   .mr_text_container_tc {
     padding: 0px 32px 0px 0px;
   }
-  .mr_the_problem_container_tc{
+  .mr_the_problem_container_tc {
     padding: 24px 0px 0px;
+  }
+  .mr_main_title_tc {
+    padding: 0px 24px 24px 24px;
   }
 }
 @media (min-width: 1080px) {
   .mr_image_tc {
     max-width: 400px;
   }
-  .mr_the_problem_container_tc, .mr_the_claim_container_tc {
+  .mr_the_problem_container_tc,
+  .mr_the_claim_container_tc {
     max-width: 400px;
   }
   .mr_content_container_tc {
     justify-content: space-between;
-    padding: 0px 18px;
+    padding: 0px 46px;
+  }
+  .mr_main_title_tc {
+    padding: 0px 46px 24px 46px;
   }
 }

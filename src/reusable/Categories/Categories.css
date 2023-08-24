@@ -22,7 +22,7 @@
 
 .category_TC {
   color: var(--color4TC);
-  background-color: var(--secondaryTC);
+  background-color: var(--primaryTC);
 }
 
 .category_CK {
@@ -34,9 +34,14 @@
 @media (min-width: 1008px) {
   .category_container {
     cursor: pointer;
+    margin: 8px;
+    margin-left: 0px;
   }
   .category_title {
     font-size: .8rem;
     letter-spacing: normal;
+  }
+  .test_width {
+    width: 100%;
   }
 }
