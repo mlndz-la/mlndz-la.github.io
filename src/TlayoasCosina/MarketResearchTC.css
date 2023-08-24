@@ -52,6 +52,9 @@
   }
   .mr_content_container_tc {
     justify-content: space-between;
-    padding: 0px 18px;
+    padding: 0px 46px;
   }
+  .mr_main_title_tc {
+  padding: 0px 46px 24px 46px;
+}
 }

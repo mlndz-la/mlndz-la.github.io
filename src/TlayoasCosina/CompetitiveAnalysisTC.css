@@ -80,11 +80,16 @@
   }
 }
 @media (min-width: 1080px) {
+  .ca_logo_container_tc {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 46px;
+  }
   .ca_container_tc {
     padding: 46px 0px;
   }
   .ca_text_container_tc {
-    padding: 0px 0px 46px 18px;
+    padding: 0px 46px 46px 46px;
   }
   .ca_image_container_tc {
     width: 250px;
@@ -102,5 +107,9 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding: 0px 46px;
+  }
+  .ca_text_container_good_bad_tc {
+    margin: 0px 0px;
   }
 }

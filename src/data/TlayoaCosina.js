@@ -131,14 +131,14 @@ export const tlayoaCosinaData = {
         profilePic:
           "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/sophie.png",
         comment:
-          "I always love to see what others have to say about the restaurant.",
+          "I always love to see what others have to say about the food options and tastes.",
       },
       {
         name: "Jacob",
         profilePic:
           "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/jacob.png",
         comment:
-          "People have to realize, when you make an app it can't be boring.",
+          "People should realize, when you make an app it can't be boring, I want to comeback.",
       },
     ],
     elementId: "tc_competitive_analysis",

@@ -8,7 +8,7 @@ export const Category = ({title, theme, elementId}: ICategoryProps) => {
   };
 
   return (
-    <div>
+    <div className="test_width">
       <button
         className={`category_container category_${theme}`}
         onClick={handleView}

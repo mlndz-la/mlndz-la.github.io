@@ -95,17 +95,17 @@
     padding: 46px 0px;
   }
   .us_text_container_tc {
-    padding: 0px 0px 0px 46px;
+    padding: 0px 46px 0px 46px;
   }
   .us_reddit_survey_container_tc {
-    padding: 46px 0px 24px 46px;
+    padding: 46px 46px 24px 46px;
     max-width: 100%;
   }
   .us_reddit_display_data_container_tc {
-    padding: 0px 0px 38px 46px;
-    max-width: 90%;
+    padding: 0px 46px 38px 46px;
+    max-width: 100%;
   }
   .us_reddit_text_container_tc{
-    padding: 0px 0px 32px 46px;
+    padding: 0px 46px 32px 46px;
   }
 }
