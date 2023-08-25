@@ -7,7 +7,7 @@ export const WhyThisProductTC = ({ data, textColor }: any) => {
     <div className="wtp_container_tc">
       <div className="wtp_text_container_tc">
         <h1
-          className={`font_size_main_title margin_bottom_main_title ${textColor}`}
+          className={`font_size_title ${textColor}`}
         >
           {title}
         </h1>
