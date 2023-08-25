@@ -11,6 +11,7 @@ import { MarketResearchTC } from "./TlayoasCosina/MarketResearchTC";
 import { ColoredSection } from "./reusable/ColoredSection";
 import { CompetitiveAnalysisTC } from "./TlayoasCosina/CompetitiveAnalysisTC";
 import { UserSurveyTC } from "./TlayoasCosina/UserSurveyTC";
+import { InitialResearchTC } from "./TlayoasCosina/InitialResearchTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -24,6 +25,7 @@ export const TlayoasCocina = () => {
     marketResearch,
     competitiveAnalysis,
     userSurvey,
+    researchSoFar,
   } = tlayoaCosinaData;
 
   return (
@@ -69,6 +71,10 @@ export const TlayoasCocina = () => {
                 textColor={themeText}
               />
             </ColoredSection>
+            <InitialResearchTC
+              data={researchSoFar}
+              textColor={themeText}
+            />
           </div>
         </div>
       </div>
