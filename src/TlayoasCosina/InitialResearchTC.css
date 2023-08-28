@@ -37,6 +37,7 @@
   .ir_text_container_tc {
     padding: 46px;
     max-width: 500px;
+    padding-top: 64px;
     padding-bottom: 24px;
   }
   .ir_image_tc {
@@ -50,7 +51,7 @@
     margin-top: 0px;
   }
   .ir_container_tc {
-    padding: 46px 0px;
+    padding: 0px 0px;
     padding-bottom: 0px;
   }
 }

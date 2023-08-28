@@ -1,0 +1,38 @@
+.sd_container_tc {
+  padding: 8px 18px 32px 18px;
+}
+.sd_text_container_tc {
+  text-align: center;
+}
+.sd_image_tc {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .sd_container_tc {
+    padding: 8px 0px 32px 0px;
+  }
+  .sd_text_container_tc {
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1080px) {
+  .sd_container_tc {
+    padding: 0px 0px 64px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .sd_text_container_tc {
+    margin: 0;
+  }
+  .sd_image_tc {
+    display: block;
+    max-width: 250px;
+    margin-right: 46px;
+  }
+}

@@ -12,8 +12,8 @@ import { ColoredSection } from "./reusable/ColoredSection";
 import { CompetitiveAnalysisTC } from "./TlayoasCosina/CompetitiveAnalysisTC";
 import { UserSurveyTC } from "./TlayoasCosina/UserSurveyTC";
 import { InitialResearchTC } from "./TlayoasCosina/InitialResearchTC";
-import { PersonaCK } from "./CosmicKitchen/PersonaCK";
 import { PersonaTC } from "./TlayoasCosina/PersonaTC";
+import { StartDesignTC } from "./TlayoasCosina/StartDesignTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -29,6 +29,7 @@ export const TlayoasCocina = () => {
     userSurvey,
     researchSoFar,
     personas,
+    timeToStartDesign,
   } = tlayoaCosinaData;
 
   return (
@@ -80,6 +81,10 @@ export const TlayoasCocina = () => {
             />
             <PersonaTC
               data={personas}
+              textColor={themeText}
+            />
+            <StartDesignTC
+              data={timeToStartDesign}
               textColor={themeText}
             />
           </div>
