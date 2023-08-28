@@ -197,7 +197,8 @@ export const tlayoaCosinaData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Persona-min.png",
     bottomImage:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Persona-1.png",
-  },
+    elementId: "tc_personas",
+    },
   timeToStartDesign: {
     title: "Time to start designing!",
     desc: "Once I collected and synthesized through all my research data, it was time to sketch out the first flows and the initial low-fidelity wireframes.",

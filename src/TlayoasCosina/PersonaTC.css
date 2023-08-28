@@ -1,0 +1,48 @@
+.persona_container_tc {
+  padding-bottom: 24px;
+}
+
+.persona_text_container_tc {
+  padding: 24px 18px 24px 18px;
+}
+
+.p_persona_image_tc {
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.image_one_persona_tc {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 700px) {
+  .persona_text_container_tc {
+    padding: 32px 24px 32px 24px;
+  }
+  .persona_container_tc {
+    padding-bottom: 32px;
+  }
+  .image_one_persona_tc {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .p_persona_image_tc {
+    max-width: 850px;
+  }
+  .persona_image_container_tc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .persona_text_container_tc {
+    padding: 46px 46px 46px 46px;
+  }
+  .persona_container_tc {
+    padding-bottom: 46px;
+  }
+  .image_one_persona_tc {
+    margin-bottom: 46px;
+  }
+}
