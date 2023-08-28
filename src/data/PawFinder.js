@@ -137,11 +137,6 @@ export const pawFinderData = {
       comment: "I want a dog for my home, its a lot of work to search through multiple apps for the \"one.\""
     },
     {
-      name: "Sam",
-      profilePic: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Sam.png",
-      comment: "I wish this app had a map so I can see where all the locations are."
-    },
-    {
       name: "Michael",
       profilePic: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/Michael.png",
       comment: "I like reviewing all of my likes when it comes to deciding what I'm looking for."
