@@ -14,6 +14,7 @@ import { UserSurveyTC } from "./TlayoasCosina/UserSurveyTC";
 import { InitialResearchTC } from "./TlayoasCosina/InitialResearchTC";
 import { PersonaTC } from "./TlayoasCosina/PersonaTC";
 import { StartDesignTC } from "./TlayoasCosina/StartDesignTC";
+import { FlowDiagramTC } from "./TlayoasCosina/FlowDiagramTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -30,6 +31,7 @@ export const TlayoasCocina = () => {
     researchSoFar,
     personas,
     timeToStartDesign,
+    flowDiagram,
   } = tlayoaCosinaData;
 
   return (
@@ -87,6 +89,12 @@ export const TlayoasCocina = () => {
               data={timeToStartDesign}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <FlowDiagramTC
+                data={flowDiagram}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>
