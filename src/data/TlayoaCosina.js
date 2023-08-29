@@ -211,13 +211,14 @@ export const tlayoaCosinaData = {
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Frame3-min.png",
     imageTitle: "Main Client Flow",
-  elementId: "tc_flow_diagram",
+    elementId: "tc_flow_diagram",
   },
   lowFidelityUIDesign: {
     title: "Low-fidelity UI Design",
     desc: "Once the flow diagram was established I started creating the low fidelity wire frames of the main flow. This panel shows how a user might add to cart an item.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/low-fid-min.png",
+    elementId: "tc_low_fidelity_ui",
   },
   highFidelityUIDesign: {
     title: "High-fidelity UI Design",

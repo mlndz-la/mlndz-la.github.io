@@ -1,0 +1,36 @@
+.lfui_image_tc {
+  max-width: 100%;
+}
+
+.lfui_container_tc {
+  padding: 24px 0px;
+}
+.lfui_text_container_tc {
+  padding: 0px 18px;
+  padding-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .lfui_container_tc {
+    padding: 32px 0px;
+  }
+  .lfui_text_container_tc {
+    padding: 0px 24px;
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1080px) {
+  .lfui_container_tc {
+    padding: 46px 0px;
+  }
+  .lfui_text_container_tc {
+    padding: 0px 46px;
+    padding-bottom: 46px;
+  }
+  .lfui_image_tc {
+    max-width: 800px;
+  }
+  .lfui_image_container_tc {
+    display: flex;
+    justify-content: center;
+  }
+}
