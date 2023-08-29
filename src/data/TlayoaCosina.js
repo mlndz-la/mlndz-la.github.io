@@ -211,6 +211,7 @@ export const tlayoaCosinaData = {
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Frame3-min.png",
     imageTitle: "Main Client Flow",
+  elementId: "tc_flow_diagram",
   },
   lowFidelityUIDesign: {
     title: "Low-fidelity UI Design",
