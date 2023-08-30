@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
 
 .hfui_container_tc {
   position: relative;
@@ -23,11 +23,11 @@
 }
 .first_tc {
   background-color: var(--color1TC);
-  border: 0.5px solid rgba(0, 0, 0, 0.50);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
 }
 .second_tc {
   background-color: var(--color2TC);
-  border: 0.5px solid rgba(0, 0, 0, 0.50);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
 }
 .third_tc {
   background-color: var(--color3TC);
@@ -45,7 +45,7 @@
 .hf_text_alphabet_tc {
   font-size: 2rem;
   padding-top: 8px;
-  font-family: 'Figtree', sans-serif;
+  font-family: "Figtree", sans-serif;
   letter-spacing: 1.5px;
 }
 
@@ -66,10 +66,11 @@
 .hfui_dark_button_text_tc {
   color: var(--buttonPrimaryTextTC);
 }
-.hfui_light_button_text_tc, .hfui_dark_button_text_tc {
+.hfui_light_button_text_tc,
+.hfui_dark_button_text_tc {
   font-size: 1rem;
 }
-.hfui_light_button_tc{
+.hfui_light_button_tc {
   border: 1px solid #000;
 }
 .hfui_button_tc {
@@ -81,7 +82,7 @@
 }
 .hfui_visuals_title_tc {
   text-align: center;
-  font-family: 'Square Peg', cursive;
+  font-family: "Square Peg", cursive;
   color: var(--color4TC);
   font-size: 4rem;
   font-weight: 500;
@@ -89,6 +90,37 @@
 }
 
 @media (min-width: 700px) {
-  
+  .hfui_container_tc {
+    padding: 32px 0px;
+  }
+  .hfui_text_container_tc {
+    padding: 0px 24px;
+    padding-bottom: 46px;
+  }
+  .hfui_color_font_container_tc {
+    padding: 0px 24px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 32px;
+  }
+  .hfui_font_container_tc, .hfui_color_container_tc {
+    margin-bottom: 0px;
+  }
+  .hfui_feel_visuals_container {
+    padding: 0px 32px;
+    display: flex;
+    align-items: start;
+  }
+  .hfui_feel_container_tc, .hfui_visuals_container_tc {
+    margin-bottom: 0px;
+  }
+  .hfui_feel_container_tc {
+    max-width: 50%;
+  }
+  .hfui_visuals_container_tc {
+    min-width: 50%;
+    margin: auto;
+  }
 }
-@media (min-width: 1080px) {}
+@media (min-width: 1080px) {
+}
