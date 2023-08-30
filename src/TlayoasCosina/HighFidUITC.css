@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+.hfui_container_tc {
+  position: relative;
+  padding: 24px 0px;
+}
+.hfui_text_container_tc {
+  padding: 0px 18px;
+  padding-bottom: 32px;
+}
+
+.hfui_color_font_container_tc {
+  padding: 0px 18px;
+}
+
+.hfui_color_container_tc {
+  margin-bottom: 24px;
+}
+.hfui_color_circles_container_tc {
+  display: flex;
+  gap: 12px;
+  padding-top: 8px;
+}
+.first_tc {
+  background-color: var(--color1TC);
+  border: 0.5px solid rgba(0, 0, 0, 0.50);
+}
+.second_tc {
+  background-color: var(--color2TC);
+  border: 0.5px solid rgba(0, 0, 0, 0.50);
+}
+.third_tc {
+  background-color: var(--color3TC);
+}
+.fourth_tc {
+  background-color: var(--color4TC);
+}
+.fifth_tc {
+  background-color: var(--color5TC);
+}
+
+.hfui_font_container_tc {
+  margin-bottom: 24px;
+}
+.hf_text_alphabet_tc {
+  font-size: 2rem;
+  padding-top: 8px;
+  font-family: 'Figtree', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.hfui_feel_visuals_container {
+  padding: 0px 24px;
+}
+.hfui_feel_container_tc {
+  margin-bottom: 24px;
+}
+
+.hfui_button_container_tc {
+  display: flex;
+  justify-content: space-around;
+}
+.hfui_dark_button_tc {
+  background-color: var(--buttonPrimaryTC);
+}
+.hfui_dark_button_text_tc {
+  color: var(--buttonPrimaryTextTC);
+}
+.hfui_light_button_text_tc, .hfui_dark_button_text_tc {
+  font-size: 1rem;
+}
+.hfui_light_button_tc{
+  border: 1px solid #000;
+}
+.hfui_button_tc {
+  width: 40%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hfui_visuals_title_tc {
+  text-align: center;
+  font-family: 'Square Peg', cursive;
+  color: var(--color4TC);
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+@media (min-width: 700px) {
+  
+}
+@media (min-width: 1080px) {}
