@@ -20,6 +20,7 @@ import { HighFidUITC } from "./TlayoasCosina/HighFidUITC";
 import { HighFidDesignTC } from "./TlayoasCosina/HighFidDesignTC";
 import { PrototypeTC } from "./TlayoasCosina/PrototypeTC";
 import { UsabilityTC } from "./TlayoasCosina/UsabilityTC";
+import { StudyResultsTC } from "./TlayoasCosina/StudyResultsTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -42,6 +43,7 @@ export const TlayoasCocina = () => {
     highFidelityDesign,
     highFidelityPrototype,
     usabilityStudy,
+    studyResults,
   } = tlayoaCosinaData;
 
   return (
@@ -125,6 +127,10 @@ export const TlayoasCocina = () => {
             />
             <UsabilityTC
               data={usabilityStudy}
+              textColor={themeText}
+            />
+            <StudyResultsTC
+              data={studyResults}
               textColor={themeText}
             />
           </div>
