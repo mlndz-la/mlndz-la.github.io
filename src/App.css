@@ -167,6 +167,8 @@
 @media (min-width: 700px) {
   .show_case_designs_module {
     justify-content: space-evenly;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
   .categories_container {
     padding: 0px 16px;
