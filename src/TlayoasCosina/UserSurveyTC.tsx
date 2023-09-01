@@ -23,8 +23,8 @@ export const UserSurveyTC = ({ data, textColor }: any) => {
       return (
         <div key={i}>
           <div className="us_reddit_display_data_text_container_tc">
-            <h1 className={`font_size_desc ${textColor}50`}>{title}</h1>
-            <h1 className={`font_size_desc ${textColor}50`}>{percent}</h1>
+            <h1 className={`font_size_desc ${textColor}65`}>{title}</h1>
+            <h1 className={`font_size_desc ${textColor}65`}>{percent}</h1>
           </div>
           <div className={`us_reddit_display_data_line_tc`}>
             <div className={`us_percent_bar_tc us_percent_${css}_tc`}></div>
@@ -42,7 +42,7 @@ export const UserSurveyTC = ({ data, textColor }: any) => {
         >
           {title}
         </h1>
-        <p className={`font_size_desc ${textColor}50`}>{desc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <div className="us_reddit_survey_container_tc">
         <div>
@@ -57,7 +57,7 @@ export const UserSurveyTC = ({ data, textColor }: any) => {
               src={redditInfoGraphic.redditLogo}
               alt="reddit logo"
             />
-            <h2 className={`font_size_desc ${textColor}50`}>
+            <h2 className={`font_size_desc ${textColor}65`}>
               {redditInfoGraphic.subtitle}
             </h2>
           </div>

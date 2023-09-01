@@ -258,7 +258,7 @@ export const tlayoaCosinaData = {
     desc: "I connected my high fidelity designs into a clickable prototype. That will allow me to test the app on a first group of users.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/buy-flow.png",
-    imageDesc: "The prototype can be live-previewed at: [ link ]",
+    imageDesc: "The prototype can be live-previewed at: ",
     link: "",
   },
   usabilityStudy: {

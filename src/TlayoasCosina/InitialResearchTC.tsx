@@ -6,7 +6,7 @@ export const InitialResearchTC = ({ data, textColor }: any) => {
     <div className="ir_container_tc">
       <div className="ir_text_container_tc">
         <h1 className="font_size_title ">{title}</h1>
-        <p className={`font_size_desc ${textColor}50`}>{desc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <div className="ir_image_container_tc">
         <img className="ir_image_tc" src={image} alt="cartoon" />

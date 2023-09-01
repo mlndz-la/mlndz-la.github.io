@@ -11,7 +11,7 @@ export const WhyThisProductTC = ({ data, textColor }: any) => {
         >
           {title}
         </h1>
-        <p className={`font_size_desc ${textColor}50`}>{desc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <img className="wtp_image_tc" src={image} alt="crocodile cartoon" />
     </div>
