@@ -8,5 +8,7 @@
   }
 }
 @media (min-width: 1080px) {
-  
+  .u_container_tc {
+    padding: 46px 46px 18px 46px;
+  }
 }
