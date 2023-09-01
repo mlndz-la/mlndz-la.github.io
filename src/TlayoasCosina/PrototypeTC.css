@@ -1,0 +1,22 @@
+.p_container_tc {
+  padding: 24px 0px;
+}
+
+.p_text_container_tc {
+  padding: 0px 18px;
+}
+.p_image_tc {
+  max-width: 100%;
+  margin: 24px 0px;
+}
+
+.p_text_image_tc {
+  padding: 0px 18px;
+}
+.hf_prototype_link_tc {
+  color: #3385FF;
+  opacity: .75;
+}
+
+@media (min-width: 700px) {}
+@media (min-width: 1080px) {}
