@@ -14,7 +14,9 @@ export const PrototypeTC = ({ data, textColor }: any) => {
         </h1>
         <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
-      <img className="p_image_tc" src={image} alt="prototype preview" />
+      <div className="p_image_container_tc">
+        <img className="p_image_tc" src={image} alt="prototype preview" />
+      </div>
       <p className={`p_text_image_tc font_size_desc ${textColor}65`}>
         {imageDesc}{" "}
         <a className="hf_prototype_link_tc" href={link}>
