@@ -239,6 +239,7 @@ export const tlayoaCosinaData = {
     elementId: "tc_high_fidelity_ui",
   },
   highFidelityDesign: {
+    title: "21 high-fidelity frames were created",
     desc: "Including two different navigation patterns (a tab bar and taskbar) that could be used for A/B testing in further design stages.",
     screenshots: [
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Menu-1-min.png",
@@ -250,19 +251,20 @@ export const tlayoaCosinaData = {
     ],
     imageDesc:
       "I also tested a white background to give the app a more elegant look and feel on the main screens. As well as giving the product preview a square viewing window.",
+    elementId: "tc_prototype",
   },
   highFidelityPrototype: {
     title: "High- fidelity Prototype",
     desc: "I connected my high fidelity designs into a clickable prototype. That will allow me to test the app on a first group of users.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/buy-flow.png",
-    imageDesc: "The prototype can  be live-previewed at: [ link ]",
+    imageDesc: "The prototype can be live-previewed at: [ link ]",
     link: "",
   },
   usabilityStudy: {
     title: "Usability Study",
     desc1:
-      "I conducted a unmoderated usability study with 5 users. Each were given a prototype and a set of prompts to follow. The prompts were designed to help me better understand if my initial user flow was easy to follow and navigate. Can a user add items, delete items or learn about a product?",
+      "I conducted an unmoderated usability study with 5 users. Each were given a prototype and a set of prompts to follow. The prompts were designed to help me better understand if my initial user flow was easy to follow and navigate. Can a user add items, delete items or learn about a product?",
     desc2:
       "This was tested with the help of Google slides and recording software of their choice. Their was an initial Zoom call to help the user understand what the usability study entails and getting proper consent for any data collected.",
   },
