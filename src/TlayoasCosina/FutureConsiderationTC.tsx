@@ -13,7 +13,7 @@ export const FutureConsiderationTC = ({ data, textColor }: any) => {
         </h1>
         <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
-      <div>
+      <div className="fd_image_container_tc">
         <img className="fd_image_tc" src={image} />
       </div>
     </div>
