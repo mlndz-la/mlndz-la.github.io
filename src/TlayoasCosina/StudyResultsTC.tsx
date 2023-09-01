@@ -5,6 +5,8 @@ export const StudyResultsTC = ({ data, textColor }: any) => {
 
   return (
     <div className="sr_container_tc">
+      <br />
+      <br />
       <h1
         className={`font_size_main_title margin_bottom_main_title ${textColor}`}
       >
