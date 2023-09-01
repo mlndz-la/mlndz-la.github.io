@@ -11,7 +11,7 @@ export const LowFidUITC = ({ data, textColor }: any) => {
         >
           {title}
         </h1>
-        <p className={`font_size_desc ${textColor}50`}>{desc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <div className="lfui_image_container_tc">
         <img className="lfui_image_tc" src={image} alt="low fidelity ui" />

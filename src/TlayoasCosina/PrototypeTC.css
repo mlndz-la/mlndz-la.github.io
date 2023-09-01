@@ -14,9 +14,11 @@
   padding: 0px 18px;
 }
 .hf_prototype_link_tc {
-  color: #3385FF;
-  opacity: .75;
+  color: #2d73db;
+  opacity: 1;
 }
 
-@media (min-width: 700px) {}
+@media (min-width: 700px) {
+  
+}
 @media (min-width: 1080px) {}

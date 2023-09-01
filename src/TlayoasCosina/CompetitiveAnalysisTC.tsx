@@ -36,7 +36,7 @@ export const CompetitiveAnalysisTC = ({ data, textColor, theme }: any) => {
         >
           {title}
         </h1>
-        <p className={`font_size_desc ${textColor}50`}>{desc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <div className="ca_logo_container_tc">
         <div className="ca_logo_card_tc ca_logo_card_v1_tc">

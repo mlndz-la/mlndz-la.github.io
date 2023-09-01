@@ -15,11 +15,11 @@ export const HighFidDesignTC = ({ data, textColor }: any) => {
         >
           {title}
         </h1>
-        <p className={`font_size_desc ${textColor}50`}>{desc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{desc}</p>
       </div>
       <div className="show_case_designs_module">{displayScreenshots}</div>
       <div className="hfd_image_desc_text_container_tc">
-        <p className={`font_size_desc ${textColor}50`}>{imageDesc}</p>
+        <p className={`font_size_desc ${textColor}65`}>{imageDesc}</p>
       </div>
     </div>
   );
