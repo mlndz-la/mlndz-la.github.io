@@ -267,6 +267,7 @@ export const tlayoaCosinaData = {
       "I conducted an unmoderated usability study with 5 users. Each were given a prototype and a set of prompts to follow. The prompts were designed to help me better understand if my initial user flow was easy to follow and navigate. Can a user add items, delete items or learn about a product?",
     desc2:
       "This was tested with the help of Google slides and recording software of their choice. Their was an initial Zoom call to help the user understand what the usability study entails and getting proper consent for any data collected.",
+    elementId: "tc_usability_study",
   },
   studyResults: {
     title: "Study Results",
