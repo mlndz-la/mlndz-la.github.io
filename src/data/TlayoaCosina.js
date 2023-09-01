@@ -223,7 +223,6 @@ export const tlayoaCosinaData = {
   highFidelityUIDesign: {
     title: "High-fidelity UI Design",
     desc: "As soon as I finished the first iteration of the app's flow, I dove right into making the app's primary screens. Initially, I set the style guidelines, including the fonts and colors.",
-    alphabet: "AaBbCcDdEeFfGgHh",
     color: {
       title: "Color Palette",
       desc: "Accent, Primary, Secondary, Tertiary, Background",
@@ -231,11 +230,13 @@ export const tlayoaCosinaData = {
     font: {
       title: "Font",
       desc: "Proxima Nova Regular, Medium, Bold, Extra Bold",
+      alphabet: "AaBbCcDdEeFfGgHh",
     },
     look: {
-      title: "Modern minimal look & feel",
-      desc: "This style was achieved by using sharp edges along with a soft color scheme and an elegant font logo.",
+      title: "Look & feel",
+      desc: "The style used was achieved using a combination of sharp edges along with a soft color scheme and an elegant font.",
     },
+    elementId: "tc_high_fidelity_ui",
   },
   highFidelityDesign: {
     desc: "Including two different navigation patterns (a tab bar and taskbar) that could be used for A/B testing in further design stages.",

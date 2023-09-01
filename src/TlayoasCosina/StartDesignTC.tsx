@@ -7,7 +7,7 @@ export const StartDesignTC = ({ data, textColor }: any) => {
     <div className="sd_container_tc">
       <div className="sd_text_container_tc">
         <h1
-          className={`font_size_main_title margin_bottom_main_title ${textColor}`}
+          className={`font_size_title ${textColor}`}
         >
           {title}
         </h1>

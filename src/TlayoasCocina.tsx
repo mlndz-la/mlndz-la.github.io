@@ -16,6 +16,7 @@ import { PersonaTC } from "./TlayoasCosina/PersonaTC";
 import { StartDesignTC } from "./TlayoasCosina/StartDesignTC";
 import { FlowDiagramTC } from "./TlayoasCosina/FlowDiagramTC";
 import { LowFidUITC } from "./TlayoasCosina/LowFidUITC";
+import { HighFidUITC } from "./TlayoasCosina/HighFidUITC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -34,6 +35,7 @@ export const TlayoasCocina = () => {
     timeToStartDesign,
     flowDiagram,
     lowFidelityUIDesign,
+    highFidelityUIDesign,
   } = tlayoaCosinaData;
 
   return (
@@ -101,9 +103,16 @@ export const TlayoasCocina = () => {
               data={lowFidelityUIDesign}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <HighFidUITC
+                data={highFidelityUIDesign}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>
     </div>
   );
 };
+// Test
