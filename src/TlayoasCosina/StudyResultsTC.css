@@ -3,6 +3,8 @@
 }
 
 @media (min-width: 700px) {
-  
+  .sr_container_tc {
+    padding: 0px 24px 32px 24px;
+  }
 }
 @media (min-width: 1080px) {}
