@@ -1,0 +1,13 @@
+.a_container_tc {
+  position: relative;
+  padding: 24px 0px;
+}
+
+.a_text_container_tc {
+  padding: 0px 18px;
+}
+
+.a_image_tc {
+  max-width: 100%;
+  padding-top: 24px;
+}

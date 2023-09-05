@@ -22,6 +22,7 @@ import { PrototypeTC } from "./TlayoasCosina/PrototypeTC";
 import { UsabilityTC } from "./TlayoasCosina/UsabilityTC";
 import { StudyResultsTC } from "./TlayoasCosina/StudyResultsTC";
 import { FutureConsiderationTC } from "./TlayoasCosina/FutureConsiderationTC";
+import { AccessibilityTC } from "./TlayoasCosina/AccessibilityTC";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -46,6 +47,7 @@ export const TlayoasCocina = () => {
     usabilityStudy,
     studyResults,
     futureConsiderations,
+    accessibilityCheck,
   } = tlayoaCosinaData;
 
   return (
@@ -139,6 +141,12 @@ export const TlayoasCocina = () => {
               data={futureConsiderations}
               textColor={themeText}
             />
+            <ColoredSection theme={themeColor}>
+              <AccessibilityTC
+                data={accessibilityCheck}
+                textColor={themeText}
+              />
+            </ColoredSection>
           </div>
         </div>
       </div>

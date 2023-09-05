@@ -287,6 +287,7 @@ export const tlayoaCosinaData = {
       "In one example, the star (rating system) blends into the background color too much, making it difficult for user to see. I decided too create a black outline of the star so it can pop out more easily. The same was done for the spicy meter for consistency.",
     image:
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/WCAG-2.png",
+    elementId: "tc_accessibility_check",
   },
   productOverview: {
     title: "Product Summary",
