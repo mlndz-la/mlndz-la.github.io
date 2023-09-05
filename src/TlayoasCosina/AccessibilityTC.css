@@ -11,3 +11,20 @@
   max-width: 100%;
   padding-top: 24px;
 }
+
+@media (min-width: 700px) {
+  .a_container_tc {
+    padding: 32px 0px;
+  }
+
+  .a_text_container_tc {
+    padding: 0px 24px;
+  }
+
+  .a_image_tc {
+    max-width: 100%;
+    padding-top: 32px;
+  }
+}
+@media (min-width: 1080px) {
+}
