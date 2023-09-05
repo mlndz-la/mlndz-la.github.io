@@ -15,7 +15,7 @@ export const AccessibilityTC = ({ data, textColor }: any) => {
         <br />
         <p className={`font_size_desc ${textColor}65`}>{desc2}</p>
       </div>
-      <div>
+      <div className="a_image_container_tc">
         <img className="a_image_tc" src={image} />
       </div>
     </div>

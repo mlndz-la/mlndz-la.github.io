@@ -22,9 +22,23 @@
   }
 
   .a_image_tc {
-    max-width: 100%;
     padding-top: 32px;
   }
 }
 @media (min-width: 1080px) {
+  .a_container_tc {
+    padding: 46px 0px;
+  }
+
+  .a_text_container_tc {
+    padding: 0px 46px;
+  }
+  .a_image_container_tc {
+    display: flex;
+    justify-content: center;
+  }
+  .a_image_tc {
+    max-width: 800px;
+    padding-top: 46px;
+  }
 }
