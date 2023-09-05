@@ -296,5 +296,5 @@ export const tlayoaCosinaData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/croc_arrow.png",
   },
   mockUpImageBottom:
-    "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/no-aurora-Mock-up-min.png",
+    "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/TC/Mock-up.png",
 };
