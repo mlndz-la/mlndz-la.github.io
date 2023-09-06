@@ -16,11 +16,11 @@
 }
 
 .research_so_far_title_content {
-  margin: 32px 0px 0px 0px;
+  margin: 24px 0px 0px 0px;
 }
 
 .research_so_far_text_container {
-  padding: 0px 4px 0px 18px;
+  padding: 0px 18px 0px 18px;
 }
 @media (min-width: 700px) {
   .research_so_far_image {
