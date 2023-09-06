@@ -2,6 +2,10 @@
   font-size: 1.2rem;
 }
 
+.competitive_analysis_PF_intro_container{
+  padding: 24px 18px;
+}
+
 .competitive_analysis_PF_logo {
   max-width: 80px;
 }
@@ -37,16 +41,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 24px;
+  padding: 24px 18px;
 }
 
 .competitive_analysis_PF_good_bad_title {
   font-size: 1.2rem;
-}
-
-.competitive_analysis_PF_good_bad_desc {
-  margin-top: 8px;
-  font-weight: bold;
 }
 
 .competitive_analysis_PF_screenshot_container {
