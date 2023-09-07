@@ -38,6 +38,7 @@
   .market_research_PF_text_container {
     display: flex;
     justify-content: space-between;
+    padding: 0px 24px;
   }
   .mr_image_container_pf {
     display: block;
@@ -54,12 +55,14 @@
   }
   .market_research_PF_desc_container {
     width: 48%;
-    margin-top: 24px;
+    margin: 0px 0px;
+    margin-top: 32px;
   }
   .market_research_PF_container {
-    padding: 32px 18px 32px 18px;
+    padding: 32px 0px;
   }
 }
+
 @media (min-width: 1008px) {
   .market_research_PF_container {
     padding: 46px 18px 46px 18px;
