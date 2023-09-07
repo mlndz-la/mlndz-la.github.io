@@ -3,7 +3,7 @@
 }
 
 .flow_diagram_text_container_PF {
-  padding: 24px 12px 24px 18px;
+  padding: 24px 18px;
 }
 
 .flow_diagram_title_PF {
@@ -19,7 +19,7 @@
 
 .flow_diagram_image_PF {
   max-width: 100%;
-  margin-bottom: 11px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 700px) {

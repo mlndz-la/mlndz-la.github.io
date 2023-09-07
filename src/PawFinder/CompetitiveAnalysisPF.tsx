@@ -62,7 +62,11 @@ export const CompetitiveAnalysisPF = ({
   return (
     <div className="white_content_border" id={elementId}>
       <div className="competitive_analysis_PF_intro_container">
-        <h1 className={`font_size_title ${textColor}`}>{mainData.title}</h1>
+        <h1
+          className={`font_size_main_title margin_bottom_main_title ${textColor}`}
+        >
+          {mainData.title}
+        </h1>
         <p className={`font_size_desc ${textColor}65`}>{mainData.desc}</p>
       </div>
       {/* Good / Bad & Logo Container */}
