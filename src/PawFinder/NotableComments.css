@@ -20,7 +20,11 @@
     padding: 0px 24px;
   }
   .notable_comments_content {
-    padding: 32px 18px 32px 18px;
+    padding: 32px 0px 32px 0px;
+  }
+  .notable_comments_title {
+    margin-bottom: 32px;
+    padding: 0px 24px;
   }
 }
 @media (min-width: 1008px) {
