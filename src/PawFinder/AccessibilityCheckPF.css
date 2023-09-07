@@ -3,17 +3,12 @@
 }
 
 .ac_text_container_PF {
-  padding: 24px 4px 0px 18px;
-}
-
-.ac_title_PF {
-  padding-bottom: 8px;
-  font-size: 1.2rem;
+  padding: 24px 18px 0px 18px;
 }
 
 .ac_image_PF {
   max-width: 100%;
-  padding: 12px 0px;
+  padding: 24px 0px;
 }
 
 @media (min-width: 700px) {
