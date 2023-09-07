@@ -1,5 +1,5 @@
 .paper_wireframe_text_container_PF {
-  margin: 24px 4px 24px 18px;
+  margin: 24px 18px;
 }
 
 .paper_wireframe_title_PF {
@@ -13,7 +13,7 @@
 }
 
 .paper_wireframe_image_desc_PF {
-  margin: 0px 8px 0px 18px;
+  margin: 0px 18px 0px 18px;
 }
 @media (min-width: 700px) {
   .paper_wireframe_text_container_PF {
