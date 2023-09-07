@@ -3,7 +3,7 @@
 }
 
 .hf_text_container_PF {
-  padding: 24px 8px 0px 18px;
+  padding: 24px 18px 0px 18px;
 }
 
 .hf_title_PF {
@@ -29,6 +29,13 @@
 .hf_color_circles_container_PF {
   display: flex;
   gap: 12px;
+  padding-top: 8px;
+}
+.hf_text_alphabet_pf {
+  font-size: 2rem;
+  padding-top: 8px;
+  font-family: "Figtree", sans-serif;
+  letter-spacing: 1.5px;
 }
 .circle {
   width: 44px;
@@ -54,10 +61,6 @@
 .hf_font_container_PF {
   padding-bottom: 24px;
 }
-.hf_cp_font_size_alphabet_PF {
-  font-size: 2rem;
-}
-
 .hf_look_and_feel_container_PF {
   padding-bottom: 24px;
 }
