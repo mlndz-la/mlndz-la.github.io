@@ -231,7 +231,7 @@ export const pawFinderData = {
     title: "High- fidelity Prototype",
     desc: "I linked my high-fidelity designs to a click-through prototype that will let me test the application with an initial set of users.",
     image: "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/PF/MapFlow.png",
-    imageDesc: "Prototype can be live-previewed at: ",
+    imageDesc: "Live preview can be viewed here: ",
     link: "https://www.figma.com/proto/H0lxfPEPj8WoqfsUMSD6YI/UI-%2F-UX-Portfolio?page-id=221%3A687&node-id=226%3A87&viewport=625%2C-5238%2C0.9&scaling=min-zoom&starting-point-node-id=226%3A87&show-proto-sidebar=1"
   },
   usability: {
