@@ -13,7 +13,10 @@
 
 @media (min-width: 700px) {
   .ac_text_container_PF {
-    padding: 32px 4px 0px 18px;
+    padding: 32px 24px 0px 24px;
+  }
+  .ac_image_PF {
+    padding: 32px 0px;
   }
 }
 

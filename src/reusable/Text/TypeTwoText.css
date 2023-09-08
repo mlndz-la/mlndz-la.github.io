@@ -15,7 +15,7 @@
 @media (min-width: 700px) {
   .type_two_text_container {
     max-width: 429px;
-    padding: 46px 0px 46px 0px;
+    padding: 48px 0px 50px;
   }
   .type_two_container {
     display: flex;
