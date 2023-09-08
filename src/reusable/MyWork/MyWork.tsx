@@ -2,7 +2,7 @@ import { CaseStudyPreview, CaseStudyUrlEnum } from "../../components/CaseStudyPr
 import { MyWorkProps } from './types';
 import './MyWork.css';
 
-export const MyWork = ({ caseStudies }: MyWorkProps) => {
+export const MyWork = ({ title = 'My Work', subtitle = '', caseStudies }: MyWorkProps) => {
   const getCaseStudyUrl = (caseStudyTitle: string): CaseStudyUrlEnum => {
     switch (caseStudyTitle) {
       case "Tlayoa's Cosina": {

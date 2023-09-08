@@ -1,0 +1,45 @@
+.pages-footer__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 48px auto;
+  justify-content: center;
+}
+
+.more_work__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.more_work__title {
+  color: #000;
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.more_work__subtitle {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.more_work__case_study__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;  
+  gap: 48px
+}
+
+@media (min-width: 600px) {
+  .more_work__case_study__container {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+}
