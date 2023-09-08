@@ -31,17 +31,22 @@
   .personas_image_two_PF {
     margin-bottom: 46px;
   }
+  .personas_text_container_PF {
+    margin: 0px 24px 32px 24px;
+  }
+  .personas_image_one_PF {
+    margin-bottom: 32px;
+  }
 }
 @media (min-width: 1008px) {
   .personas_image_PF {
     width: 80%;
     border-radius: 15px;
     border: 1.5px solid rgba(194, 214, 200, 0.5);
-
   }
   .personas_image_one_PF {
     margin-bottom: 46px;
-  } 
+  }
   .personas_image_two_PF {
     margin-bottom: 64px;
   }
