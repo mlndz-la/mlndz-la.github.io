@@ -22,4 +22,10 @@
     max-width: 951px;
     padding-bottom: 0px;
   }
+  .future_consideration_text_container_PF {
+    padding: 0px 46px 46px 46px;
+  }
+  .future_consideration_image_PF {
+    padding-bottom: 46px;
+  }
 }
