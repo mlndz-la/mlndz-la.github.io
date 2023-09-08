@@ -6,6 +6,15 @@
   justify-content: center;
 }
 
+.pages-footer__view-more-button {
+  color: rgba(46, 46, 46, 0.70);
+  font-family: Plus Jakarta Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .more_work__container {
   display: flex;
   flex-direction: column;
@@ -39,7 +48,7 @@
 @media (min-width: 600px) {
   .more_work__case_study__container {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
