@@ -25,6 +25,7 @@ import { FutureConsiderationTC } from "./TlayoasCosina/FutureConsiderationTC";
 import { AccessibilityTC } from "./TlayoasCosina/AccessibilityTC";
 import { ProductSummaryTC } from "./TlayoasCosina/ProductSummaryTC";
 import { FinalMockupTC } from "./TlayoasCosina/FinalMockupTC";
+import { PagesFooter } from "./reusable/PagesFooter/PagesFooter";
 
 export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
@@ -163,6 +164,7 @@ export const TlayoasCocina = () => {
           </div>
         </div>
       </div>
+      <PagesFooter />
     </div>
   );
 };
