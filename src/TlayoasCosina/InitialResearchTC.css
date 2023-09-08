@@ -4,7 +4,6 @@
 
 .ir_text_container_tc {
   padding: 0px 18px;
-  text-align: center;
 }
 
 .ir_image_tc {
@@ -24,7 +23,7 @@
     margin: auto;
   }
   .ir_container_tc {
-    padding: 32px 0px;
+    padding: 50px 0px 32px;
   }
   .ir_line {
     padding: 1px;

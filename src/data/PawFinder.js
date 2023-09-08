@@ -22,7 +22,7 @@ export const pawFinderData = {
         elementId: "pf_flow_diagram"
       },
       {
-        title: "Paper Wireframe",
+        title: "Wireframe",
         elementId: "pf_paper_wireframe"
       },
       {
@@ -42,7 +42,7 @@ export const pawFinderData = {
         elementId: "pf_usability_study"
       },
       {
-        title: "Accessibility Evaluation",
+        title: "Accessibility",
         elementId: "pf_accessibility_evaluation"
       }
     ],
@@ -88,7 +88,7 @@ export const pawFinderData = {
       },
       {
         title: "The Problem",
-        desc: "It is estimated that 6.5 million animals enter into shelters each year, that leaves around 2 million animals that aren't adopted, many of which get euthanized or die in shelters due to sickness or old age."
+        desc: "It is estimated that 6.5 million animals enter into shelters each year, that leaves around 2 million animals that aren't adopted, many of which get euthanized or die in shelters due to sickness or age."
       }
     ],
     elementId: "pf_market_research"

@@ -18,7 +18,7 @@
 @media (min-width: 700px) {
   .paper_wireframe_text_container_PF {
     margin: 0px;
-    padding: 32px 24px;
+    padding: 50px 24px 32px;
   }
   .paper_wireframe_image_PF {
     max-width: 100%;

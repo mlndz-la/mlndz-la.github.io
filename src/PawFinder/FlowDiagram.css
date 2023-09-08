@@ -24,11 +24,11 @@
 
 @media (min-width: 700px) {
   .flow_diagram_text_container_PF {
-    padding: 32px 24px;
+    padding: 50px 24px 32px;
   }
   .flow_diagram_image_PF {
     max-width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1008px) {
