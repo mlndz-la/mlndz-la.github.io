@@ -8,15 +8,15 @@ export const cosmicKitchenData = {
     caseStudySubtitle: "The kitchen of tomorrow",
     categories: [
       {
-        title: "Research",
+        title: "Analysis",
         elementId: "kc_research_and_analysis"
       },
       {
-        title: "Global Market Research",
+        title: "Market Research",
         elementId: "kc_global_market_research"
       },
       {
-        title: "Target Audience",
+        title: "Audience",
         elementId: "kc_target_audience"
       },
       {
@@ -28,11 +28,11 @@ export const cosmicKitchenData = {
         elementId: "kc_information_architecture"
       },
       {
-        title: "Low-fidelity UI",
+        title: "Low-fidelity",
         elementId: "kc_low_fidelity_ui"
       },
       {
-        title: "High-fidelity UI",
+        title: "High-fidelity",
         elementId: "kc_high_fidelity_ui"
       },
       {
