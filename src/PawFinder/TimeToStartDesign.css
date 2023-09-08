@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
+    padding-bottom: 64px;
   }
 
   .time_to_design_text_container {

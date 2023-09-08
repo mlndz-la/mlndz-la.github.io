@@ -29,7 +29,7 @@
 }
 @media (min-width: 1008px) {
   .notable_comments_content {
-    padding: 46px 18px 46px 18px;
+    padding: 46px 0px;
   }
   .notable_comments_comment_box_container {
     flex-direction: row;
@@ -39,6 +39,7 @@
     padding: 0px 46px;
   }
   .notable_comments_title {
+    padding: 0px 46px;
     margin-bottom: 24px;
   }
 }

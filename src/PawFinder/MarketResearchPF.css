@@ -61,16 +61,21 @@
   .market_research_PF_container {
     padding: 32px 0px;
   }
+  .mr_main_title_pf {
+    padding: 0px 24px;
+  }
 }
 
 @media (min-width: 1008px) {
   .market_research_PF_container {
-    padding: 46px 18px 46px 18px;
+    padding: 46px 0px;
   }
 
+  .mr_main_title_pf {
+    padding: 0px 46px;
+  }
   .market_research_PF_text_container {
-    display: flex;
-    justify-content: space-between;
+    padding: 0px 46px;
   }
 
   .market_research_PF_title {

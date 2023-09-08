@@ -130,10 +130,10 @@
 }
 @media (min-width: 1008px) {
   .hf_text_container_PF {
-    padding: 46px 18px 0px 18px;
+    padding: 46px 46px 0px 46px;
   }
   .hf_main_content_PF {
-    padding: 46px 64px;
+    padding: 46px;
   }
   .hf_font_and_color_container_PF {
     display: flex;
@@ -141,7 +141,7 @@
   }
   .hf_feel_and_imagery_container_PF {
     display: flex;
-    justify-content: space-around;
+    justify-content: normal;
   }
   .hf_cp_font_feel_PF {
     max-width: 450px;
@@ -154,11 +154,18 @@
   }
   .hf_look_and_feel_container_PF {
     padding-bottom: 0px;
+    max-width: 50%;
+    min-width: none;
+    padding-right: 50px;
   }
   .hf_color_palette_container_PF {
     padding-bottom: 46px;
   }
   .hf_font_container_PF {
     padding-bottom: 46px;
+  }
+  .hf_button_container_PF {
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -41,7 +41,7 @@ export const HighFidelityPF = ({ data, textColor, elementId }: any) => {
               {look.title}
             </p>
             <h1
-              className={`font_size_main_title margin_bottom_main_title ${textColor}`}
+              className={`hf_feel_text_ck font_size_title ${textColor}`}
             >
               {look.desc}
             </h1>

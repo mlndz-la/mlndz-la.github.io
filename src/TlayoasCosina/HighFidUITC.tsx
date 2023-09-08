@@ -40,7 +40,7 @@ export const HighFidUITC = ({ data, textColor }: any) => {
           <p className={`font_size_desc margin-bottom-four ${textColor}65`}>
             {look.title}
           </p>
-          <h1 className={`font_size_main_title ${textColor}`}>{look.desc}</h1>
+          <h1 className={`hf_feel_text_ck font_size_title ${textColor}`}>{look.desc}</h1>
         </div>
         <div className="hfui_visuals_container_tc">
           <div className="hfui_button_container_tc">

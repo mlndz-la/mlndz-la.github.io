@@ -30,7 +30,8 @@
 }
 @media (min-width: 1008px) {
   .paper_wireframe_text_container_PF {
-    margin: 46px 4px 46px 18px;
+    margin: 0px;
+    padding: 46px;
   }
   .paper_wireframe_image_PF {
     max-width: 629px;
@@ -43,6 +44,7 @@
     justify-content: center;
   }
   .paper_wireframe_image_desc_PF {
+    margin: 0px 46px;
     margin-bottom: 64px;
   }
 }

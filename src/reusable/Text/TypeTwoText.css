@@ -29,6 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 64px 46px;
+    padding-top: 40px;
   }
 
   .type_two_text_image {
@@ -47,9 +49,6 @@
     font-size: 1rem;
   }
   
-  .type_two_paragraph {
-  }
-
   .type_two_text_image {
     display: inline;
   }

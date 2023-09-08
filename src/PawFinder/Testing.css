@@ -18,11 +18,11 @@
 }
 @media (min-width: 1008px) {
   .testing_text_container_PF {
-    margin: 0px 8px 0px 18px;
+    margin: 0px 46px;
   }
   .testing_image_PF {
     max-width: 751px;
-    padding-bottom: 0px;
+    padding: 46px 0px 0px;
   }
   .testing_image_container_PF {
     display: flex;

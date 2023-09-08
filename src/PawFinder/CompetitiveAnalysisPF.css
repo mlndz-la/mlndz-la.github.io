@@ -81,7 +81,7 @@
   .competitive_analysis_PF_companies_container {
     display: flex;
     justify-content: space-evenly;
-    margin: 46px 18px 46px 18px;
+    margin: 46px 46px 46px 46px;
     gap: 64px;
   }
   .competitive_analysis_PF_logo_title_container {
@@ -97,11 +97,13 @@
     border-radius: 12px;
   }
   .competitive_analysis_PF_intro_container{
-    margin: 46px 18px 32px 18px;
+    margin: 0px;
+    padding: 46px 46px 0px 46px;
   }
   .competitive_analysis_PF_screenshot_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 46px;
     margin-bottom: 46px;
   }
   .competitive_analysis_PF_screenshot{
