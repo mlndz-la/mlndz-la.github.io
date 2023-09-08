@@ -1,5 +1,5 @@
 .type_two_text_container {
-  padding: 30px 4px 30px 18px;
+  padding: 30px 18px 24px;
 }
 
 .type_two_text_image {
@@ -11,13 +11,11 @@
   margin-bottom: 8px;
 }
 
-.type_two_paragraph {
-}
 
 @media (min-width: 700px) {
   .type_two_text_container {
     max-width: 429px;
-    padding: 46px 0px 46px 0px;
+    padding: 48px 0px 50px;
   }
   .type_two_container {
     display: flex;
@@ -31,6 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 64px 46px;
+    padding-top: 40px;
   }
 
   .type_two_text_image {
@@ -49,9 +49,6 @@
     font-size: 1rem;
   }
   
-  .type_two_paragraph {
-  }
-
   .type_two_text_image {
     display: inline;
   }

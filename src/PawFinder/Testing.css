@@ -1,5 +1,5 @@
 .testing_text_container_PF {
-  margin: 48px 8px 12px 18px;
+  margin: 48px 18px 24px 18px;
 }
 
 .testing_title_PF {
@@ -11,14 +11,18 @@
   max-width: 100%;
   padding-bottom: 24px;
 }
-
+@media (min-width: 700px) {
+  .testing_text_container_PF {
+    margin: 64px 24px 24px 24px;
+  }
+}
 @media (min-width: 1008px) {
   .testing_text_container_PF {
-    margin: 0px 8px 0px 18px;
+    margin: 0px 46px;
   }
   .testing_image_PF {
     max-width: 751px;
-    padding-bottom: 0px;
+    padding: 46px 0px 0px;
   }
   .testing_image_container_PF {
     display: flex;

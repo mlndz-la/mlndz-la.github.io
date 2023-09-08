@@ -1,4 +1,4 @@
-import "./PaperWireframe.css"
+import "./PaperWireframe.css";
 
 export const PaperWireframe = ({
   title,
@@ -11,8 +11,14 @@ export const PaperWireframe = ({
   return (
     <div id={elementId} className="white_content_border">
       <div className="paper_wireframe_text_container_PF">
-        <h1 className="paper_wireframe_title_PF font_size_title">{title}</h1>
-        <p className={`paper_wireframe_desc_PF font_size_desc ${textColor}65`}>{desc}</p>
+        <h1
+          className={`font_size_main_title margin_bottom_main_title ${textColor}`}
+        >
+          {title}
+        </h1>
+        <p className={`font_size_desc ${textColor}65`}>
+          {desc}
+        </p>
       </div>
       <div className="paper_wireframe_image_container_PF">
         <img
@@ -21,7 +27,11 @@ export const PaperWireframe = ({
           alt="sketch of wireframe"
         />
       </div>
-      <p className={`paper_wireframe_image_desc_PF font_size_desc ${textColor}65`}>{imageDesc}</p>
+      <p
+        className={`paper_wireframe_image_desc_PF font_size_desc ${textColor}65`}
+      >
+        {imageDesc}
+      </p>
     </div>
   );
 };

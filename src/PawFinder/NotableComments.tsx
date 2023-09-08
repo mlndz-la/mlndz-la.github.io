@@ -9,7 +9,7 @@ export const NotableComments = ({data, theme}: any) => {
   })
   return (
     <div className="notable_comments_content position_relative">
-      <h1 className="notable_comments_title">Notable Comments</h1>
+      <h1 className="notable_comments_title font_size_title">Notable Comments</h1>
       <div className="notable_comments_comment_box_container">
         {displayComments}
       </div>

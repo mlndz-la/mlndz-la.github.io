@@ -1,5 +1,5 @@
 .future_consideration_text_container_PF {
-  padding: 0px 8px 0px 18px;
+  padding: 0px 18px 24px 18px;
 }
 
 .future_consideration_title_PF {
@@ -17,9 +17,24 @@
   padding-bottom: 24px;
 }
 
+@media (min-width: 700px) {
+  .future_consideration_text_container_PF {
+    padding: 0px 24px 32px 24px;
+  }
+  .future_consideration_image_PF {
+    padding-bottom: 32px;
+  }
+}
+
 @media (min-width: 1008px) {
   .future_consideration_image_PF {
     max-width: 951px;
     padding-bottom: 0px;
+  }
+  .future_consideration_text_container_PF {
+    padding: 0px 46px 46px 46px;
+  }
+  .future_consideration_image_PF {
+    padding-bottom: 46px;
   }
 }

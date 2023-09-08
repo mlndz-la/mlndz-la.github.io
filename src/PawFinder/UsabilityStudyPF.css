@@ -1,22 +1,13 @@
 .usability_container_PF {
-  padding: 24px 8px 48px 18px;
-}
-
-.usability_title_PF {
-  padding-bottom: 8px;
-  font-size: 1.2rem;
-}
-
-.study_results_text_container_PF {
-  padding-top: 24px;
+  padding: 24px 18px 48px 18px;
 }
 @media (min-width: 700px) {
 .usability_container_PF {
-  padding: 32px 8px 48px 18px;
+  padding: 32px 24px 64px 24px;
 }
 }
 @media (min-width: 1008px) {
   .usability_container_PF {
-    padding: 46px 8px 64px 18px;
+    padding: 46px 46px 64px 46px;
   }
 }
