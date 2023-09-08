@@ -27,6 +27,7 @@ import { FutureConsiderationCK } from "./CosmicKitchen/FutureConsiderationCK";
 import { AccessibilityCheckCK } from "./CosmicKitchen/AccessibilityCheckCK";
 import { ProductOverviewCK } from "./CosmicKitchen/ProductOverviewCK";
 import { BottomImageCK } from "./CosmicKitchen/BottomImageCK";
+import { PagesFooter } from "./reusable/PagesFooter/PagesFooter";
 
 export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
@@ -169,6 +170,7 @@ export const CosmicKitchen = () => {
                 data={mockUpImageBottom}
               />
             </ColoredSection>
+            <PagesFooter />
           </div>
         </div>
       </div>

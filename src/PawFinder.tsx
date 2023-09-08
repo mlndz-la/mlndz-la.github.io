@@ -27,6 +27,7 @@ import { AccessibilityCheckPF } from "./PawFinder/AccessibilityCheckPF";
 import { ProductSummaryPF } from "./PawFinder/ProductSummaryPF";
 import { MockUpBottomImagePF } from "./PawFinder/MockUpBottomImagePF";
 import { ColoredLine } from "./reusable/ColoredLine";
+import { PagesFooter } from "./reusable/PagesFooter/PagesFooter";
 
 export const PawFinder = () => {
   const {
@@ -201,6 +202,7 @@ export const PawFinder = () => {
               />
             </ColoredSection>
             {/* Recommendations are added here */}
+            <PagesFooter />
           </div>
         </div>
       </div>
