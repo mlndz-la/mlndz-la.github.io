@@ -1,12 +1,13 @@
 .persona_container_ck {
-  padding: 24px 0px 0px;
+  padding: 32px 0px 0px;
 }
 
 .persona_text_container_ck {
-  padding: 0px 8px 24px 18px;
+  padding: 0px 18px 24px;
 }
 
-.persona_image_top, .persona_image_bottom {
+.persona_image_top,
+.persona_image_bottom {
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
 }
@@ -25,24 +26,27 @@
     margin-bottom: 32px;
   }
   .persona_container_ck {
-    padding: 32px 0px 0px;
+    padding: 50px 0px 0px;
+    margin-top: 14px;
   }
   .persona_text_container_ck {
-    padding: 0px 8px 32px 18px;
+    padding: 0px 24px 32px 24px;
   }
-  .persona_image_top, .persona_image_bottom {
+  .persona_image_top,
+  .persona_image_bottom {
     max-width: 850px;
   }
 }
 
 @media (min-width: 1080px) {
   .persona_text_container_ck {
-    padding: 0px 8px 46px 18px;
+    padding: 0px 46px 46px 46px;
   }
   .persona_image_top {
     margin-bottom: 46px;
   }
   .persona_container_ck {
-    padding: 46px 0px 0px;
+    margin-top: 0px;
+    padding: 64px 0px 0px;
   }
 }

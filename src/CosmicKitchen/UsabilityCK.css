@@ -4,16 +4,22 @@
 }
 
 .u_text_container_ck {
-  padding: 0px 8px 0px 18px;
+  padding: 0px 18px 0px 18px;
 }
 
 @media (min-width: 700px) {
   .u_container_ck {
-    padding-top: 32px;
+    padding-top: 48px;
+  }
+  .u_text_container_ck {
+    padding: 0px 24px;
   }
 }
 @media (min-width: 1080px) {
   .u_container_ck {
-    padding-top: 46px;
+    padding-top: 64px;
+  }
+  .u_text_container_ck {
+    padding: 0px 46px;
   }
 }

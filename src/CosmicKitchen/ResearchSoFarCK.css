@@ -1,9 +1,8 @@
 .rsf_container_ck {
-  padding: 32px 0px;
+  padding: 38px 0px 46px;
 }
 
 .rsf_text_container_ck {
-  text-align: center;
   padding: 0px 18px;
 }
 
@@ -14,16 +13,19 @@
 
 @media (min-width: 700px) {
   .rsf_text_container_ck {
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     padding: 0px 0px;
   }
   .rsf_container_ck {
-    padding: 46px 0px;
+    padding: 50px 0px 64px;
   }
 }
 @media (min-width: 1080px) {
   .rsf_line {
     border-radius: 100%;
+  }
+  .rsf_container_ck {
+    padding: 64px 0px;
   }
 }

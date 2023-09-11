@@ -31,6 +31,7 @@ export const TlayoasCocina = () => {
   const themeColor = ThemesEnum.tc;
   const themeText = TextColorEnum.dark;
   const themeName = ThemesEnum.tc;
+  const lastCSS = "last_ele_bottom_margin_zero";
   const {
     mockUpImageTopDesktop,
     mockUpImageTopMobile,
@@ -156,7 +157,7 @@ export const TlayoasCocina = () => {
               data={productOverview}
               textColor={themeText}
             />
-            <ColoredSection theme={themeColor}>
+            <ColoredSection theme={themeColor} isLast={lastCSS}>
               <FinalMockupTC
                 data={mockUpImageBottom}
               />

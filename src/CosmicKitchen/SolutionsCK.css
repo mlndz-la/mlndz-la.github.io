@@ -3,26 +3,26 @@
 }
 
 .s_text_container_ck {
-  padding: 24px 8px 16px 18px;
+  padding: 32px 18px 16px 18px;
 }
 
 .s_list_container_ck {
-  padding: 0px 8px 24px 38px;
+  padding: 0px 18px 24px 38px;
 }
 
 @media (min-width: 700px) {
   .s_text_container_ck {
-    padding: 48px 8px 16px 18px;
+    padding: 48px 24px 16px 24px;
   }
   .s_list_container_ck {
-    padding: 0px 8px 32px 38px;
+    padding: 0px 24px 50px 48px;
   }
 }
 @media (min-width: 1080px) {
   .s_list_container_ck {
-    padding: 0px 8px 46px 38px;
+    padding: 0px 46px 64px 68px;
   }
   .s_text_container_ck {
-    padding: 48px 8px 24px 18px;
+    padding: 64px 46px 24px 46px;
   }
 }

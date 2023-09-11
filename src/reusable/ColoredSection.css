@@ -21,11 +21,17 @@
 .theme_section_TC {
   background-color: var(--primaryTC);
 }
+.last_ele_bottom_margin_zero {
+  margin-bottom: 0px;
+}
 
 @media (min-width: 700px) {
   .colored_section_container {
     margin: 14px 0px;
     padding: 14px 0px;
+  }
+  .last_ele_bottom_margin_zero {
+    margin-bottom: 0px;
   }
 }
 

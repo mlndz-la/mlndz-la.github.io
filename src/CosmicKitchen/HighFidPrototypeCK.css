@@ -3,7 +3,7 @@
 }
 
 .hfp_text_container_ck {
-  padding: 0px 8px 0px 18px;
+  padding: 0px 18px 0px 18px;
 }
 
 .hfp_image_container_ck {
@@ -29,6 +29,12 @@
   .hfp_container_ck {
     padding-bottom: 16px;
   }
+  .hfp_text_container_ck {
+    padding: 0px 24px;
+  }
+  .hfp_link_ck {
+    padding: 0px 24px;
+  }
 }
 @media (min-width: 1080px) {
   .hfp_image_ck {
@@ -36,6 +42,12 @@
     padding: 24px 0px;
   }
   .hfp_container_ck {
-    padding-bottom: 18px;
+    padding-bottom: 0px;
+  }
+  .hfp_text_container_ck {
+    padding: 0px 46px;
+  }
+  .hfp_link_ck {
+    padding: 0px 46px;
   }
 }
