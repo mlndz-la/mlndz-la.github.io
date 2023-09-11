@@ -25,4 +25,7 @@
   .rsf_line {
     border-radius: 100%;
   }
+  .rsf_container_ck {
+    padding: 64px 0px;
+  }
 }

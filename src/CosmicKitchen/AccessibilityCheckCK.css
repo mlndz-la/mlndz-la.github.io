@@ -5,7 +5,7 @@
 }
 
 .ac_text_container_ck {
-  padding: 0px 24px 24px 24px;
+  padding: 0px 18px 24px;
 }
 
 .ac_image_container_ck {
@@ -21,12 +21,19 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .ac_text_container_ck {
+    padding: 0px 24px 24px 24px;
+  }
 }
 @media (min-width: 1080px) {
   .ac_container_ck {
-    padding-top: 46px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .ac_image_ck {
     max-width: 870px;
+  }
+  .ac_text_container_ck {
+    padding: 0px 46px 64px;
   }
 }

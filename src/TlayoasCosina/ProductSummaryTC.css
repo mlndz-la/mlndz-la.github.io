@@ -19,12 +19,10 @@
   }
 }
 @media (min-width: 1080px) {
-  .ps_container_tc {
-    padding: 64px 0px;
-  }
   .ps_text_container_tc {
     padding: 0px 0px;
     max-width: 419px;
+    margin: 0px;
   }
   .ps_image_tc {
     max-width: 250px;
@@ -34,6 +32,7 @@
     display: block;
   }
   .ps_container_tc {
+    padding: 64px 0px;
     display: flex;
     align-items: center;
     justify-content: center;

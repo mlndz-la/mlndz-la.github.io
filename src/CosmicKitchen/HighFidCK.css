@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Square+Peg&display=swap');
+
 .hf_container_ck {
   position: relative;
   padding: 24px 0px;
@@ -84,7 +86,10 @@
 .margin-bottom-four {
   margin-bottom: 4px;
 }
-
+.hf_text_alphabet_ck {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
 @media (min-width: 700px) {
   .hf_container_ck {
     padding: 50px 0px;
@@ -127,10 +132,10 @@
 }
 @media (min-width: 1080px) {
   .hf_content_container_ck {
-    padding: 0px 64px;
+    padding: 0px 46px;
   }
   .hf_container_ck {
-    padding: 46px 0px;
+    padding: 64px 0px;
   }
   .hf_color_circles_container_ck {
     padding-top: 8px;
@@ -139,5 +144,11 @@
   }
   .hf_feel_and_imagery_container_ck {
     align-items: normal;
+  }
+  .hf_text_container_ck {
+    padding: 0px 46px 32px 46px;
+  }
+  .hf_font_and_color_container_ck {
+    padding-bottom: 46px;
   }
 }

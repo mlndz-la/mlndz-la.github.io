@@ -4,7 +4,7 @@
 }
 
 .ia_text_container_ck {
-  padding: 0px 24px 0px;
+  padding: 0px 18px 0px;
 }
 
 .ia_image_container_ck {
@@ -24,17 +24,21 @@
   }
   .ia_image_container_ck {
     margin-top: 32px;
+  }.ia_text_container_ck {
+    padding: 0px 24px 0px;
   }
 }
 
 @media (min-width: 1080px) {
   .ia_container_ck {
-    padding: 46px 0px;
+    padding: 64px 0px;
   }
   .ia_image_container_ck {
     margin-top: 46px;
   }
   .ia_image_ck {
     max-width: 800px;
+  }.ia_text_container_ck {
+    padding: 0px 46px 0px;
   }
 }

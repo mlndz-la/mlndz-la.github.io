@@ -42,6 +42,12 @@
     padding: 24px 0px;
   }
   .hfp_container_ck {
-    padding-bottom: 18px;
+    padding-bottom: 0px;
+  }
+  .hfp_text_container_ck {
+    padding: 0px 46px;
+  }
+  .hfp_link_ck {
+    padding: 0px 46px;
   }
 }

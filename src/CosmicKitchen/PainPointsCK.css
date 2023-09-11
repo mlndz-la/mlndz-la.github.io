@@ -18,6 +18,9 @@
 
 @media (min-width: 1080px) {
   .pp_text_container_ck {
-    padding: 46px 12px 24px 18px;
+    padding: 64px 46px 24px 46px;
+  }
+  .pp_list_container_ck {
+    padding: 0px 46px 0px 68px;
   }
 }

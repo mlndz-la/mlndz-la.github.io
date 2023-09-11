@@ -73,12 +73,15 @@
 }
 
 @media (min-width: 1008px) {
+  .users_text_container_ck {
+    padding: 0px 46px;
+  }
   .gmr_and_ta_container_ck {
     padding-bottom: 64px;
   }
   .ta_text_container_ck, .gmr_text_container_ck {
     margin-top: 0px;
-    padding: 46px 18px 46px 18px;
+    padding: 64px 46px 46px 46px;
   }
   .gmr_image_ck {
     width: 868px;

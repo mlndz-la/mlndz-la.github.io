@@ -40,7 +40,7 @@ export const HighFidCK = ({ data, textColor }: any) => {
               <h1 className={`font_size_main_title light ${textColor}`}>
                 {font.desc}
               </h1>
-              <h1 className={`hf_text_alphabet_PF ${textColor}`}>{alphabet}</h1>
+              <h1 className={`hf_text_alphabet_PF hf_text_alphabet_ck ${textColor}`}>{alphabet}</h1>
             </div>
           </div>
         </div>

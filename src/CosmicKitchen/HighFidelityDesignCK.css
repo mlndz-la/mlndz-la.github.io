@@ -17,9 +17,18 @@
   .hfd_image_desc_container_ck {
     padding: 0px 24px;
   }
+  .hfd_text_container {
+    padding: 0px 24px;
+  }
 }
 @media (min-width: 1080px) {
   .hfd_container_ck {
-    padding: 46px 0px 64px;
+    padding: 64px 0px 64px;
+  }
+  .hfd_text_container {
+    padding: 0px 46px;
+  }
+  .hfd_image_desc_container_ck {
+    padding: 0px 46px;
   }
 }

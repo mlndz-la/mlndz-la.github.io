@@ -17,6 +17,9 @@
 }
 @media (min-width: 1080px) {
   .u_container_ck {
-    padding-top: 46px;
+    padding-top: 64px;
+  }
+  .u_text_container_ck {
+    padding: 0px 46px;
   }
 }
