@@ -4,7 +4,7 @@
 }
 
 .ia_text_container_ck {
-  padding: 0px 18px 0px 18px;
+  padding: 0px 24px 0px;
 }
 
 .ia_image_container_ck {
@@ -20,7 +20,7 @@
 
 @media (min-width: 700px) {
   .ia_container_ck {
-    padding: 32px 0px;
+    padding: 50px 0px;
   }
   .ia_image_container_ck {
     margin-top: 32px;

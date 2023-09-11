@@ -10,6 +10,15 @@
   max-width: 100%;
 }
 
+@media (min-width: 700px) {
+  .fc_text_container_ck {
+    padding: 0px 24px 24px 24px;
+  }
+  .fc_container_ck {
+    padding-bottom: 50px;
+  }
+}
+
 @media (min-width: 1080px) {
   .fc_image_container_ck {
     display: flex;

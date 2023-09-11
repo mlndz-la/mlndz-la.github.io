@@ -25,7 +25,8 @@
 }
 
 .ta_text_container_ck {
-  padding: 48px 18px 24px 18px;
+  margin-top: 24px;
+  padding: 24px 18px 24px 18px;
 }
 .ta_image_ck {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
@@ -42,13 +43,17 @@
 }
 @media (min-width: 700px) {
   .gmr_and_ta_container_ck {
-    padding-bottom: 32px;
+    padding-bottom: 50px;
+  }
+  .users_text_container_ck {
+    padding: 0px 24px;
   }
   .gmr_text_container_ck {
-    padding: 32px 18px 32px 18px;
+    padding: 50px 24px 32px;
   }
   .ta_text_container_ck {
-    padding: 48px 18px 24px 18px;
+    margin-top: 14px;
+    padding: 50px 24px 24px;
   }
   .ta_image_desc_ck {
     padding: 0px;
@@ -72,6 +77,7 @@
     padding-bottom: 64px;
   }
   .ta_text_container_ck, .gmr_text_container_ck {
+    margin-top: 0px;
     padding: 46px 18px 46px 18px;
   }
   .gmr_image_ck {

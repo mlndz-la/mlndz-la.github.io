@@ -9,7 +9,10 @@
 
 @media (min-width: 700px) {
   .u_container_ck {
-    padding-top: 32px;
+    padding-top: 48px;
+  }
+  .u_text_container_ck {
+    padding: 0px 24px;
   }
 }
 @media (min-width: 1080px) {

@@ -3,10 +3,10 @@
 }
 @media (min-width: 700px) {
   .po_text_container_ck {
-    max-width: 600px;
+    max-width: 540px;
   }  
   .po_container_ck {
-    padding: 46px 0px;
+    padding: 64px 0px;
     display: flex;
     justify-content: center;
   }

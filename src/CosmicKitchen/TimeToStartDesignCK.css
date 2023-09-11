@@ -9,11 +9,11 @@
 @media (min-width: 700px) {
   .ttsd_text_container_ck {
     padding: 0px 0px;
-    max-width: 620px;
+    max-width: 500px;
     margin: auto;
   }
   .ttsd_container_ck {
-    padding: 46px 0px;
+    padding: 64px 0px 50px;
   }
 }
 @media (min-width: 1080px) {

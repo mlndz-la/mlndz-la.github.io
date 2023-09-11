@@ -13,12 +13,12 @@
 
 @media (min-width: 700px) {
   .rsf_text_container_ck {
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     padding: 0px 0px;
   }
   .rsf_container_ck {
-    padding: 46px 0px;
+    padding: 50px 0px 64px;
   }
 }
 @media (min-width: 1080px) {

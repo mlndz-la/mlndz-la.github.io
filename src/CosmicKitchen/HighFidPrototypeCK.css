@@ -29,6 +29,12 @@
   .hfp_container_ck {
     padding-bottom: 16px;
   }
+  .hfp_text_container_ck {
+    padding: 0px 24px;
+  }
+  .hfp_link_ck {
+    padding: 0px 24px;
+  }
 }
 @media (min-width: 1080px) {
   .hfp_image_ck {

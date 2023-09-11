@@ -30,6 +30,9 @@
     margin: 14px 0px;
     padding: 14px 0px;
   }
+  .last_ele_bottom_margin_zero {
+    margin-bottom: 0px;
+  }
 }
 
 @media (min-width: 1008px) {
