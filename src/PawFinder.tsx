@@ -54,6 +54,7 @@ export const PawFinder = () => {
     productOverview,
     mockUpImageBottom,
   } = pawFinderData;
+  const lastCSS = "last_ele_bottom_margin_zero";
   const themeColor = ThemesEnum.pf;
   const themeText = TextColorEnum.dark;
   const themeName = ThemesEnum.pf
@@ -196,7 +197,7 @@ export const PawFinder = () => {
               data={productOverview}
               textColor={themeText}
             />
-            <ColoredSection theme={themeColor}>
+            <ColoredSection theme={themeColor} isLast={lastCSS}>
               <MockUpBottomImagePF
                 image={mockUpImageBottom}
               />

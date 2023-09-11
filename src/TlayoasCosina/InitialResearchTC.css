@@ -1,5 +1,5 @@
 .ir_container_tc {
-  padding: 24px 0px 8px 0px;
+  padding: 38px 0px 8px 0px;
 }
 
 .ir_text_container_tc {
@@ -13,7 +13,7 @@
 .ir_line {
   padding: 1px;
   background-color: var(--dark40);
-  margin-top: 32px;
+  margin-top: 46px;
 }
 
 @media (min-width: 700px) {

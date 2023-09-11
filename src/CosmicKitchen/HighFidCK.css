@@ -4,7 +4,7 @@
 }
 
 .hf_text_container_ck {
-  padding: 0px 8px 32px 18px;
+  padding: 0px 18px 32px 18px;
 }
 
 .hf_color_text_container_ck {
@@ -31,7 +31,7 @@
 .fifth_ck { background-color: var(--color5CK); }
 
 .hf_font_text_container_ck {
-  padding: 0px 8px 24px 18px;
+  padding: 0px 18px 24px 18px;
 }
 .hf_text_alphabet_PF {
   font-size: 2rem;
@@ -39,7 +39,7 @@
 }
 
 .hf_feel_container_ck {
-  padding: 0px 8px 24px 18px;
+  padding: 0px 18px 24px 18px;
 }
 .hf_feel_text_ck {
   padding-bottom: 0px;

@@ -33,6 +33,7 @@ export const CosmicKitchen = () => {
   const themeColor = ThemesEnum.ck;
   const themeText = TextColorEnum.light;
   const themeName = ThemesEnum.ck;
+  const lastCSS = "last_ele_bottom_margin_zero";
   const {
     caseStudyStart,
     whyThisProduct,
@@ -165,7 +166,7 @@ export const CosmicKitchen = () => {
               data={productOverview}
               textColor={themeText}
             />
-            <ColoredSection theme={themeColor}>
+            <ColoredSection theme={themeColor} isLast={lastCSS}>
               <BottomImageCK
                 data={mockUpImageBottom}
               />

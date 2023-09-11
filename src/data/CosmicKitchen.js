@@ -77,7 +77,7 @@ export const cosmicKitchenData = {
   },
   whyThisProduct: {
     desc: "There have been more technological advances in the United States as a whole, but the fridge hasn't done anything new yet. This area has a lot of room for growth, and I'd like to be at the front of it.",
-    title: "The question is why I chose this product.",
+    title: "About the product and market.",
   },
   researchAndAnalysis: {
     title: "Research & Analysis",
@@ -169,7 +169,7 @@ export const cosmicKitchenData = {
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Stephanie.png",
   },
   timeToStartDesign: {
-    title: "It's time to get to work on the blueprints",
+    title: "It's time to start working",
     desc: "Once the research was finished, the target audience, pain points, and personas could be developed. Information architecture and low-fidelity wireframes, the cornerstones of any successful product, must now be laid.",
   },
   informationArchitecture: {
@@ -213,7 +213,7 @@ export const cosmicKitchenData = {
     elementId: "kc_high_fidelity_ui",
   },
   highFidelityDesign: {
-    title: "+20 high-fidelity design were created",
+    title: "+20 high-fidelity design",
     desc: "Previously, the app could be navigated using a hamburger menu. We didn't implement it because we believed that was better suited for a mobile device.",
     screenshots: [
       "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Notes.png",
@@ -265,7 +265,7 @@ export const cosmicKitchenData = {
   },
   productOverview: {
     title: "Product Overview",
-    desc: "I looked at the best the smart fridge makers both nationally and internationally. figured out who would benefit most from using Cosmic Kitchen and what problems those users were having, then made an effort to alleviate those problems. developed user profiles, planned the site's structure, and drafted both low- and high-fidelity prototypes. Then, as a last step, we compared our findings from the usability study with those from the accessibility audit from WCAG.",
+    desc: "I inspected the best the smart fridge makers both international and nationally. Figured out who would benefit most from using Cosmic Kitchen and what problems those users were having, then made an effort to alleviate those problems. developed user profiles, planned the site's structure, and drafted both low- and high-fidelity prototypes. Then, as a last step, we compared our findings from the usability study with those from the accessibility audit from WCAG.",
   },
   mockUpImageBottom:
     "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-up3panels.png",

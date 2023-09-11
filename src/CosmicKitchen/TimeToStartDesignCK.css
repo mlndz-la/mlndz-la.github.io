@@ -1,10 +1,9 @@
 .ttsd_container_ck {
-  padding: 32px 0px;
+  padding: 46px 0px 38px;
 }
 
 .ttsd_text_container_ck {
   padding: 0px 18px;
-  text-align: center;
 }
 
 @media (min-width: 700px) {
