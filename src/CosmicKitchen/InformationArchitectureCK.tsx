@@ -14,7 +14,6 @@ export const InformationArchitectureCK = ({ data, textColor }: any) => {
         <p className={`font_size_desc ${textColor}50`}>{desc}</p>
       </div>
       <div className="ia_image_container_ck">
-        <h1 className={`ia_image_title_ck font_size_main_title ${textColor}`}>{imageTitle}</h1>
         <img className="ia_image_ck" src={image} />
       </div>
     </div>
