@@ -32,15 +32,15 @@
   gap: 48px
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .pages-footer__container {
-    max-width: 80%;
+    margin: 64px 24px;
   }
 
   .more_work__case_study__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 84px;
+    margin-top: 46px;
   }
 }
