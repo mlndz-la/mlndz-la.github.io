@@ -26,8 +26,12 @@ import { AccessibilityTC } from "./TlayoasCosina/AccessibilityTC";
 import { ProductSummaryTC } from "./TlayoasCosina/ProductSummaryTC";
 import { FinalMockupTC } from "./TlayoasCosina/FinalMockupTC";
 import { PagesFooter } from "./reusable/PagesFooter/PagesFooter";
+import { useEffect } from "react";
 
 export const TlayoasCocina = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const themeColor = ThemesEnum.tc;
   const themeText = TextColorEnum.dark;
   const themeName = ThemesEnum.tc;

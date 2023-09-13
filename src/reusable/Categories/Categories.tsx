@@ -4,7 +4,7 @@ import "./Categories.css";
 export const Category = ({title, theme, elementId}: ICategoryProps) => {
   const handleView = () => {
     const element = document.getElementById(elementId);
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    element.scrollIntoView({ behavior: 'auto', block: 'start' })
   };
 
   return (

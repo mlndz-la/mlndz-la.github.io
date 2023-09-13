@@ -67,7 +67,7 @@ export const PagesFooter = () => {
     <div className="pages-footer__container">
       <div className="more_work__container">
         <h2 className="more_work__title">More Work</h2>
-        <h5 className="more_work__subtitle">Usability Studies,  Case Studies, Redesigns, and more</h5>
+        <p className="more_work__subtitle font_size_desc">Case Studies, Redesigns and more</p>
         <div className="more_work__case_study__container">
           {
             displayedCaseStudies.map(({ imagePreview, title, description }) => {

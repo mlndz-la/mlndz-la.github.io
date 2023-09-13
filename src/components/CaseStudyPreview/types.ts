@@ -1,7 +1,7 @@
 export enum CaseStudyUrlEnum {
   tlayoasCocina = 'tlayoas-cocina',
   cosmicKitchen = 'cosmic-kitchen',
-  pawFinder = 'paw-finder'
+  pawFinder = 'paw-finder',
 }
 
 export interface ICaseStudyPreviewProps {

@@ -28,8 +28,12 @@ import { AccessibilityCheckCK } from "./CosmicKitchen/AccessibilityCheckCK";
 import { ProductOverviewCK } from "./CosmicKitchen/ProductOverviewCK";
 import { BottomImageCK } from "./CosmicKitchen/BottomImageCK";
 import { PagesFooter } from "./reusable/PagesFooter/PagesFooter";
+import { useEffect } from "react";
 
 export const CosmicKitchen = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const themeColor = ThemesEnum.ck;
   const themeText = TextColorEnum.light;
   const themeName = ThemesEnum.ck;

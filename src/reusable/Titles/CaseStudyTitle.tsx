@@ -5,7 +5,7 @@ export const CaseStudyTitle = ({title, subtitle, textColor}: ICaseStudyTitleProp
   return (
     <div className="case_study_title_container">
       <h1 className={`case_study_title ${textColor}`}>{title}</h1>
-      <h2 className={`case_study_subtitle ${textColor}50`}>{subtitle}</h2>
+      <h2 className={`case_study_subtitle ${textColor}65`}>{subtitle}</h2>
     </div>
   )
 }
