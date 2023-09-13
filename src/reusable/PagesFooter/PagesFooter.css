@@ -44,3 +44,10 @@
     margin-top: 46px;
   }
 }
+
+@media (min-width: 700px) {
+  .pages-footer__container {
+    max-width: 1324px;
+    margin: 64px auto 64px auto;
+  }
+}
