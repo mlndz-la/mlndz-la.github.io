@@ -31,7 +31,7 @@
 @media (min-width: 1008px) {
   .paper_wireframe_text_container_PF {
     margin: 0px;
-    padding: 46px;
+    padding: 64px 46px 46px;
   }
   .paper_wireframe_image_PF {
     max-width: 629px;

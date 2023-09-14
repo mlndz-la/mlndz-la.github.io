@@ -28,9 +28,9 @@
   }
   .ac_image_PF {
     max-width: 951px;
-    padding: 46px 0px;
+    padding: 46px 0px 64px;
   }
   .ac_text_container_PF {
-    padding: 46px 46px 0px 46px;
+    padding: 64px 46px 0px 46px;
   }
 }

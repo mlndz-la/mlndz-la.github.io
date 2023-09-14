@@ -1,8 +1,8 @@
 .pages-footer__container {
   display: flex;
   flex-direction: column;
-  max-width: 80%;
-  margin: 48px auto;
+  max-width: 100%;
+  margin: 46px 18px;
   justify-content: center;
 }
 
@@ -21,12 +21,8 @@
 }
 
 .more_work__subtitle {
-  color: rgba(0, 0, 0, 0.50);
+  color: rgba(0, 0, 0, 0.65);
   font-family: Plus Jakarta Sans;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .more_work__case_study__container {
@@ -36,15 +32,22 @@
   gap: 48px
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .pages-footer__container {
-    max-width: 80%;
+    margin: 64px 24px;
   }
 
   .more_work__case_study__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 84px;
+    margin-top: 46px;
+  }
+}
+
+@media (min-width: 700px) {
+  .pages-footer__container {
+    max-width: 1324px;
+    margin: 64px auto 64px auto;
   }
 }

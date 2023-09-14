@@ -19,7 +19,7 @@ export const caseStudiesData = {
       imagePreview:
         "https://raw.githubusercontent.com/mlndz-la/pwAssets/main/CK/Mock-up.png",
       description:
-        "A fridge software that helps with grocery shopping, meal planning, and as a recipe book.",
+        "A fridge that helps with grocery shopping, meal planning, and acts as a recipe book.",
     },
     {
       title: "Under Construction",

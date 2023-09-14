@@ -24,14 +24,14 @@
 
 @media (min-width: 1008px) {
   .low_fidelity_text_container_PF {
-    padding: 46px;
+    padding: 64px 46px 46px;
   }
   .low_fidelity_container_PF {
     padding: 0px 8px 0px 18px;
   }
   .low_fidelity_image_PF {
     max-width: 951px;
-    padding-bottom: 46px;
+    padding-bottom: 64px;
   }
   .low_fidelity_image_container_PF {
     display: flex;

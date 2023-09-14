@@ -28,8 +28,12 @@ import { ProductSummaryPF } from "./PawFinder/ProductSummaryPF";
 import { MockUpBottomImagePF } from "./PawFinder/MockUpBottomImagePF";
 import { ColoredLine } from "./reusable/ColoredLine";
 import { PagesFooter } from "./reusable/PagesFooter/PagesFooter";
+import { useEffect } from "react";
 
 export const PawFinder = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const {
     mockUpImageTopDesktop,
     caseStudyStart,
