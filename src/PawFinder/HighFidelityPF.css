@@ -130,10 +130,10 @@
 }
 @media (min-width: 1008px) {
   .hf_text_container_PF {
-    padding: 46px 46px 0px 46px;
+    padding: 64px 46px 0px 46px;
   }
   .hf_main_content_PF {
-    padding: 46px;
+    padding: 46px 46px 64px;
   }
   .hf_font_and_color_container_PF {
     display: flex;

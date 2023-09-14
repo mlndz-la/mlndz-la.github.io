@@ -33,8 +33,8 @@
 }
 @media (min-width: 1008px) {
   .flow_diagram_image_PF {
-    max-width: 80%;
-    margin-bottom: 46px;
+    max-width: 700px;
+    margin-bottom: 64px;
   }
   .flow_diagram_image_title_PF {
     font-size: 1.2rem;
@@ -42,7 +42,7 @@
     margin-bottom: 8px;
   }
   .flow_diagram_text_container_PF {
-    padding: 46px 46px 46px;
+    padding: 64px 46px 46px;
   }
   .flow_diagram_image_container_PF {
     display: flex;
