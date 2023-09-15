@@ -2,8 +2,6 @@
   margin-top: 64px;
 }
 
-.get_in_touch__title {}
-
 .get_in_touch__button {
   box-shadow: 3px 3px 8px 1px rgba(0, 70, 215, 0.4);
   border: none;
@@ -12,6 +10,14 @@
   padding: 20px 23px;
   color: var(--light);
   background-color: var(--accent);
+}
+
+.get_in_touch__button:hover {
+  cursor: pointer;
+}
+.get_in_touch__button:focus {
+  transform: translateY(1px);
+  box-shadow: 3px 3px 3px 1px rgba(0, 70, 215, 0.4);
 }
 
 @media (min-width: 1008px) {

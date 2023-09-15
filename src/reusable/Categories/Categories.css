@@ -20,15 +20,31 @@
   background-color: var(--primaryPF);
 }
 
+.category_PF:hover {
+  color: var(--primaryPF);
+  background-color: var(--secondaryPF);
+  cursor: pointer;
+}
+
 .category_TC {
   color: var(--color4TC);
   background-color: var(--primaryTC);
+}
+.category_TC:hover {
+  color: var(--primaryTC);
+  background-color: var(--color4TC);
+  cursor: pointer;
 }
 
 .category_CK {
   color: var(--secondaryCK);
   background-color: var(--color1CK);
   font-weight: 500;
+}
+.category_CK:hover {
+  color: var(--color1CK);
+  background-color: var(--secondaryCK);
+  cursor: pointer;
 }
 
 @media (min-width: 1008px) {
