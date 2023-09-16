@@ -107,6 +107,7 @@
   .ca_text_container_bad_tc,
   .ca_text_container_good_tc {
     width: 457px;
+    padding: 64px 0px 0px 0px
   }
   .ca_text_container_good_bad_tc {
     display: flex;

@@ -21,6 +21,6 @@
     margin-top: 24px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 84px 224px;
+    justify-content: space-between;
   }
 }

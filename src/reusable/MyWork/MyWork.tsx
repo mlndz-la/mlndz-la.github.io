@@ -22,9 +22,9 @@ export const MyWork = ({ caseStudies }: MyWorkProps) => {
       <h2 className="my_work__title">My Work</h2>
       <div className="case_study__container">
         {
-          caseStudies.map(({ imagePreview, title, description }) => {
+          caseStudies.map(({ imagePreview, title, description }, key) => {
             return (
-              <CaseStudyPreview imagePreview={imagePreview} title={title} subtitle={description} caseStudyUrl={getCaseStudyUrl(title)} />
+              <CaseStudyPreview imagePreview={imagePreview} title={title} subtitle={description} caseStudyUrl={getCaseStudyUrl(title)} key={key}/>
             );
           })
         }

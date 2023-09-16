@@ -8,12 +8,12 @@ export const Category = ({title, theme, elementId}: ICategoryProps) => {
   };
 
   return (
-    <div className="test_width">
+    <div className={`test_width`}>
       <button
-        className={`category_container category_${theme}`}
+        className={`category_container category_${theme} category_${theme}_button`}
         onClick={handleView}
       >
-        <h1 className={`category_title category_${theme}`}>{title}</h1>
+        <h1 className={`category_title`}>{title}</h1>
       </button>
     </div>
   )

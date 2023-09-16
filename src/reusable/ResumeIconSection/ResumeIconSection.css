@@ -8,5 +8,6 @@
 .resume_icon_section__img {
   max-width: 64px;
 }
-
-.resume_icon_section__text {}
+.resume_icon_section__img:hover {
+  cursor: pointer;
+}

@@ -1,8 +1,9 @@
 {
   "include": [
-    "**/*.tsx"
+    "**/*.tsx", "*.d.ts"
   ],
   "compilerOptions": {
+    "typeRoots": ["types.d.ts"],
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "es6",
