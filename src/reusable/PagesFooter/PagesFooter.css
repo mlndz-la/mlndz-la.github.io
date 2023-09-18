@@ -45,9 +45,9 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1080px) {
   .pages-footer__container {
     max-width: 1324px;
-    margin: 64px auto 64px auto;
+    margin: 64px auto;
   }
 }
