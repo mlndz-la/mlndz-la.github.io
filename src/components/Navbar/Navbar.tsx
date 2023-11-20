@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import pdf from "../../reusable/Erick_Melendez_UI_Designer_2023.pdf"
+import pdf from "../../reusable/Erick_Melendez_UI_UX_2023_Resume.pdf"
 
 export const Navbar = () => {
   const navigate = useNavigate()

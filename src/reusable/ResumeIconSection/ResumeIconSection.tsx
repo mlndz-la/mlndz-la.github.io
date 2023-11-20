@@ -1,6 +1,6 @@
 import { websiteAssets } from '../../data/WebsiteAssets';
 import './ResumeIconSection.css'
-import pdf from "../../reusable/Erick_Melendez_UI_Designer_2023.pdf"
+import pdf from "../../reusable/Erick_Melendez_UI_UX_2023_Resume.pdf"
 
 
 export const ResumeIconSection = () => {
